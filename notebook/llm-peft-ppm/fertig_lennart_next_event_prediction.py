@@ -135,7 +135,7 @@ def parse_args():
     parser.add_argument("--continuous_features", nargs="+", default=None)
     parser.add_argument("--continuous_targets", nargs="+", default=None)
     
-    parser.add_argument("--model", type=str, default="nep", choices=["nep", "majority", "tabpfn", "saprpt"])
+    parser.add_argument("--model", type=str, default="nep", choices=["nep", "majority", "tabpfn", "saprpt", "chronos2"])
 
     """ in layer config """
     parser.add_argument(
@@ -310,6 +310,22 @@ def main(training_config: dict):
     set_seed(seed)
     log = EVENT_LOGS[training_config["log"]]()
     train, test = prepare_data(log.dataframe, log.unbiased_split_params)
+    
+    # --- split diagnostics (case-level and event-level sizes) ---
+    n_train_cases = train["case_id"].nunique()
+    n_test_cases = test["case_id"].nunique()
+    n_all_cases = n_train_cases + n_test_cases
+
+    print("unbiased_split_params:", log.unbiased_split_params)
+    print(
+        f"cases: train={n_train_cases} test={n_test_cases} "
+        f"train_share={n_train_cases / n_all_cases:.3f}"
+    )
+    print(
+        f"events: train={len(train)} test={len(test)} "
+        f"train_share={len(train) / (len(train) + len(test)):.3f}"
+    )
+    # --- end split diagnostics ---
 
     event_features = EventFeatures(
         categorical=training_config["categorical_features"],
@@ -391,6 +407,23 @@ def main(training_config: dict):
             wandb.finish()
 
         print("SAP-RPT metrics:", {k: (round(v, 6) if isinstance(v, (float, int)) else v) for k, v in metrics.items()})
+        return
+    
+    if training_config["model"] == "chronos2":
+        from ppm.baselines.chronos2_model import run_chronos2_baseline
+        use_wandb = training_config["wandb"]
+        project_name = training_config["project_name"]
+
+        if use_wandb and WANDB_AVAILABLE:
+            wandb.init(project=project_name, config=training_config)
+
+        metrics = run_chronos2_baseline(train_log, test_log, random_state=seed)
+
+        if use_wandb and WANDB_AVAILABLE:
+            wandb.log(metrics)
+            wandb.finish()
+
+        print("Chronos-2 metrics:", {k: (round(v, 6) if isinstance(v, (float, int)) else v) for k, v in metrics.items()})
         return
     
     dataset_device = training_config["device"]
