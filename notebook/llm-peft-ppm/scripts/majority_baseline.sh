@@ -26,7 +26,7 @@ export PYTORCH_ALLOC_CONF=expandable_segments:True
 export HF_HOME="$PWD/.cache/huggingface"
 export WANDB_DIR="$PWD/.wandb"
 export TOKENIZERS_PARALLELISM=false
-export VSC_SCRATCH="/ceph/lfertig/Thesis/notebook/llm-peft-ppm"
+export VSC_SCRATCH="/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm"
 
 # GPU Info
 nvidia-smi || true

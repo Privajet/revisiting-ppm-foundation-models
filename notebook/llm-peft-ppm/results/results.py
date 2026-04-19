@@ -30,8 +30,8 @@ print("ENTITY:", entity)
 print("WANDB_MODE:", os.environ.get("WANDB_MODE"))
 
 # %%
-output_dir_csv = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv"
-output_dir_plots = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots"
+output_dir_csv = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv"
+output_dir_plots = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots"
 os.makedirs(output_dir_csv, exist_ok=True)
 os.makedirs(output_dir_plots, exist_ok=True)
 
@@ -906,7 +906,7 @@ for (log_name, backbone), df_sub in lora_sweeps_grouped.groupby(["log", "backbon
 # %%
 LLM_BACKBONES = ["gpt2", "gptneo-1b3", "qwen25-05b", "llama32-1b", "gemma-2-2b"]
 
-multi_path = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
+multi_path = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
 llm = pd.read_csv(multi_path)
 
 # --- sanity checks ---
@@ -935,7 +935,7 @@ BACKBONE_MAP_LLM = {
 }
 llm["Backbone_pretty"] = llm["backbone"].map(BACKBONE_MAP_LLM).fillna(llm["backbone"])
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
 PLOTS = [
     ("test_next_activity_acc",            "NA Acc."),
@@ -1076,8 +1076,8 @@ PLOTS = [
 METRICS = [m for (m, _) in PLOTS]
 
 # paths
-multi_path = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
-out_csv_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv"
+multi_path = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
+out_csv_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv"
 os.makedirs(out_csv_dir, exist_ok=True)
 
 out_csv_75 = os.path.join(out_csv_dir, "rq3_llm_tradeoff_per_log_75_selected_hp.csv")
@@ -1341,7 +1341,7 @@ PLOTS = [
 ]
 
 # input CSV from the code above
-in_csv_75 = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv/rq3_llm_tradeoff_per_log_75_selected_hp.csv"
+in_csv_75 = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv/rq3_llm_tradeoff_per_log_75_selected_hp.csv"
 per_log = pd.read_csv(in_csv_75)
 
 # filter just in case
@@ -1372,7 +1372,7 @@ def annotate_medians_top(ax, data: pd.DataFrame, x_col: str, y_col: str, order: 
             clip_on=False,
         )
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 out_dir = os.path.join(plots_base_dir, "all_datasets")
 os.makedirs(out_dir, exist_ok=True)
 
@@ -1408,8 +1408,6 @@ for setting in KEEP_SETTINGS:
         ax.set_ylabel(ylabel)
         ax.set_xticklabels(backbone_order, rotation=45, ha="right")
 
-    axes[-1].set_xlabel("LLM backbone")
-    fig.suptitle(f"All datasets – {setting}", fontsize=12)
     plt.tight_layout(rect=(0, 0, 1, 0.96))
 
     out_path = os.path.join(out_dir, f"llm_backbones_boxplot_ALL_{setting}_from_csv.png")
@@ -1421,7 +1419,7 @@ for setting in KEEP_SETTINGS:
 # %%
 LLM_BACKBONES = ["gpt2", "gptneo-1b3", "qwen25-05b", "llama32-1b", "gemma-2-2b"]
 
-multi_path = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
+multi_path = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
 llm = pd.read_csv(multi_path)
 
 if "Setting" not in llm.columns:
@@ -1435,7 +1433,7 @@ llm = llm[llm["Setting"].isin(KEEP_SETTINGS)].copy()
 
 llm["Setting_main"] = llm["Setting"]
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
 SETTING_ORDER_FULL = [
     "ZeroShot",
@@ -1551,7 +1549,7 @@ llm_freezing = llm[
 ].copy()
 llm_freezing = llm_freezing[llm_freezing["Setting"] != "FewShot-Freezing"].copy()
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
 # Order as in your example plot (will be filtered to what exists per run)
 FREEZING_ORDER = [
@@ -1928,7 +1926,7 @@ if "Backbone_pretty" not in pareto_source.columns:
         .fillna(pareto_source["backbone"])
     )
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
 for log_name, df_log in pareto_source.groupby("log"):
     # pro Datensatz: bester LoRA-Run je Backbone
@@ -2091,7 +2089,7 @@ else:
         .fillna(lora_sweeps_grouped["backbone"])
     )
 
-    plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+    plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
     # 4) Pro Datensatz: All-Sweeps + echte Pareto-Front
     for log_name, df_log in lora_sweeps_grouped.groupby("log"):
