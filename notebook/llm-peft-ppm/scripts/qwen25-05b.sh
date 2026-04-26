@@ -6,7 +6,7 @@
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --gres=gpu:1
 #SBATCH --partition=gpu-vram-48gb
-#SBATCH --chdir=/ceph/lfertig/Thesis/notebook/llm-peft-ppm
+#SBATCH --chdir=/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm
 #SBATCH --output=logs/%x_%j.out
 #SBATCH --error=logs/%x_%j.err
 

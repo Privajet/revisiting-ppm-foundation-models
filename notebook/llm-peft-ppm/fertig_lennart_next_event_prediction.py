@@ -411,6 +411,7 @@ def main(training_config: dict):
     
     if training_config["model"] == "chronos2":
         from ppm.baselines.chronos2_model import run_chronos2_baseline
+        
         use_wandb = training_config["wandb"]
         project_name = training_config["project_name"]
 
