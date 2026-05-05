@@ -140,6 +140,7 @@ BACKBONE_PROJECTS = {
     "transformer":      "llm-peft-ppm_transformer_baseline",
     "tabpfn":           "llm-peft-ppm_tabpfn_baseline",
     "saprpt":           "llm-peft-ppm_saprpt_baseline",
+    "chronos2":         "llm-peft-ppm_chronos2_baseline",
     "gpt2":             "llm-peft-ppm_gpt2",
     "gptneo-1b3":       "llm-peft-ppm_gpt-neo-1.3B",
     "qwen25-05b":       "llm-peft-ppm_qwen25-05b",
@@ -226,11 +227,24 @@ cols = [
 ]
 
 df = global_results.copy()
-df = df[
-    df["test_next_activity_acc"].notna()
+
+chronos_mask = df["backbone"] == "chronos2"
+regular_mask = df["backbone"] != "chronos2"
+
+df_regular = df[
+    regular_mask
+    & df["test_next_activity_acc"].notna()
     & df["test_next_remaining_time_loss"].notna()
     & df["test_next_time_to_next_event_loss"].notna()
 ].copy()
+
+df_chronos = df[
+    chronos_mask
+    & df["test_next_remaining_time_loss"].notna()
+    & df["test_next_time_to_next_event_loss"].notna()
+].copy()
+
+df = pd.concat([df_regular, df_chronos], ignore_index=True)
 
 sc_acc = MinMaxScaler()
 sc_rt  = MinMaxScaler()
@@ -282,7 +296,7 @@ majority_grouped = (
     .reset_index()
 )
 
-BASELINE_BACKBONES = ["rnn", "transformer", "tabpfn", "saprpt"]
+BASELINE_BACKBONES = ["rnn", "transformer", "tabpfn", "saprpt", "chronos2"]
 baseline = df[df["backbone"].isin(BASELINE_BACKBONES)].copy()
 
 NON_HP_COLS = set(
@@ -339,6 +353,7 @@ BACKBONE_MAP = {
     "transformer": "Transformer",
     "tabpfn": "TabPFN",
     "saprpt": "SAP-RPT",
+    "chronos2": "Chronos-2"
 }
 
 baseline_all["Dataset"] = baseline_all["log"].map(DATASET_MAP).fillna(baseline_all["log"])
@@ -583,7 +598,7 @@ multi = pd.read_csv(multi_path)
 if "Setting" not in multi.columns:
     multi["Setting"] = np.nan
 
-BASELINE_BACKBONES = ["majority", "rnn", "transformer", "tabpfn", "saprpt"]
+BASELINE_BACKBONES = ["majority", "rnn", "transformer", "tabpfn", "saprpt", "chronos2"]
 LLM_BACKBONES = ["gpt2", "gptneo-1b3", "qwen25-05b", "llama32-1b", "gemma-2-2b"]
 
 subset = multi[

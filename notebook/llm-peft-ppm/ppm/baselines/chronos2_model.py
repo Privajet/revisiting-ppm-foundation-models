@@ -131,11 +131,7 @@ def _build_case_cache(
         features = {}
         for c in feature_cols:
             values = g[c].to_numpy()
-            if c == "activity":
-                # Chronos-2 supports categorical covariates; use symbolic labels
-                features[c] = _decode_activity_array(values, itos_activity)
-            else:
-                features[c] = values.astype(np.float32, copy=False)
+            features[c] = values.astype(np.float32, copy=False)
 
         cache[cid] = {
             "nt": g["time_to_next_event"].astype(np.float32).to_numpy(),
@@ -182,7 +178,7 @@ def run_chronos2_baseline(
     df_train = train_log.dataframe.copy()
     df_test = test_log.dataframe.copy()
 
-    feature_cols = list(train_log.features.categorical) + list(train_log.features.numerical)
+    feature_cols = list(train_log.features.numerical)
 
     train_ord = _ordered_with_pos(df_train)
     test_ord = _ordered_with_pos(df_test)
