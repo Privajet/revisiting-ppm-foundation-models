@@ -30,8 +30,8 @@ print("ENTITY:", entity)
 print("WANDB_MODE:", os.environ.get("WANDB_MODE"))
 
 # %%
-output_dir_csv = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv"
-output_dir_plots = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots"
+output_dir_csv = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv"
+output_dir_plots = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots"
 os.makedirs(output_dir_csv, exist_ok=True)
 os.makedirs(output_dir_plots, exist_ok=True)
 
@@ -140,6 +140,7 @@ BACKBONE_PROJECTS = {
     "transformer":      "llm-peft-ppm_transformer_baseline",
     "tabpfn":           "llm-peft-ppm_tabpfn_baseline",
     "saprpt":           "llm-peft-ppm_saprpt_baseline",
+    "chronos2":         "llm-peft-ppm_chronos2_baseline",
     "gpt2":             "llm-peft-ppm_gpt2",
     "gptneo-1b3":       "llm-peft-ppm_gpt-neo-1.3B",
     "qwen25-05b":       "llm-peft-ppm_qwen25-05b",
@@ -226,20 +227,52 @@ cols = [
 ]
 
 df = global_results.copy()
-df = df[
-    df["test_next_activity_acc"].notna()
+
+chronos_mask = df["backbone"] == "chronos2"
+regular_mask = df["backbone"] != "chronos2"
+
+df_regular = df[
+    regular_mask
+    & df["test_next_activity_acc"].notna()
     & df["test_next_remaining_time_loss"].notna()
     & df["test_next_time_to_next_event_loss"].notna()
 ].copy()
+
+df_chronos = df[
+    chronos_mask
+    & df["test_next_remaining_time_loss"].notna()
+    & df["test_next_time_to_next_event_loss"].notna()
+].copy()
+
+df = pd.concat([df_regular, df_chronos], ignore_index=True)
+
+chronos_mask = df["backbone"] == "chronos2"
 
 sc_acc = MinMaxScaler()
 sc_rt  = MinMaxScaler()
 sc_nt  = MinMaxScaler()
 
-df["na_norm"] = sc_acc.fit_transform(df[["test_next_activity_acc"]])
-df["rt_norm"] = sc_rt.fit_transform(-df[["test_next_remaining_time_loss"]])
-df["nt_norm"] = sc_nt.fit_transform(-df[["test_next_time_to_next_event_loss"]])
+# Scaler nur auf vollständigen (Non-Chronos) Runs fitten
+df_fit = df.loc[~chronos_mask]
+sc_acc.fit(df_fit[["test_next_activity_acc"]])
+sc_rt.fit(-df_fit[["test_next_remaining_time_loss"]])
+sc_nt.fit(-df_fit[["test_next_time_to_next_event_loss"]])
+
+# NA-Norm: NaN für Chronos-2, transform für alle anderen
+df["na_norm"] = np.nan
+df.loc[~chronos_mask, "na_norm"] = sc_acc.transform(
+    df.loc[~chronos_mask, ["test_next_activity_acc"]]
+).ravel()
+
+# RT/NT-Norm: für alle Rows transformieren (Chronos-2 hat valide Werte)
+df["rt_norm"] = sc_rt.transform(-df[["test_next_remaining_time_loss"]]).ravel()
+df["nt_norm"] = sc_nt.transform(-df[["test_next_time_to_next_event_loss"]]).ravel()
+
+# Drei-Task-Score (für Chronos-2 absichtlich NaN — wird nicht zur Selektion verwendet)
 df["mt_score"] = df["na_norm"] + df["rt_norm"] + df["nt_norm"]
+
+# Zwei-Task-Score für Chronos-2 (RT + NT only)
+df["mt_score_2task"] = df["rt_norm"] + df["nt_norm"]
 
 df.head(10)
 
@@ -262,7 +295,10 @@ def agg_over_seeds(group: pd.DataFrame) -> pd.Series:
             out[c] = group[c].iloc[0]
     if "mt_score" in group.columns:
         out["mt_score_mean"] = group["mt_score"].mean()
-        out["mt_score_std"] = group["mt_score"].std()
+        out["mt_score_std"]  = group["mt_score"].std()
+    if "mt_score_2task" in group.columns:                       # <-- NEU
+        out["mt_score_2task_mean"] = group["mt_score_2task"].mean()
+        out["mt_score_2task_std"]  = group["mt_score_2task"].std()
     if "_runtime" in group.columns:
         out["_runtime_mean"] = group["_runtime"].mean()
         out["_runtime_std"]  = group["_runtime"].std()
@@ -270,7 +306,7 @@ def agg_over_seeds(group: pd.DataFrame) -> pd.Series:
         if m in group.columns:
             vals = group[m].dropna()
             out[m + "_mean"] = vals.mean()
-            out[m + "_std"] = vals.std()
+            out[m + "_std"]  = vals.std()
     return pd.Series(out)
 
 # %%
@@ -282,7 +318,7 @@ majority_grouped = (
     .reset_index()
 )
 
-BASELINE_BACKBONES = ["rnn", "transformer", "tabpfn", "saprpt"]
+BASELINE_BACKBONES = ["rnn", "transformer", "tabpfn", "saprpt", "chronos2"]
 baseline = df[df["backbone"].isin(BASELINE_BACKBONES)].copy()
 
 NON_HP_COLS = set(
@@ -290,7 +326,7 @@ NON_HP_COLS = set(
         "id","log","backbone","categorical_features","categorical_targets",
         "continuous_features","continuous_targets","device","project","model",
         "name","fine_tuning","lora_alpha", "r", "few_shot_k", "seed","_runtime","_timestamp",
-        "na_norm","rt_norm","nt_norm","mt_score","majority_stat",
+        "na_norm","rt_norm","nt_norm","mt_score","mt_score_2task","majority_stat",
         "total_params","trainable_params","best_train_next_remaining_time_loss",
         "_step","best_train_next_activity_loss","train_next_time_to_next_event_loss",
         "best_train_next_time_to_next_event_loss","train_next_activity_acc",
@@ -309,13 +345,18 @@ group_cols = ["log", "backbone"] + HP_COLS
 baseline_grouped = (
     baseline
     .groupby(group_cols, dropna=False)
-    .apply(agg_over_seeds)   # deine Funktion von oben
+    .apply(agg_over_seeds)
     .reset_index()
 )
 
-score_col = "mt_score_mean"
-if score_col not in baseline_grouped.columns:
-    score_col = "test_next_activity_acc_mean"
+# Chronos-2 hat keinen NA-Task → 2-Task-Score zum Auswählen verwenden
+baseline_grouped["selection_score"] = np.where(
+    baseline_grouped["backbone"].eq("chronos2"),
+    baseline_grouped.get("mt_score_2task_mean"),
+    baseline_grouped["mt_score_mean"],
+)
+
+score_col = "selection_score"
 
 idx_best = (
     baseline_grouped
@@ -339,6 +380,7 @@ BACKBONE_MAP = {
     "transformer": "Transformer",
     "tabpfn": "TabPFN",
     "saprpt": "SAP-RPT",
+    "chronos2": "Chronos-2"
 }
 
 baseline_all["Dataset"] = baseline_all["log"].map(DATASET_MAP).fillna(baseline_all["log"])
@@ -583,7 +625,7 @@ multi = pd.read_csv(multi_path)
 if "Setting" not in multi.columns:
     multi["Setting"] = np.nan
 
-BASELINE_BACKBONES = ["majority", "rnn", "transformer", "tabpfn", "saprpt"]
+BASELINE_BACKBONES = ["majority", "rnn", "transformer", "tabpfn", "saprpt", "chronos2"]
 LLM_BACKBONES = ["gpt2", "gptneo-1b3", "qwen25-05b", "llama32-1b", "gemma-2-2b"]
 
 subset = multi[
@@ -906,7 +948,7 @@ for (log_name, backbone), df_sub in lora_sweeps_grouped.groupby(["log", "backbon
 # %%
 LLM_BACKBONES = ["gpt2", "gptneo-1b3", "qwen25-05b", "llama32-1b", "gemma-2-2b"]
 
-multi_path = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
+multi_path = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
 llm = pd.read_csv(multi_path)
 
 # --- sanity checks ---
@@ -935,7 +977,7 @@ BACKBONE_MAP_LLM = {
 }
 llm["Backbone_pretty"] = llm["backbone"].map(BACKBONE_MAP_LLM).fillna(llm["backbone"])
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
 PLOTS = [
     ("test_next_activity_acc",            "NA Acc."),
@@ -1076,8 +1118,8 @@ PLOTS = [
 METRICS = [m for (m, _) in PLOTS]
 
 # paths
-multi_path = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
-out_csv_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv"
+multi_path = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
+out_csv_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv"
 os.makedirs(out_csv_dir, exist_ok=True)
 
 out_csv_75 = os.path.join(out_csv_dir, "rq3_llm_tradeoff_per_log_75_selected_hp.csv")
@@ -1341,7 +1383,7 @@ PLOTS = [
 ]
 
 # input CSV from the code above
-in_csv_75 = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv/rq3_llm_tradeoff_per_log_75_selected_hp.csv"
+in_csv_75 = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv/rq3_llm_tradeoff_per_log_75_selected_hp.csv"
 per_log = pd.read_csv(in_csv_75)
 
 # filter just in case
@@ -1372,7 +1414,7 @@ def annotate_medians_top(ax, data: pd.DataFrame, x_col: str, y_col: str, order: 
             clip_on=False,
         )
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 out_dir = os.path.join(plots_base_dir, "all_datasets")
 os.makedirs(out_dir, exist_ok=True)
 
@@ -1408,8 +1450,6 @@ for setting in KEEP_SETTINGS:
         ax.set_ylabel(ylabel)
         ax.set_xticklabels(backbone_order, rotation=45, ha="right")
 
-    axes[-1].set_xlabel("LLM backbone")
-    fig.suptitle(f"All datasets – {setting}", fontsize=12)
     plt.tight_layout(rect=(0, 0, 1, 0.96))
 
     out_path = os.path.join(out_dir, f"llm_backbones_boxplot_ALL_{setting}_from_csv.png")
@@ -1421,7 +1461,7 @@ for setting in KEEP_SETTINGS:
 # %%
 LLM_BACKBONES = ["gpt2", "gptneo-1b3", "qwen25-05b", "llama32-1b", "gemma-2-2b"]
 
-multi_path = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
+multi_path = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/csv/multi_task_results_r256_a512.csv"
 llm = pd.read_csv(multi_path)
 
 if "Setting" not in llm.columns:
@@ -1435,7 +1475,7 @@ llm = llm[llm["Setting"].isin(KEEP_SETTINGS)].copy()
 
 llm["Setting_main"] = llm["Setting"]
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
 SETTING_ORDER_FULL = [
     "ZeroShot",
@@ -1551,7 +1591,7 @@ llm_freezing = llm[
 ].copy()
 llm_freezing = llm_freezing[llm_freezing["Setting"] != "FewShot-Freezing"].copy()
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
 # Order as in your example plot (will be filtered to what exists per run)
 FREEZING_ORDER = [
@@ -1928,7 +1968,7 @@ if "Backbone_pretty" not in pareto_source.columns:
         .fillna(pareto_source["backbone"])
     )
 
-plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
 for log_name, df_log in pareto_source.groupby("log"):
     # pro Datensatz: bester LoRA-Run je Backbone
@@ -2091,7 +2131,7 @@ else:
         .fillna(lora_sweeps_grouped["backbone"])
     )
 
-    plots_base_dir = "/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/plots/per_dataset"
+    plots_base_dir = "/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/results/plots/per_dataset"
 
     # 4) Pro Datensatz: All-Sweeps + echte Pareto-Front
     for log_name, df_log in lora_sweeps_grouped.groupby("log"):

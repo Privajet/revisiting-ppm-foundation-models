@@ -6,7 +6,7 @@
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --gres=gpu:1
 #SBATCH --partition=gpu-vram-48gb
-#SBATCH --chdir=/ceph/lfertig/Thesis/notebook/llm-peft-ppm
+#SBATCH --chdir=/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm
 #SBATCH --output=logs/%x_%j.out
 #SBATCH --error=logs/%x_%j.err
 
@@ -26,7 +26,7 @@ export PYTORCH_ALLOC_CONF=expandable_segments:True
 export HF_HOME="$PWD/.cache/huggingface"
 export WANDB_DIR="$PWD/.wandb"
 export TOKENIZERS_PARALLELISM=false
-export VSC_SCRATCH="/ceph/lfertig/Thesis/notebook/llm-peft-ppm"
+export VSC_SCRATCH="/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm"
 
 # GPU Info
 nvidia-smi || true
@@ -38,7 +38,8 @@ PARAMS_FILE="scripts/transformer_params.txt"
 PY_MAIN="fertig_lennart_next_event_prediction.py"
 PROJECT="llm-peft-ppm_transformer_baseline"   
 
-SEEDS="41 42 43 44 45"
+# SEEDS="41 42 43 44 45"
+SEEDS="41"
 
 grep -vE '^\s*#|^\s*$' "$PARAMS_FILE" | while IFS= read -r ARGS; do
   for SEED in $SEEDS; do

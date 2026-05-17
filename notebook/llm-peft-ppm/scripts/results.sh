@@ -6,9 +6,9 @@
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --gres=gpu:1
 #SBATCH --partition=gpu-vram-48gb
-#SBATCH --chdir=/ceph/lfertig/Thesis/notebook/llm-peft-ppm/results/
-#SBATCH --output=logs/%x_%j.out
-#SBATCH --error=logs/%x_%j.err
+#SBATCH --chdir=/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm
+#SBATCH --output=/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/logs/%x_%j.out
+#SBATCH --error=/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm/logs/%x_%j.err
 
 set -euo pipefail
 
@@ -23,7 +23,7 @@ conda activate llm-peft-ppm
 export LD_LIBRARY_PATH="$CONDA_PREFIX/lib:${LD_LIBRARY_PATH:-}"
 
 # PYTHONPATH so ppm/ gefunden wird
-export PYTHONPATH="/ceph/lfertig/Thesis/notebook/llm-peft-ppm:${PYTHONPATH:-}"
+export PYTHONPATH="/ceph/lfertig/Paper/revisiting-ppm-foundation-models/notebook/llm-peft-ppm:${PYTHONPATH:-}"
 
 # W&B offline (kein Projekt nötig)
 export WANDB_MODE=offline
@@ -43,7 +43,7 @@ echo "CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
 python -c "import torch,sys; print('torch', torch.__version__, 'cuda?', torch.cuda.is_available())" || true
 
 # Configuration
-PY_MAIN="results.py"
+PY_MAIN="results/results.py"
 export ENTITY="privajet-university-of-mannheim"
 
 echo ">>> RUN: python $PY_MAIN"
