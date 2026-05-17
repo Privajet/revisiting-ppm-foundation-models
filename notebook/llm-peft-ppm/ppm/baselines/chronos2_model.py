@@ -114,7 +114,6 @@ def _build_empirical_stats(train_df_ordered: pd.DataFrame) -> dict[str, Any]:
 def _build_case_cache(
     df_ordered: pd.DataFrame,
     feature_cols: list[str],
-    itos_activity: dict[int, str],
 ) -> dict[Any, dict[str, Any]]:
     cache = {}
     for cid, g in df_ordered.groupby("case_id", sort=False):
