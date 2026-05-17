@@ -246,14 +246,33 @@ df_chronos = df[
 
 df = pd.concat([df_regular, df_chronos], ignore_index=True)
 
+chronos_mask = df["backbone"] == "chronos2"
+
 sc_acc = MinMaxScaler()
 sc_rt  = MinMaxScaler()
 sc_nt  = MinMaxScaler()
 
-df["na_norm"] = sc_acc.fit_transform(df[["test_next_activity_acc"]])
-df["rt_norm"] = sc_rt.fit_transform(-df[["test_next_remaining_time_loss"]])
-df["nt_norm"] = sc_nt.fit_transform(-df[["test_next_time_to_next_event_loss"]])
+# Scaler nur auf vollständigen (Non-Chronos) Runs fitten
+df_fit = df.loc[~chronos_mask]
+sc_acc.fit(df_fit[["test_next_activity_acc"]])
+sc_rt.fit(-df_fit[["test_next_remaining_time_loss"]])
+sc_nt.fit(-df_fit[["test_next_time_to_next_event_loss"]])
+
+# NA-Norm: NaN für Chronos-2, transform für alle anderen
+df["na_norm"] = np.nan
+df.loc[~chronos_mask, "na_norm"] = sc_acc.transform(
+    df.loc[~chronos_mask, ["test_next_activity_acc"]]
+).ravel()
+
+# RT/NT-Norm: für alle Rows transformieren (Chronos-2 hat valide Werte)
+df["rt_norm"] = sc_rt.transform(-df[["test_next_remaining_time_loss"]]).ravel()
+df["nt_norm"] = sc_nt.transform(-df[["test_next_time_to_next_event_loss"]]).ravel()
+
+# Drei-Task-Score (für Chronos-2 absichtlich NaN — wird nicht zur Selektion verwendet)
 df["mt_score"] = df["na_norm"] + df["rt_norm"] + df["nt_norm"]
+
+# Zwei-Task-Score für Chronos-2 (RT + NT only)
+df["mt_score_2task"] = df["rt_norm"] + df["nt_norm"]
 
 df.head(10)
 
@@ -276,7 +295,10 @@ def agg_over_seeds(group: pd.DataFrame) -> pd.Series:
             out[c] = group[c].iloc[0]
     if "mt_score" in group.columns:
         out["mt_score_mean"] = group["mt_score"].mean()
-        out["mt_score_std"] = group["mt_score"].std()
+        out["mt_score_std"]  = group["mt_score"].std()
+    if "mt_score_2task" in group.columns:                       # <-- NEU
+        out["mt_score_2task_mean"] = group["mt_score_2task"].mean()
+        out["mt_score_2task_std"]  = group["mt_score_2task"].std()
     if "_runtime" in group.columns:
         out["_runtime_mean"] = group["_runtime"].mean()
         out["_runtime_std"]  = group["_runtime"].std()
@@ -284,7 +306,7 @@ def agg_over_seeds(group: pd.DataFrame) -> pd.Series:
         if m in group.columns:
             vals = group[m].dropna()
             out[m + "_mean"] = vals.mean()
-            out[m + "_std"] = vals.std()
+            out[m + "_std"]  = vals.std()
     return pd.Series(out)
 
 # %%
@@ -304,7 +326,7 @@ NON_HP_COLS = set(
         "id","log","backbone","categorical_features","categorical_targets",
         "continuous_features","continuous_targets","device","project","model",
         "name","fine_tuning","lora_alpha", "r", "few_shot_k", "seed","_runtime","_timestamp",
-        "na_norm","rt_norm","nt_norm","mt_score","majority_stat",
+        "na_norm","rt_norm","nt_norm","mt_score","mt_score_2task","majority_stat",
         "total_params","trainable_params","best_train_next_remaining_time_loss",
         "_step","best_train_next_activity_loss","train_next_time_to_next_event_loss",
         "best_train_next_time_to_next_event_loss","train_next_activity_acc",
@@ -323,13 +345,18 @@ group_cols = ["log", "backbone"] + HP_COLS
 baseline_grouped = (
     baseline
     .groupby(group_cols, dropna=False)
-    .apply(agg_over_seeds)   # deine Funktion von oben
+    .apply(agg_over_seeds)
     .reset_index()
 )
 
-score_col = "mt_score_mean"
-if score_col not in baseline_grouped.columns:
-    score_col = "test_next_activity_acc_mean"
+# Chronos-2 hat keinen NA-Task → 2-Task-Score zum Auswählen verwenden
+baseline_grouped["selection_score"] = np.where(
+    baseline_grouped["backbone"].eq("chronos2"),
+    baseline_grouped.get("mt_score_2task_mean"),
+    baseline_grouped["mt_score_mean"],
+)
+
+score_col = "selection_score"
 
 idx_best = (
     baseline_grouped

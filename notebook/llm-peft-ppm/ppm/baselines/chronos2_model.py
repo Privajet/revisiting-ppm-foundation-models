@@ -1,4 +1,3 @@
-import time
 from collections import defaultdict
 from typing import Any
 
@@ -36,14 +35,6 @@ def _ordered_with_pos(df: pd.DataFrame) -> pd.DataFrame:
     out["case_len"] = out.groupby("case_id")["pos"].transform("max") + 1
     out["remaining_events"] = out["case_len"] - out["pos"] - 1
     return out
-
-
-def _decode_activity_array(activity_ids: np.ndarray, itos_activity: dict[int, str]) -> np.ndarray:
-    return np.asarray(
-        [itos_activity.get(int(x), "<UNK>") for x in activity_ids],
-        dtype=object,
-    )
-
 
 def _singleton_cov_value(value: Any) -> np.ndarray:
     if isinstance(value, str):
@@ -168,7 +159,6 @@ def run_chronos2_baseline(
       - It uses only train-split statistics for fallbacks / RT horizon estimation.
       - It never uses past remaining_time values as model history (to avoid leakage).
     """
-    start_time = time.perf_counter()
 
     if na_strategy not in {"nan", "majority"}:
         raise ValueError("na_strategy must be either 'nan' or 'majority'")
@@ -197,11 +187,9 @@ def run_chronos2_baseline(
         torch_dtype=dtype,
     )
 
-    itos_activity = train_log.itos["activity"]
     case_cache = _build_case_cache(
         test_ord,
-        feature_cols=feature_cols,
-        itos_activity=itos_activity,
+        feature_cols=feature_cols
     )
 
     # Ground truth arrays

@@ -386,10 +386,10 @@ def main(training_config: dict):
         metrics = run_tabpfn_baseline(train_log, test_log, random_state=seed)
         
         if use_wandb and WANDB_AVAILABLE:
-            wandb.log(metrics)
+            wandb.log({k: v for k, v in metrics.items() if k != "y_true_pred_dump"})
             wandb.finish()
         
-        print("TabPFN metrics:", {k: round(v, 6) for k, v in metrics.items()})
+        print("TabPFN metrics:", {k: (round(v, 6) if isinstance(v, (float, int)) else v) for k, v in metrics.items()})
         return
     
     if training_config["model"] == "saprpt":
@@ -403,7 +403,7 @@ def main(training_config: dict):
         metrics = run_sap_rpt_baseline(train_log, test_log, random_state=seed)
 
         if use_wandb and WANDB_AVAILABLE:
-            wandb.log(metrics)
+            wandb.log({k: v for k, v in metrics.items() if k != "y_true_pred_dump"})
             wandb.finish()
 
         print("SAP-RPT metrics:", {k: (round(v, 6) if isinstance(v, (float, int)) else v) for k, v in metrics.items()})
@@ -421,7 +421,7 @@ def main(training_config: dict):
         metrics = run_chronos2_baseline(train_log, test_log, random_state=seed)
 
         if use_wandb and WANDB_AVAILABLE:
-            wandb.log(metrics)
+            wandb.log({k: v for k, v in metrics.items() if k != "y_true_pred_dump"})
             wandb.finish()
 
         print("Chronos-2 metrics:", {k: (round(v, 6) if isinstance(v, (float, int)) else v) for k, v in metrics.items()})
