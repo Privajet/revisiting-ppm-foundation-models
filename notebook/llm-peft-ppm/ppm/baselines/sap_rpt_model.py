@@ -1,6 +1,13 @@
+import numpy as np
 from sklearn.metrics import accuracy_score, mean_squared_error
 from sap_rpt_oss import SAP_RPT_OSS_Classifier, SAP_RPT_OSS_Regressor
 
+def _enrich_with_positions(df):
+    out = df.reset_index(drop=False).rename(columns={"index": "_row_id"}).copy()
+    out = out.sort_values(["case_id", "_row_id"], kind="mergesort").reset_index(drop=True)
+    out["pos"] = out.groupby("case_id").cumcount()
+    out["case_len"] = out.groupby("case_id")["pos"].transform("max") + 1
+    return out
 
 def run_sap_rpt_baseline(train_log, test_log, random_state: int):
     """
@@ -12,7 +19,7 @@ def run_sap_rpt_baseline(train_log, test_log, random_state: int):
     max_n_test = 2000
     
     df_train = train_log.dataframe
-    df_test = test_log.dataframe
+    df_test = _enrich_with_positions(test_log.dataframe)
     
     if len(df_train) > max_n_train:
         df_train = df_train.sample(n=max_n_train, random_state=random_state).reset_index(drop=True)
@@ -72,7 +79,12 @@ def run_sap_rpt_baseline(train_log, test_log, random_state: int):
         "y_true_remaining_time": y_test_rt.to_numpy(),
         "y_pred_remaining_time": pred_rt,
         "y_true_time_to_next_event": y_test_nt.to_numpy(),
-        "y_pred_time_to_next_event": pred_nt,
+        "y_pred_time_to_next_event": np.asarray(pred_nt),
+        # NEU: Metadaten in derselben Reihenfolge wie die predictions
+        "case_ids": df_test["case_id"].to_numpy(),
+        "positions": df_test["pos"].to_numpy(),
+        "case_lengths": df_test["case_len"].to_numpy(),
+        "activity_ids_current": df_test["activity"].astype(int).to_numpy(),
     }
         
     return metrics
