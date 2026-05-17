@@ -135,7 +135,7 @@ def parse_args():
     parser.add_argument("--continuous_features", nargs="+", default=None)
     parser.add_argument("--continuous_targets", nargs="+", default=None)
     
-    parser.add_argument("--model", type=str, default="nep", choices=["nep", "majority", "tabpfn", "saprpt", "chronos2"])
+    parser.add_argument("--model", type=str, default="nep", choices=["nep", "majority", "tabpfn", "tabpfn3", "saprpt", "chronos2"])
 
     """ in layer config """
     parser.add_argument(
@@ -390,6 +390,24 @@ def main(training_config: dict):
             wandb.finish()
         
         print("TabPFN metrics:", {k: (round(v, 6) if isinstance(v, (float, int)) else v) for k, v in metrics.items()})
+        return
+    
+    if training_config["model"] == "tabpfn3":
+        from ppm.baselines.tabpfn3_model import run_tabpfn3_baseline
+        use_wandb = training_config["wandb"]
+        project_name = training_config["project_name"]
+
+        if use_wandb and WANDB_AVAILABLE:
+            wandb.init(project=project_name, config=training_config)
+
+        metrics = run_tabpfn3_baseline(train_log, test_log, random_state=seed)
+
+        if use_wandb and WANDB_AVAILABLE:
+            wandb.log({k: v for k, v in metrics.items() if k != "y_true_pred_dump"})
+            wandb.finish()
+
+        print("TabPFN-3 metrics:", {k: (round(v, 6) if isinstance(v, (float, int)) else v)
+                                    for k, v in metrics.items() if k != "y_true_pred_dump"})
         return
     
     if training_config["model"] == "saprpt":

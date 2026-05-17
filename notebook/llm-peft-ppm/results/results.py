@@ -139,6 +139,7 @@ BACKBONE_PROJECTS = {
     "rnn":              "llm-peft-ppm_rnn",
     "transformer":      "llm-peft-ppm_transformer_baseline",
     "tabpfn":           "llm-peft-ppm_tabpfn_baseline",
+    "tabpfn3":          "llm-peft-ppm_tabpfn3_baseline",
     "saprpt":           "llm-peft-ppm_saprpt_baseline",
     "chronos2":         "llm-peft-ppm_chronos2_baseline",
     "gpt2":             "llm-peft-ppm_gpt2",
@@ -318,7 +319,7 @@ majority_grouped = (
     .reset_index()
 )
 
-BASELINE_BACKBONES = ["rnn", "transformer", "tabpfn", "saprpt", "chronos2"]
+BASELINE_BACKBONES = ["rnn", "transformer", "tabpfn", "tabpfn3", "saprpt", "chronos2"]
 baseline = df[df["backbone"].isin(BASELINE_BACKBONES)].copy()
 
 NON_HP_COLS = set(
@@ -379,6 +380,7 @@ BACKBONE_MAP = {
     "rnn": "RNN",
     "transformer": "Transformer",
     "tabpfn": "TabPFN",
+    "tabpfn3": "TabPFN-3",
     "saprpt": "SAP-RPT",
     "chronos2": "Chronos-2"
 }
