@@ -138,10 +138,10 @@ BACKBONE_PROJECTS = {
     "majority":         "llm-peft-ppm_majority_baseline",
     "rnn":              "llm-peft-ppm_rnn",
     "transformer":      "llm-peft-ppm_transformer_baseline",
-    "tabpfn":           "llm-peft-ppm_tabpfn_baseline",
+    #"tabpfn":           "llm-peft-ppm_tabpfn_baseline",
     "tabpfn3":          "llm-peft-ppm_tabpfn3_baseline",
     "saprpt":           "llm-peft-ppm_saprpt_baseline",
-    "chronos2":         "llm-peft-ppm_chronos2_baseline",
+    #"chronos2":         "llm-peft-ppm_chronos2_baseline",
     "gpt2":             "llm-peft-ppm_gpt2",
     "gptneo-1b3":       "llm-peft-ppm_gpt-neo-1.3B",
     "qwen25-05b":       "llm-peft-ppm_qwen25-05b",
@@ -229,6 +229,43 @@ cols = [
 
 df = global_results.copy()
 
+NUMERIC_RESULT_COLS = [
+    "total_params",
+    "trainable_params",
+    "seed",
+    "_runtime",
+    "_timestamp",
+
+    "test_next_activity_acc",
+    "test_next_activity_loss",
+    "test_next_remaining_time_loss",
+    "test_next_time_to_next_event_loss",
+    "best_test_next_activity_acc",
+    "best_test_next_activity_loss",
+    "best_test_next_remaining_time_loss",
+    "best_test_next_time_to_next_event_loss",
+
+    "batch_size",
+    "embedding_size",
+    "epochs",
+    "grad_clip",
+    "hidden_size",
+    "lr",
+    "n_layers",
+    "weight_decay",
+    "lora_alpha",
+    "r",
+    "few_shot_k",
+]
+
+for c in NUMERIC_RESULT_COLS:
+    if c in df.columns:
+        df[c] = (
+            df[c]
+            .replace(["NaN", "nan", "None", "null", ""], np.nan)
+            .pipe(pd.to_numeric, errors="coerce")
+        )
+
 chronos_mask = df["backbone"] == "chronos2"
 regular_mask = df["backbone"] != "chronos2"
 
@@ -291,23 +328,33 @@ METRICS = [
 
 def agg_over_seeds(group: pd.DataFrame) -> pd.Series:
     out = {"n_runs": len(group)}
+
     for c in ["total_params", "trainable_params"]:
         if c in group.columns:
-            out[c] = group[c].iloc[0]
+            vals = pd.to_numeric(group[c], errors="coerce").dropna()
+            out[c] = vals.iloc[0] if len(vals) else np.nan
+
     if "mt_score" in group.columns:
-        out["mt_score_mean"] = group["mt_score"].mean()
-        out["mt_score_std"]  = group["mt_score"].std()
-    if "mt_score_2task" in group.columns:                       # <-- NEU
-        out["mt_score_2task_mean"] = group["mt_score_2task"].mean()
-        out["mt_score_2task_std"]  = group["mt_score_2task"].std()
+        vals = pd.to_numeric(group["mt_score"], errors="coerce")
+        out["mt_score_mean"] = vals.mean()
+        out["mt_score_std"] = vals.std()
+
+    if "mt_score_2task" in group.columns:
+        vals = pd.to_numeric(group["mt_score_2task"], errors="coerce")
+        out["mt_score_2task_mean"] = vals.mean()
+        out["mt_score_2task_std"] = vals.std()
+
     if "_runtime" in group.columns:
-        out["_runtime_mean"] = group["_runtime"].mean()
-        out["_runtime_std"]  = group["_runtime"].std()
+        vals = pd.to_numeric(group["_runtime"], errors="coerce")
+        out["_runtime_mean"] = vals.mean()
+        out["_runtime_std"] = vals.std()
+
     for m in METRICS:
         if m in group.columns:
-            vals = group[m].dropna()
+            vals = pd.to_numeric(group[m], errors="coerce").dropna()
             out[m + "_mean"] = vals.mean()
-            out[m + "_std"]  = vals.std()
+            out[m + "_std"] = vals.std()
+
     return pd.Series(out)
 
 # %%
@@ -319,7 +366,7 @@ majority_grouped = (
     .reset_index()
 )
 
-BASELINE_BACKBONES = ["rnn", "transformer", "tabpfn", "tabpfn3", "saprpt", "chronos2"]
+BASELINE_BACKBONES = ["rnn", "transformer", "tabpfn", "tabpfn3", "saprpt"]
 baseline = df[df["backbone"].isin(BASELINE_BACKBONES)].copy()
 
 NON_HP_COLS = set(
@@ -627,7 +674,7 @@ multi = pd.read_csv(multi_path)
 if "Setting" not in multi.columns:
     multi["Setting"] = np.nan
 
-BASELINE_BACKBONES = ["majority", "rnn", "transformer", "tabpfn", "saprpt", "chronos2"]
+BASELINE_BACKBONES = ["majority", "rnn", "transformer", "tabpfn3", "saprpt"]
 LLM_BACKBONES = ["gpt2", "gptneo-1b3", "qwen25-05b", "llama32-1b", "gemma-2-2b"]
 
 subset = multi[

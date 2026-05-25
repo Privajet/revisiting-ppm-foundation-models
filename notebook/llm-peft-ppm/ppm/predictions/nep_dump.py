@@ -6,11 +6,14 @@ import torch
 
 # Wie die EventTargets-Namen auf die Spaltennamen in den Predictions mappen
 CAT_TARGET_TO_DUMP_KEY = {
-    "activity": "next_activity",
+    "next_activity": "next_activity",  # Präfix beibehalten
+    "activity": "next_activity",       # Fallback, falls jemand unprefixed nutzt
 }
 NUM_TARGET_TO_DUMP_KEY = {
-    "remaining_time": "remaining_time",
-    "time_to_next_event": "time_to_next_event",
+    "next_remaining_time": "remaining_time",            # Präfix strippen
+    "next_time_to_next_event": "time_to_next_event",    # Präfix strippen
+    "remaining_time": "remaining_time",                  # Fallback
+    "time_to_next_event": "time_to_next_event",          # Fallback
 }
 
 
@@ -24,8 +27,14 @@ def dump_predictions_nep(model, test_loader, test_log, device: str = "cuda") -> 
     iterates cases in the same order as test_log.dataframe sorted by (case_id, _row_id).
     """
     model.eval()
-    targets_cat = list(test_loader.dataset.log.targets.categorical)  # e.g. ["activity"]
-    targets_num = list(test_loader.dataset.log.targets.numerical)    # e.g. ["remaining_time", "time_to_next_event"]
+    targets_cat = list(test_log.targets.categorical)  # e.g. ["activity"]
+    targets_num = list(test_log.targets.numerical)    # e.g. ["remaining_time", "time_to_next_event"]
+    print(f"[nep_dump] targets_cat={targets_cat}, targets_num={targets_num}")
+    if not targets_cat and not targets_num:
+        raise RuntimeError(
+            "dump_predictions_nep: no targets detected on test_log. "
+            f"categorical={targets_cat}, numerical={targets_num}"
+        )
 
     # 1) Reihenfolge der Cases ableiten, wie der DataLoader sie ausgibt
     df_test = test_log.dataframe.reset_index(drop=False).rename(columns={"index": "_row_id"})
