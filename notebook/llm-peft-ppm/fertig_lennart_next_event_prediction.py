@@ -149,6 +149,7 @@ def parse_args():
         default="rnn",
         choices=["llama32-1b", "qwen25-05b", "gptneo-1b3", "gpt2", "gemma-2-2b", "rnn", "transformer"],
     )
+    
     # if rnn
     parser.add_argument("--embedding_size", type=int, default=16)
     parser.add_argument("--hidden_size", type=int, default=32)
@@ -172,6 +173,11 @@ def parse_args():
         default=None,
         help="List of layer indices to freeze. If None, all layers are frozen.",
     )
+    
+    parser.add_argument("--persist_predictions", action="store_true", default=False,
+                    help="If set, dump per-prefix predictions to predictions/<log>/<backbone>/seed_<NN>.parquet")
+    parser.add_argument("--predictions_dir", type=str, default="results",
+                    help="Base directory for predictions output (parquet files land under <dir>/predictions/...)")
 
     return parser.parse_args()
 
@@ -377,6 +383,8 @@ def main(training_config: dict):
 
     if training_config["model"] == "tabpfn":
         from ppm.baselines.tabpfn_model import run_tabpfn_baseline
+        from ppm.predictions.io import persist_predictions
+        
         use_wandb = training_config["wandb"]
         project_name = training_config["project_name"]
         
@@ -384,6 +392,17 @@ def main(training_config: dict):
             wandb.init(project=project_name, config=training_config)
        
         metrics = run_tabpfn_baseline(train_log, test_log, random_state=seed)
+        
+        # Predictions persistieren, falls Flag gesetzt
+        if training_config.get("persist_predictions"):
+            out_path = persist_predictions(
+                dump=metrics["y_true_pred_dump"],
+                base_dir=training_config["predictions_dir"],
+                log_name=training_config["log"],
+                backbone="tabpfn",
+                seed=seed,
+            )
+            print(f"Persisted predictions to: {out_path}")
         
         if use_wandb and WANDB_AVAILABLE:
             wandb.log({k: v for k, v in metrics.items() if k != "y_true_pred_dump"})
@@ -394,6 +413,8 @@ def main(training_config: dict):
     
     if training_config["model"] == "tabpfn3":
         from ppm.baselines.tabpfn3_model import run_tabpfn3_baseline
+        from ppm.predictions.io import persist_predictions
+        
         use_wandb = training_config["wandb"]
         project_name = training_config["project_name"]
 
@@ -402,6 +423,17 @@ def main(training_config: dict):
 
         metrics = run_tabpfn3_baseline(train_log, test_log, random_state=seed)
 
+        # Predictions persistieren, falls Flag gesetzt
+        if training_config.get("persist_predictions"):
+            out_path = persist_predictions(
+                dump=metrics["y_true_pred_dump"],
+                base_dir=training_config["predictions_dir"],
+                log_name=training_config["log"],
+                backbone="tabpfn3",
+                seed=seed,
+            )
+            print(f"Persisted predictions to: {out_path}")
+        
         if use_wandb and WANDB_AVAILABLE:
             wandb.log({k: v for k, v in metrics.items() if k != "y_true_pred_dump"})
             wandb.finish()
@@ -412,6 +444,8 @@ def main(training_config: dict):
     
     if training_config["model"] == "saprpt":
         from ppm.baselines.sap_rpt_model import run_sap_rpt_baseline
+        from ppm.predictions.io import persist_predictions
+        
         use_wandb = training_config["wandb"]
         project_name = training_config["project_name"]
 
@@ -419,6 +453,17 @@ def main(training_config: dict):
             wandb.init(project=project_name, config=training_config)
 
         metrics = run_sap_rpt_baseline(train_log, test_log, random_state=seed)
+
+        # Predictions persistieren, falls Flag gesetzt
+        if training_config.get("persist_predictions"):
+            out_path = persist_predictions(
+                dump=metrics["y_true_pred_dump"],
+                base_dir=training_config["predictions_dir"],
+                log_name=training_config["log"],
+                backbone="saprpt",
+                seed=seed,
+            )
+            print(f"Persisted predictions to: {out_path}")
 
         if use_wandb and WANDB_AVAILABLE:
             wandb.log({k: v for k, v in metrics.items() if k != "y_true_pred_dump"})
@@ -429,6 +474,7 @@ def main(training_config: dict):
     
     if training_config["model"] == "chronos2":
         from ppm.baselines.chronos2_model import run_chronos2_baseline
+        from ppm.predictions.io import persist_predictions
         
         use_wandb = training_config["wandb"]
         project_name = training_config["project_name"]
@@ -438,6 +484,16 @@ def main(training_config: dict):
 
         metrics = run_chronos2_baseline(train_log, test_log, random_state=seed)
 
+        if training_config.get("persist_predictions"):
+            out_path = persist_predictions(
+                dump=metrics["y_true_pred_dump"],
+                base_dir=training_config["predictions_dir"],
+                log_name=training_config["log"],
+                backbone="chronos2",
+                seed=seed,
+            )
+            print(f"Persisted predictions to: {out_path}")
+        
         if use_wandb and WANDB_AVAILABLE:
             wandb.log({k: v for k, v in metrics.items() if k != "y_true_pred_dump"})
             wandb.finish()
@@ -553,7 +609,23 @@ def main(training_config: dict):
         persist_model=persist_model,
     )
     print("=" * 80)
+    
+    # NN-Predictions persistieren, falls Flag gesetzt
+    if training_config.get("persist_predictions"):
+        from ppm.predictions.nep_dump import dump_predictions_nep
+        from ppm.predictions.io import persist_predictions
 
+        backbone_name_for_dump = training_config["backbone"]   # rnn, transformer, gpt2, llama32-1b, ...
+        dump = dump_predictions_nep(model, test_loader, test_log, device=training_config["device"])
+        out_path = persist_predictions(
+            dump=dump,
+            base_dir=training_config["predictions_dir"],
+            log_name=training_config["log"],
+            backbone=backbone_name_for_dump,
+            seed=seed,
+        )
+        print(f"Persisted predictions to: {out_path}")
+    
     if use_wandb and WANDB_AVAILABLE:
         wandb.finish()
 
@@ -599,6 +671,9 @@ if __name__ == "__main__":
         "strategy": args.strategy,
         # few-shot parameter
         "few_shot_k": args.few_shot_k,
+        #predictions persistency
+        "persist_predictions": args.persist_predictions,
+        "predictions_dir": args.predictions_dir,
     }
     # if is_duplicate(training_config):
     #     print("Duplicate configuration. Skipping...")

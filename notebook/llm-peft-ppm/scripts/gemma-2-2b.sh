@@ -42,7 +42,7 @@ SEEDS="41 42 43 44 45"
 
 grep -vE '^\s*#|^\s*$' "$PARAMS_FILE" | while IFS= read -r ARGS; do
   for SEED in $SEEDS; do
-    echo ">>> RUN: python $PY_MAIN $ARGS --seed $SEED --project_name $PROJECT --wandb --persist_model"
+    echo ">>> RUN: python $PY_MAIN $ARGS --seed $SEED --project_name $PROJECT --wandb"
     python "$PY_MAIN" $ARGS --seed "$SEED" --project_name "$PROJECT" --wandb
   done
 done
