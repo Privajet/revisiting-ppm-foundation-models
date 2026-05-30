@@ -1,0 +1,1264 @@
+dataset,model,y_true_na,y_pred_na,n,n_errors_total,share_of_model_errors,y_true_na_label,y_pred_na_label
+BPI12,gemma-2-2b,23,25,119,878,0.1355353075170842,W_Nabellen incomplete dossiers,W_Valideren aanvraag
+BPI12,gemma-2-2b,24,2,85,878,0.0968109339407744,W_Nabellen offertes,<EOS>
+BPI12,gemma-2-2b,22,2,49,878,0.0558086560364464,W_Completeren aanvraag,<EOS>
+BPI12,gemma-2-2b,22,20,40,878,0.0455580865603644,W_Completeren aanvraag,W_Afhandelen leads
+BPI12,gemma-2-2b,10,20,37,878,0.0421412300683371,A_PREACCEPTED,W_Afhandelen leads
+BPI12,gemma-2-2b,25,2,33,878,0.0375854214123006,W_Valideren aanvraag,<EOS>
+BPI12,gemma-2-2b,8,22,31,878,0.0353075170842824,A_FINALIZED,W_Completeren aanvraag
+BPI12,gemma-2-2b,17,22,28,878,0.0318906605922551,O_SELECTED,W_Completeren aanvraag
+BPI12,gemma-2-2b,23,2,28,878,0.0318906605922551,W_Nabellen incomplete dossiers,<EOS>
+BPI12,gemma-2-2b,7,20,26,878,0.0296127562642369,A_DECLINED,W_Afhandelen leads
+BPI12,gemma-2-2b,3,22,25,878,0.0284738041002277,A_ACCEPTED,W_Completeren aanvraag
+BPI12,gemma-2-2b,15,22,23,878,0.0261958997722095,O_CREATED,W_Completeren aanvraag
+BPI12,gemma-2-2b,24,22,19,878,0.0216400911161731,W_Nabellen offertes,W_Completeren aanvraag
+BPI12,gemma-2-2b,19,24,18,878,0.020501138952164,O_SENT_BACK,W_Nabellen offertes
+BPI12,gemma-2-2b,10,7,16,878,0.0182232346241457,A_PREACCEPTED,A_DECLINED
+BPI12,gemma-2-2b,20,7,15,878,0.0170842824601366,W_Afhandelen leads,A_DECLINED
+BPI12,gemma-2-2b,13,25,14,878,0.0159453302961275,O_ACCEPTED,W_Valideren aanvraag
+BPI12,gemma-2-2b,24,25,14,878,0.0159453302961275,W_Nabellen offertes,W_Valideren aanvraag
+BPI12,gemma-2-2b,5,25,12,878,0.0136674259681093,A_APPROVED,W_Valideren aanvraag
+BPI12,gemma-2-2b,23,22,12,878,0.0136674259681093,W_Nabellen incomplete dossiers,W_Completeren aanvraag
+BPI12,gemma-2-2b,25,24,12,878,0.0136674259681093,W_Valideren aanvraag,W_Nabellen offertes
+BPI12,gemma-2-2b,6,24,11,878,0.0125284738041002,A_CANCELLED,W_Nabellen offertes
+BPI12,gemma-2-2b,14,24,11,878,0.0125284738041002,O_CANCELLED,W_Nabellen offertes
+BPI12,gemma-2-2b,17,24,9,878,0.010250569476082,O_SELECTED,W_Nabellen offertes
+BPI12,gemma-2-2b,6,22,8,878,0.0091116173120728,A_CANCELLED,W_Completeren aanvraag
+BPI12,gemma-2-2b,11,25,8,878,0.0091116173120728,A_REGISTERED,W_Valideren aanvraag
+BPI12,gemma-2-2b,7,25,7,878,0.0079726651480637,A_DECLINED,W_Valideren aanvraag
+BPI12,gemma-2-2b,11,4,7,878,0.0079726651480637,A_REGISTERED,A_ACTIVATED
+BPI12,gemma-2-2b,22,24,7,878,0.0079726651480637,W_Completeren aanvraag,W_Nabellen offertes
+BPI12,gemma-2-2b,2,14,6,878,0.0068337129840546,<EOS>,O_CANCELLED
+BPI12,gemma-2-2b,5,4,6,878,0.0068337129840546,A_APPROVED,A_ACTIVATED
+BPI12,gemma-2-2b,15,24,6,878,0.0068337129840546,O_CREATED,W_Nabellen offertes
+BPI12,gemma-2-2b,19,2,6,878,0.0068337129840546,O_SENT_BACK,<EOS>
+BPI12,gemma-2-2b,23,24,6,878,0.0068337129840546,W_Nabellen incomplete dossiers,W_Nabellen offertes
+BPI12,gemma-2-2b,25,22,6,878,0.0068337129840546,W_Valideren aanvraag,W_Completeren aanvraag
+BPI12,gemma-2-2b,7,22,5,878,0.0056947608200455,A_DECLINED,W_Completeren aanvraag
+BPI12,gemma-2-2b,15,2,5,878,0.0056947608200455,O_CREATED,<EOS>
+BPI12,gemma-2-2b,17,2,5,878,0.0056947608200455,O_SELECTED,<EOS>
+BPI12,gemma-2-2b,19,25,5,878,0.0056947608200455,O_SENT_BACK,W_Valideren aanvraag
+BPI12,gemma-2-2b,2,24,4,878,0.0045558086560364,<EOS>,W_Nabellen offertes
+BPI12,gemma-2-2b,3,20,4,878,0.0045558086560364,A_ACCEPTED,W_Afhandelen leads
+BPI12,gemma-2-2b,4,25,4,878,0.0045558086560364,A_ACTIVATED,W_Valideren aanvraag
+BPI12,gemma-2-2b,7,2,4,878,0.0045558086560364,A_DECLINED,<EOS>
+BPI12,gemma-2-2b,13,4,4,878,0.0045558086560364,O_ACCEPTED,A_ACTIVATED
+BPI12,gemma-2-2b,17,15,4,878,0.0045558086560364,O_SELECTED,O_CREATED
+BPI12,gemma-2-2b,20,22,4,878,0.0045558086560364,W_Afhandelen leads,W_Completeren aanvraag
+BPI12,gemma-2-2b,24,6,4,878,0.0045558086560364,W_Nabellen offertes,A_CANCELLED
+BPI12,gemma-2-2b,2,6,3,878,0.0034168564920273,<EOS>,A_CANCELLED
+BPI12,gemma-2-2b,2,25,3,878,0.0034168564920273,<EOS>,W_Valideren aanvraag
+BPI12,gemma-2-2b,14,25,3,878,0.0034168564920273,O_CANCELLED,W_Valideren aanvraag
+BPI12,llama32-1b,23,25,111,853,0.1301289566236811,W_Nabellen incomplete dossiers,W_Valideren aanvraag
+BPI12,llama32-1b,25,2,70,853,0.082063305978898,W_Valideren aanvraag,<EOS>
+BPI12,llama32-1b,24,25,66,853,0.0773739742086752,W_Nabellen offertes,W_Valideren aanvraag
+BPI12,llama32-1b,23,2,50,853,0.0586166471277842,W_Nabellen incomplete dossiers,<EOS>
+BPI12,llama32-1b,10,7,44,853,0.0515826494724501,A_PREACCEPTED,A_DECLINED
+BPI12,llama32-1b,20,7,33,853,0.0386869871043376,W_Afhandelen leads,A_DECLINED
+BPI12,llama32-1b,22,7,30,853,0.0351699882766705,W_Completeren aanvraag,A_DECLINED
+BPI12,llama32-1b,3,22,29,853,0.0339976553341148,A_ACCEPTED,W_Completeren aanvraag
+BPI12,llama32-1b,24,2,24,853,0.0281359906213364,W_Nabellen offertes,<EOS>
+BPI12,llama32-1b,8,15,23,853,0.0269636576787807,A_FINALIZED,O_CREATED
+BPI12,llama32-1b,19,24,21,853,0.0246189917936694,O_SENT_BACK,W_Nabellen offertes
+BPI12,llama32-1b,17,15,18,853,0.0211019929660023,O_SELECTED,O_CREATED
+BPI12,llama32-1b,20,22,15,853,0.0175849941383352,W_Afhandelen leads,W_Completeren aanvraag
+BPI12,llama32-1b,24,14,14,853,0.0164126611957796,W_Nabellen offertes,O_CANCELLED
+BPI12,llama32-1b,25,4,14,853,0.0164126611957796,W_Valideren aanvraag,A_ACTIVATED
+BPI12,llama32-1b,5,4,12,853,0.0140679953106682,A_APPROVED,A_ACTIVATED
+BPI12,llama32-1b,20,9,12,853,0.0140679953106682,W_Afhandelen leads,A_PARTLYSUBMITTED
+BPI12,llama32-1b,22,2,12,853,0.0140679953106682,W_Completeren aanvraag,<EOS>
+BPI12,llama32-1b,11,4,11,853,0.0128956623681125,A_REGISTERED,A_ACTIVATED
+BPI12,llama32-1b,17,8,11,853,0.0128956623681125,O_SELECTED,A_FINALIZED
+BPI12,llama32-1b,6,22,9,853,0.0105509964830011,A_CANCELLED,W_Completeren aanvraag
+BPI12,llama32-1b,7,9,9,853,0.0105509964830011,A_DECLINED,A_PARTLYSUBMITTED
+BPI12,llama32-1b,13,2,9,853,0.0105509964830011,O_ACCEPTED,<EOS>
+BPI12,llama32-1b,11,2,7,853,0.0082063305978898,A_REGISTERED,<EOS>
+BPI12,llama32-1b,13,4,7,853,0.0082063305978898,O_ACCEPTED,A_ACTIVATED
+BPI12,llama32-1b,22,24,7,853,0.0082063305978898,W_Completeren aanvraag,W_Nabellen offertes
+BPI12,llama32-1b,7,22,6,853,0.0070339976553341,A_DECLINED,W_Completeren aanvraag
+BPI12,llama32-1b,7,25,6,853,0.0070339976553341,A_DECLINED,W_Valideren aanvraag
+BPI12,llama32-1b,10,9,6,853,0.0070339976553341,A_PREACCEPTED,A_PARTLYSUBMITTED
+BPI12,llama32-1b,17,14,6,853,0.0070339976553341,O_SELECTED,O_CANCELLED
+BPI12,llama32-1b,17,24,6,853,0.0070339976553341,O_SELECTED,W_Nabellen offertes
+BPI12,llama32-1b,23,4,6,853,0.0070339976553341,W_Nabellen incomplete dossiers,A_ACTIVATED
+BPI12,llama32-1b,2,4,5,853,0.0058616647127784,<EOS>,A_ACTIVATED
+BPI12,llama32-1b,5,2,5,853,0.0058616647127784,A_APPROVED,<EOS>
+BPI12,llama32-1b,6,24,5,853,0.0058616647127784,A_CANCELLED,W_Nabellen offertes
+BPI12,llama32-1b,13,25,5,853,0.0058616647127784,O_ACCEPTED,W_Valideren aanvraag
+BPI12,llama32-1b,14,4,5,853,0.0058616647127784,O_CANCELLED,A_ACTIVATED
+BPI12,llama32-1b,14,25,5,853,0.0058616647127784,O_CANCELLED,W_Valideren aanvraag
+BPI12,llama32-1b,19,25,5,853,0.0058616647127784,O_SENT_BACK,W_Valideren aanvraag
+BPI12,llama32-1b,24,4,5,853,0.0058616647127784,W_Nabellen offertes,A_ACTIVATED
+BPI12,llama32-1b,4,2,4,853,0.0046893317702227,A_ACTIVATED,<EOS>
+BPI12,llama32-1b,6,4,4,853,0.0046893317702227,A_CANCELLED,A_ACTIVATED
+BPI12,llama32-1b,8,17,4,853,0.0046893317702227,A_FINALIZED,O_SELECTED
+BPI12,llama32-1b,14,24,4,853,0.0046893317702227,O_CANCELLED,W_Nabellen offertes
+BPI12,llama32-1b,17,4,4,853,0.0046893317702227,O_SELECTED,A_ACTIVATED
+BPI12,llama32-1b,18,2,4,853,0.0046893317702227,O_SENT,<EOS>
+BPI12,llama32-1b,19,14,4,853,0.0046893317702227,O_SENT_BACK,O_CANCELLED
+BPI12,llama32-1b,24,15,4,853,0.0046893317702227,W_Nabellen offertes,O_CREATED
+BPI12,llama32-1b,2,22,3,853,0.003516998827667,<EOS>,W_Completeren aanvraag
+BPI12,llama32-1b,6,14,3,853,0.003516998827667,A_CANCELLED,O_CANCELLED
+BPI12,rnn,24,22,34,487,0.0698151950718685,W_Nabellen offertes,W_Completeren aanvraag
+BPI12,rnn,10,7,32,487,0.0657084188911704,A_PREACCEPTED,A_DECLINED
+BPI12,rnn,3,22,31,487,0.0636550308008213,A_ACCEPTED,W_Completeren aanvraag
+BPI12,rnn,23,25,29,487,0.0595482546201232,W_Nabellen incomplete dossiers,W_Valideren aanvraag
+BPI12,rnn,20,7,26,487,0.0533880903490759,W_Afhandelen leads,A_DECLINED
+BPI12,rnn,17,22,25,487,0.0513347022587269,O_SELECTED,W_Completeren aanvraag
+BPI12,rnn,8,22,21,487,0.0431211498973305,A_FINALIZED,W_Completeren aanvraag
+BPI12,rnn,10,20,21,487,0.0431211498973305,A_PREACCEPTED,W_Afhandelen leads
+BPI12,rnn,19,24,21,487,0.0431211498973305,O_SENT_BACK,W_Nabellen offertes
+BPI12,rnn,25,23,20,487,0.0410677618069815,W_Valideren aanvraag,W_Nabellen incomplete dossiers
+BPI12,rnn,2,25,16,487,0.0328542094455852,<EOS>,W_Valideren aanvraag
+BPI12,rnn,7,20,15,487,0.0308008213552361,A_DECLINED,W_Afhandelen leads
+BPI12,rnn,6,22,14,487,0.028747433264887,A_CANCELLED,W_Completeren aanvraag
+BPI12,rnn,20,22,14,487,0.028747433264887,W_Afhandelen leads,W_Completeren aanvraag
+BPI12,rnn,24,19,12,487,0.0246406570841889,W_Nabellen offertes,O_SENT_BACK
+BPI12,rnn,6,24,10,487,0.0205338809034907,A_CANCELLED,W_Nabellen offertes
+BPI12,rnn,13,25,10,487,0.0205338809034907,O_ACCEPTED,W_Valideren aanvraag
+BPI12,rnn,2,24,9,487,0.0184804928131416,<EOS>,W_Nabellen offertes
+BPI12,rnn,4,11,7,487,0.0143737166324435,A_ACTIVATED,A_REGISTERED
+BPI12,rnn,5,11,7,487,0.0143737166324435,A_APPROVED,A_REGISTERED
+BPI12,rnn,7,22,7,487,0.0143737166324435,A_DECLINED,W_Completeren aanvraag
+BPI12,rnn,7,25,7,487,0.0143737166324435,A_DECLINED,W_Valideren aanvraag
+BPI12,rnn,14,24,7,487,0.0143737166324435,O_CANCELLED,W_Nabellen offertes
+BPI12,rnn,17,24,7,487,0.0143737166324435,O_SELECTED,W_Nabellen offertes
+BPI12,rnn,24,6,6,487,0.0123203285420944,W_Nabellen offertes,A_CANCELLED
+BPI12,rnn,2,22,5,487,0.0102669404517453,<EOS>,W_Completeren aanvraag
+BPI12,rnn,5,25,4,487,0.0082135523613963,A_APPROVED,W_Valideren aanvraag
+BPI12,rnn,16,25,4,487,0.0082135523613963,O_DECLINED,W_Valideren aanvraag
+BPI12,rnn,17,8,4,487,0.0082135523613963,O_SELECTED,A_FINALIZED
+BPI12,rnn,19,22,4,487,0.0082135523613963,O_SENT_BACK,W_Completeren aanvraag
+BPI12,rnn,21,7,4,487,0.0082135523613963,W_Beoordelen fraude,A_DECLINED
+BPI12,rnn,5,4,3,487,0.0061601642710472,A_APPROVED,A_ACTIVATED
+BPI12,rnn,11,25,3,487,0.0061601642710472,A_REGISTERED,W_Valideren aanvraag
+BPI12,rnn,13,4,3,487,0.0061601642710472,O_ACCEPTED,A_ACTIVATED
+BPI12,rnn,4,25,2,487,0.0041067761806981,A_ACTIVATED,W_Valideren aanvraag
+BPI12,rnn,5,23,2,487,0.0041067761806981,A_APPROVED,W_Nabellen incomplete dossiers
+BPI12,rnn,7,11,2,487,0.0041067761806981,A_DECLINED,A_REGISTERED
+BPI12,rnn,13,5,2,487,0.0041067761806981,O_ACCEPTED,A_APPROVED
+BPI12,rnn,13,11,2,487,0.0041067761806981,O_ACCEPTED,A_REGISTERED
+BPI12,rnn,14,19,2,487,0.0041067761806981,O_CANCELLED,O_SENT_BACK
+BPI12,rnn,14,25,2,487,0.0041067761806981,O_CANCELLED,W_Valideren aanvraag
+BPI12,rnn,17,23,2,487,0.0041067761806981,O_SELECTED,W_Nabellen incomplete dossiers
+BPI12,rnn,21,25,2,487,0.0041067761806981,W_Beoordelen fraude,W_Valideren aanvraag
+BPI12,rnn,23,24,2,487,0.0041067761806981,W_Nabellen incomplete dossiers,W_Nabellen offertes
+BPI12,rnn,25,4,2,487,0.0041067761806981,W_Valideren aanvraag,A_ACTIVATED
+BPI12,rnn,4,13,1,487,0.002053388090349,A_ACTIVATED,O_ACCEPTED
+BPI12,rnn,4,23,1,487,0.002053388090349,A_ACTIVATED,W_Nabellen incomplete dossiers
+BPI12,rnn,5,13,1,487,0.002053388090349,A_APPROVED,O_ACCEPTED
+BPI12,rnn,6,17,1,487,0.002053388090349,A_CANCELLED,O_SELECTED
+BPI12,rnn,7,23,1,487,0.002053388090349,A_DECLINED,W_Nabellen incomplete dossiers
+BPI12,saprpt,25,23,47,736,0.0638586956521739,W_Valideren aanvraag,W_Nabellen incomplete dossiers
+BPI12,saprpt,24,22,46,736,0.0625,W_Nabellen offertes,W_Completeren aanvraag
+BPI12,saprpt,23,25,44,736,0.0597826086956521,W_Nabellen incomplete dossiers,W_Valideren aanvraag
+BPI12,saprpt,22,24,38,736,0.0516304347826086,W_Completeren aanvraag,W_Nabellen offertes
+BPI12,saprpt,3,22,31,736,0.0421195652173913,A_ACCEPTED,W_Completeren aanvraag
+BPI12,saprpt,25,24,30,736,0.0407608695652173,W_Valideren aanvraag,W_Nabellen offertes
+BPI12,saprpt,19,24,29,736,0.0394021739130434,O_SENT_BACK,W_Nabellen offertes
+BPI12,saprpt,7,10,27,736,0.0366847826086956,A_DECLINED,A_PREACCEPTED
+BPI12,saprpt,20,10,25,736,0.0339673913043478,W_Afhandelen leads,A_PREACCEPTED
+BPI12,saprpt,8,15,23,736,0.03125,A_FINALIZED,O_CREATED
+BPI12,saprpt,15,17,21,736,0.0285326086956521,O_CREATED,O_SELECTED
+BPI12,saprpt,20,22,20,736,0.0271739130434782,W_Afhandelen leads,W_Completeren aanvraag
+BPI12,saprpt,2,25,18,736,0.0244565217391304,<EOS>,W_Valideren aanvraag
+BPI12,saprpt,22,20,18,736,0.0244565217391304,W_Completeren aanvraag,W_Afhandelen leads
+BPI12,saprpt,24,25,13,736,0.0176630434782608,W_Nabellen offertes,W_Valideren aanvraag
+BPI12,saprpt,6,17,12,736,0.0163043478260869,A_CANCELLED,O_SELECTED
+BPI12,saprpt,8,17,12,736,0.0163043478260869,A_FINALIZED,O_SELECTED
+BPI12,saprpt,10,20,12,736,0.0163043478260869,A_PREACCEPTED,W_Afhandelen leads
+BPI12,saprpt,14,24,12,736,0.0163043478260869,O_CANCELLED,W_Nabellen offertes
+BPI12,saprpt,2,20,11,736,0.014945652173913,<EOS>,W_Afhandelen leads
+BPI12,saprpt,5,25,11,736,0.014945652173913,A_APPROVED,W_Valideren aanvraag
+BPI12,saprpt,6,22,11,736,0.014945652173913,A_CANCELLED,W_Completeren aanvraag
+BPI12,saprpt,2,22,10,736,0.0135869565217391,<EOS>,W_Completeren aanvraag
+BPI12,saprpt,13,25,10,736,0.0135869565217391,O_ACCEPTED,W_Valideren aanvraag
+BPI12,saprpt,7,20,9,736,0.0122282608695652,A_DECLINED,W_Afhandelen leads
+BPI12,saprpt,2,24,8,736,0.0108695652173913,<EOS>,W_Nabellen offertes
+BPI12,saprpt,6,24,8,736,0.0108695652173913,A_CANCELLED,W_Nabellen offertes
+BPI12,saprpt,11,25,8,736,0.0108695652173913,A_REGISTERED,W_Valideren aanvraag
+BPI12,saprpt,20,2,8,736,0.0108695652173913,W_Afhandelen leads,<EOS>
+BPI12,saprpt,2,23,7,736,0.0095108695652173,<EOS>,W_Nabellen incomplete dossiers
+BPI12,saprpt,10,7,7,736,0.0095108695652173,A_PREACCEPTED,A_DECLINED
+BPI12,saprpt,14,15,7,736,0.0095108695652173,O_CANCELLED,O_CREATED
+BPI12,saprpt,4,25,6,736,0.0081521739130434,A_ACTIVATED,W_Valideren aanvraag
+BPI12,saprpt,7,22,6,736,0.0081521739130434,A_DECLINED,W_Completeren aanvraag
+BPI12,saprpt,7,25,6,736,0.0081521739130434,A_DECLINED,W_Valideren aanvraag
+BPI12,saprpt,13,4,6,736,0.0081521739130434,O_ACCEPTED,A_ACTIVATED
+BPI12,saprpt,17,24,6,736,0.0081521739130434,O_SELECTED,W_Nabellen offertes
+BPI12,saprpt,22,2,6,736,0.0081521739130434,W_Completeren aanvraag,<EOS>
+BPI12,saprpt,22,7,6,736,0.0081521739130434,W_Completeren aanvraag,A_DECLINED
+BPI12,saprpt,25,4,6,736,0.0081521739130434,W_Valideren aanvraag,A_ACTIVATED
+BPI12,saprpt,2,7,5,736,0.0067934782608695,<EOS>,A_DECLINED
+BPI12,saprpt,11,4,5,736,0.0067934782608695,A_REGISTERED,A_ACTIVATED
+BPI12,saprpt,17,8,5,736,0.0067934782608695,O_SELECTED,A_FINALIZED
+BPI12,saprpt,17,15,5,736,0.0067934782608695,O_SELECTED,O_CREATED
+BPI12,saprpt,24,23,5,736,0.0067934782608695,W_Nabellen offertes,W_Nabellen incomplete dossiers
+BPI12,saprpt,2,17,4,736,0.0054347826086956,<EOS>,O_SELECTED
+BPI12,saprpt,4,11,4,736,0.0054347826086956,A_ACTIVATED,A_REGISTERED
+BPI12,saprpt,5,4,4,736,0.0054347826086956,A_APPROVED,A_ACTIVATED
+BPI12,saprpt,5,11,4,736,0.0054347826086956,A_APPROVED,A_REGISTERED
+BPI12,saprpt,21,2,4,736,0.0054347826086956,W_Beoordelen fraude,<EOS>
+BPI12,tabpfn3,25,23,45,723,0.0622406639004149,W_Valideren aanvraag,W_Nabellen incomplete dossiers
+BPI12,tabpfn3,24,22,44,723,0.0608575380359612,W_Nabellen offertes,W_Completeren aanvraag
+BPI12,tabpfn3,22,24,39,723,0.0539419087136929,W_Completeren aanvraag,W_Nabellen offertes
+BPI12,tabpfn3,23,25,38,723,0.0525587828492392,W_Nabellen incomplete dossiers,W_Valideren aanvraag
+BPI12,tabpfn3,10,20,32,723,0.0442600276625172,A_PREACCEPTED,W_Afhandelen leads
+BPI12,tabpfn3,3,22,30,723,0.0414937759336099,A_ACCEPTED,W_Completeren aanvraag
+BPI12,tabpfn3,7,20,28,723,0.0387275242047026,A_DECLINED,W_Afhandelen leads
+BPI12,tabpfn3,25,24,26,723,0.0359612724757952,W_Valideren aanvraag,W_Nabellen offertes
+BPI12,tabpfn3,19,24,24,723,0.0331950207468879,O_SENT_BACK,W_Nabellen offertes
+BPI12,tabpfn3,24,25,23,723,0.0318118948824343,W_Nabellen offertes,W_Valideren aanvraag
+BPI12,tabpfn3,8,15,22,723,0.0304287690179806,A_FINALIZED,O_CREATED
+BPI12,tabpfn3,22,20,22,723,0.0304287690179806,W_Completeren aanvraag,W_Afhandelen leads
+BPI12,tabpfn3,2,25,21,723,0.0290456431535269,<EOS>,W_Valideren aanvraag
+BPI12,tabpfn3,20,22,18,723,0.0248962655601659,W_Afhandelen leads,W_Completeren aanvraag
+BPI12,tabpfn3,2,20,16,723,0.0221300138312586,<EOS>,W_Afhandelen leads
+BPI12,tabpfn3,17,15,16,723,0.0221300138312586,O_SELECTED,O_CREATED
+BPI12,tabpfn3,10,7,15,723,0.0207468879668049,A_PREACCEPTED,A_DECLINED
+BPI12,tabpfn3,15,17,12,723,0.0165975103734439,O_CREATED,O_SELECTED
+BPI12,tabpfn3,20,7,12,723,0.0165975103734439,W_Afhandelen leads,A_DECLINED
+BPI12,tabpfn3,2,22,10,723,0.0138312586445366,<EOS>,W_Completeren aanvraag
+BPI12,tabpfn3,17,24,10,723,0.0138312586445366,O_SELECTED,W_Nabellen offertes
+BPI12,tabpfn3,2,24,9,723,0.0124481327800829,<EOS>,W_Nabellen offertes
+BPI12,tabpfn3,5,11,9,723,0.0124481327800829,A_APPROVED,A_REGISTERED
+BPI12,tabpfn3,6,24,9,723,0.0124481327800829,A_CANCELLED,W_Nabellen offertes
+BPI12,tabpfn3,13,4,9,723,0.0124481327800829,O_ACCEPTED,A_ACTIVATED
+BPI12,tabpfn3,14,24,9,723,0.0124481327800829,O_CANCELLED,W_Nabellen offertes
+BPI12,tabpfn3,25,4,9,723,0.0124481327800829,W_Valideren aanvraag,A_ACTIVATED
+BPI12,tabpfn3,6,22,8,723,0.0110650069156293,A_CANCELLED,W_Completeren aanvraag
+BPI12,tabpfn3,8,17,8,723,0.0110650069156293,A_FINALIZED,O_SELECTED
+BPI12,tabpfn3,13,25,8,723,0.0110650069156293,O_ACCEPTED,W_Valideren aanvraag
+BPI12,tabpfn3,14,15,8,723,0.0110650069156293,O_CANCELLED,O_CREATED
+BPI12,tabpfn3,20,2,8,723,0.0110650069156293,W_Afhandelen leads,<EOS>
+BPI12,tabpfn3,7,25,7,723,0.0096818810511756,A_DECLINED,W_Valideren aanvraag
+BPI12,tabpfn3,25,11,7,723,0.0096818810511756,W_Valideren aanvraag,A_REGISTERED
+BPI12,tabpfn3,7,22,6,723,0.0082987551867219,A_DECLINED,W_Completeren aanvraag
+BPI12,tabpfn3,11,4,6,723,0.0082987551867219,A_REGISTERED,A_ACTIVATED
+BPI12,tabpfn3,2,23,5,723,0.0069156293222683,<EOS>,W_Nabellen incomplete dossiers
+BPI12,tabpfn3,5,4,5,723,0.0069156293222683,A_APPROVED,A_ACTIVATED
+BPI12,tabpfn3,5,25,5,723,0.0069156293222683,A_APPROVED,W_Valideren aanvraag
+BPI12,tabpfn3,11,25,5,723,0.0069156293222683,A_REGISTERED,W_Valideren aanvraag
+BPI12,tabpfn3,17,8,5,723,0.0069156293222683,O_SELECTED,A_FINALIZED
+BPI12,tabpfn3,17,6,4,723,0.0055325034578146,O_SELECTED,A_CANCELLED
+BPI12,tabpfn3,4,11,3,723,0.0041493775933609,A_ACTIVATED,A_REGISTERED
+BPI12,tabpfn3,11,5,3,723,0.0041493775933609,A_REGISTERED,A_APPROVED
+BPI12,tabpfn3,13,11,3,723,0.0041493775933609,O_ACCEPTED,A_REGISTERED
+BPI12,tabpfn3,15,8,3,723,0.0041493775933609,O_CREATED,A_FINALIZED
+BPI12,tabpfn3,19,25,3,723,0.0041493775933609,O_SENT_BACK,W_Valideren aanvraag
+BPI12,tabpfn3,21,20,3,723,0.0041493775933609,W_Beoordelen fraude,W_Afhandelen leads
+BPI12,tabpfn3,24,2,3,723,0.0041493775933609,W_Nabellen offertes,<EOS>
+BPI12,tabpfn3,24,19,3,723,0.0041493775933609,W_Nabellen offertes,O_SENT_BACK
+BPI12,transformer,24,6,71,497,0.1428571428571428,W_Nabellen offertes,A_CANCELLED
+BPI12,transformer,10,20,40,497,0.0804828973843058,A_PREACCEPTED,W_Afhandelen leads
+BPI12,transformer,23,25,38,497,0.0764587525150905,W_Nabellen incomplete dossiers,W_Valideren aanvraag
+BPI12,transformer,3,22,31,497,0.062374245472837,A_ACCEPTED,W_Completeren aanvraag
+BPI12,transformer,7,20,27,497,0.0543259557344064,A_DECLINED,W_Afhandelen leads
+BPI12,transformer,24,19,22,497,0.0442655935613682,W_Nabellen offertes,O_SENT_BACK
+BPI12,transformer,24,22,20,497,0.0402414486921529,W_Nabellen offertes,W_Completeren aanvraag
+BPI12,transformer,25,23,18,497,0.0362173038229376,W_Valideren aanvraag,W_Nabellen incomplete dossiers
+BPI12,transformer,10,7,13,497,0.0261569416498993,A_PREACCEPTED,A_DECLINED
+BPI12,transformer,22,6,12,497,0.0241448692152917,W_Completeren aanvraag,A_CANCELLED
+BPI12,transformer,19,6,11,497,0.0221327967806841,O_SENT_BACK,A_CANCELLED
+BPI12,transformer,6,22,9,497,0.0181086519114688,A_CANCELLED,W_Completeren aanvraag
+BPI12,transformer,8,17,9,497,0.0181086519114688,A_FINALIZED,O_SELECTED
+BPI12,transformer,8,22,9,497,0.0181086519114688,A_FINALIZED,W_Completeren aanvraag
+BPI12,transformer,13,25,9,497,0.0181086519114688,O_ACCEPTED,W_Valideren aanvraag
+BPI12,transformer,17,6,9,497,0.0181086519114688,O_SELECTED,A_CANCELLED
+BPI12,transformer,17,22,8,497,0.0160965794768611,O_SELECTED,W_Completeren aanvraag
+BPI12,transformer,24,25,8,497,0.0160965794768611,W_Nabellen offertes,W_Valideren aanvraag
+BPI12,transformer,7,25,7,497,0.0140845070422535,A_DECLINED,W_Valideren aanvraag
+BPI12,transformer,11,4,7,497,0.0140845070422535,A_REGISTERED,A_ACTIVATED
+BPI12,transformer,25,13,7,497,0.0140845070422535,W_Valideren aanvraag,O_ACCEPTED
+BPI12,transformer,7,22,6,497,0.0120724346076458,A_DECLINED,W_Completeren aanvraag
+BPI12,transformer,11,13,6,497,0.0120724346076458,A_REGISTERED,O_ACCEPTED
+BPI12,transformer,19,24,6,497,0.0120724346076458,O_SENT_BACK,W_Nabellen offertes
+BPI12,transformer,20,7,6,497,0.0120724346076458,W_Afhandelen leads,A_DECLINED
+BPI12,transformer,5,13,4,497,0.0080482897384305,A_APPROVED,O_ACCEPTED
+BPI12,transformer,14,15,4,497,0.0080482897384305,O_CANCELLED,O_CREATED
+BPI12,transformer,22,7,4,497,0.0080482897384305,W_Completeren aanvraag,A_DECLINED
+BPI12,transformer,22,24,4,497,0.0080482897384305,W_Completeren aanvraag,W_Nabellen offertes
+BPI12,transformer,4,5,3,497,0.0060362173038229,A_ACTIVATED,A_APPROVED
+BPI12,transformer,4,13,3,497,0.0060362173038229,A_ACTIVATED,O_ACCEPTED
+BPI12,transformer,5,4,3,497,0.0060362173038229,A_APPROVED,A_ACTIVATED
+BPI12,transformer,11,5,3,497,0.0060362173038229,A_REGISTERED,A_APPROVED
+BPI12,transformer,14,6,3,497,0.0060362173038229,O_CANCELLED,A_CANCELLED
+BPI12,transformer,22,14,3,497,0.0060362173038229,W_Completeren aanvraag,O_CANCELLED
+BPI12,transformer,22,20,3,497,0.0060362173038229,W_Completeren aanvraag,W_Afhandelen leads
+BPI12,transformer,2,24,2,497,0.0040241448692152,<EOS>,W_Nabellen offertes
+BPI12,transformer,4,25,2,497,0.0040241448692152,A_ACTIVATED,W_Valideren aanvraag
+BPI12,transformer,5,23,2,497,0.0040241448692152,A_APPROVED,W_Nabellen incomplete dossiers
+BPI12,transformer,5,25,2,497,0.0040241448692152,A_APPROVED,W_Valideren aanvraag
+BPI12,transformer,11,23,2,497,0.0040241448692152,A_REGISTERED,W_Nabellen incomplete dossiers
+BPI12,transformer,14,19,2,497,0.0040241448692152,O_CANCELLED,O_SENT_BACK
+BPI12,transformer,14,22,2,497,0.0040241448692152,O_CANCELLED,W_Completeren aanvraag
+BPI12,transformer,14,24,2,497,0.0040241448692152,O_CANCELLED,W_Nabellen offertes
+BPI12,transformer,14,25,2,497,0.0040241448692152,O_CANCELLED,W_Valideren aanvraag
+BPI12,transformer,17,15,2,497,0.0040241448692152,O_SELECTED,O_CREATED
+BPI12,transformer,19,22,2,497,0.0040241448692152,O_SENT_BACK,W_Completeren aanvraag
+BPI12,transformer,20,21,2,497,0.0040241448692152,W_Afhandelen leads,W_Beoordelen fraude
+BPI12,transformer,22,19,2,497,0.0040241448692152,W_Completeren aanvraag,O_SENT_BACK
+BPI12,transformer,4,23,1,497,0.0020120724346076,A_ACTIVATED,W_Nabellen incomplete dossiers
+BPI17,gemma-2-2b,3,24,42,350,0.12,A_Accepted,W_Complete application
+BPI17,gemma-2-2b,27,23,41,350,0.1171428571428571,W_Validate application,W_Call incomplete files
+BPI17,gemma-2-2b,23,27,38,350,0.1085714285714285,W_Call incomplete files,W_Validate application
+BPI17,gemma-2-2b,27,13,25,350,0.0714285714285714,W_Validate application,O_Accepted
+BPI17,gemma-2-2b,4,22,23,350,0.0657142857142857,A_Cancelled,W_Call after offers
+BPI17,gemma-2-2b,23,9,18,350,0.0514285714285714,W_Call incomplete files,A_Incomplete
+BPI17,gemma-2-2b,27,22,13,350,0.0371428571428571,W_Validate application,W_Call after offers
+BPI17,gemma-2-2b,12,27,12,350,0.0342857142857142,A_Validating,W_Validate application
+BPI17,gemma-2-2b,13,27,11,350,0.0314285714285714,O_Accepted,W_Validate application
+BPI17,gemma-2-2b,9,23,10,350,0.0285714285714285,A_Incomplete,W_Call incomplete files
+BPI17,gemma-2-2b,14,22,10,350,0.0285714285714285,O_Cancelled,W_Call after offers
+BPI17,gemma-2-2b,13,23,9,350,0.0257142857142857,O_Accepted,W_Call incomplete files
+BPI17,gemma-2-2b,24,11,9,350,0.0257142857142857,W_Complete application,A_Submitted
+BPI17,gemma-2-2b,15,19,7,350,0.02,O_Create Offer,O_Sent (mail and online)
+BPI17,gemma-2-2b,15,22,7,350,0.02,O_Create Offer,W_Call after offers
+BPI17,gemma-2-2b,25,24,7,350,0.02,W_Handle leads,W_Complete application
+BPI17,gemma-2-2b,14,2,6,350,0.0171428571428571,O_Cancelled,<EOS>
+BPI17,gemma-2-2b,24,3,6,350,0.0171428571428571,W_Complete application,A_Accepted
+BPI17,gemma-2-2b,22,27,5,350,0.0142857142857142,W_Call after offers,W_Validate application
+BPI17,gemma-2-2b,24,25,5,350,0.0142857142857142,W_Complete application,W_Handle leads
+BPI17,gemma-2-2b,27,12,5,350,0.0142857142857142,W_Validate application,A_Validating
+BPI17,gemma-2-2b,23,13,4,350,0.0114285714285714,W_Call incomplete files,O_Accepted
+BPI17,gemma-2-2b,6,11,3,350,0.0085714285714285,A_Concept,A_Submitted
+BPI17,gemma-2-2b,18,23,3,350,0.0085714285714285,O_Returned,W_Call incomplete files
+BPI17,gemma-2-2b,19,24,3,350,0.0085714285714285,O_Sent (mail and online),W_Complete application
+BPI17,gemma-2-2b,20,19,3,350,0.0085714285714285,O_Sent (online only),O_Sent (mail and online)
+BPI17,gemma-2-2b,24,6,3,350,0.0085714285714285,W_Complete application,A_Concept
+BPI17,gemma-2-2b,17,27,2,350,0.0057142857142857,O_Refused,W_Validate application
+BPI17,gemma-2-2b,18,27,2,350,0.0057142857142857,O_Returned,W_Validate application
+BPI17,gemma-2-2b,23,14,2,350,0.0057142857142857,W_Call incomplete files,O_Cancelled
+BPI17,gemma-2-2b,2,14,1,350,0.0028571428571428,<EOS>,O_Cancelled
+BPI17,gemma-2-2b,4,23,1,350,0.0028571428571428,A_Cancelled,W_Call incomplete files
+BPI17,gemma-2-2b,5,22,1,350,0.0028571428571428,A_Complete,W_Call after offers
+BPI17,gemma-2-2b,8,13,1,350,0.0028571428571428,A_Denied,O_Accepted
+BPI17,gemma-2-2b,8,23,1,350,0.0028571428571428,A_Denied,W_Call incomplete files
+BPI17,gemma-2-2b,8,27,1,350,0.0028571428571428,A_Denied,W_Validate application
+BPI17,gemma-2-2b,14,19,1,350,0.0028571428571428,O_Cancelled,O_Sent (mail and online)
+BPI17,gemma-2-2b,14,23,1,350,0.0028571428571428,O_Cancelled,W_Call incomplete files
+BPI17,gemma-2-2b,15,23,1,350,0.0028571428571428,O_Create Offer,W_Call incomplete files
+BPI17,gemma-2-2b,15,24,1,350,0.0028571428571428,O_Create Offer,W_Complete application
+BPI17,gemma-2-2b,19,22,1,350,0.0028571428571428,O_Sent (mail and online),W_Call after offers
+BPI17,gemma-2-2b,20,22,1,350,0.0028571428571428,O_Sent (online only),W_Call after offers
+BPI17,gemma-2-2b,21,27,1,350,0.0028571428571428,W_Assess potential fraud,W_Validate application
+BPI17,gemma-2-2b,22,23,1,350,0.0028571428571428,W_Call after offers,W_Call incomplete files
+BPI17,gemma-2-2b,24,19,1,350,0.0028571428571428,W_Complete application,O_Sent (mail and online)
+BPI17,gemma-2-2b,27,18,1,350,0.0028571428571428,W_Validate application,O_Returned
+BPI17,llama32-1b,23,27,50,404,0.1237623762376237,W_Call incomplete files,W_Validate application
+BPI17,llama32-1b,27,23,43,404,0.1064356435643564,W_Validate application,W_Call incomplete files
+BPI17,llama32-1b,24,6,38,404,0.094059405940594,W_Complete application,A_Concept
+BPI17,llama32-1b,3,24,36,404,0.0891089108910891,A_Accepted,W_Complete application
+BPI17,llama32-1b,4,22,21,404,0.0519801980198019,A_Cancelled,W_Call after offers
+BPI17,llama32-1b,23,9,17,404,0.042079207920792,W_Call incomplete files,A_Incomplete
+BPI17,llama32-1b,27,22,15,404,0.0371287128712871,W_Validate application,W_Call after offers
+BPI17,llama32-1b,13,27,14,404,0.0346534653465346,O_Accepted,W_Validate application
+BPI17,llama32-1b,25,24,13,404,0.0321782178217821,W_Handle leads,W_Complete application
+BPI17,llama32-1b,14,22,10,404,0.0247524752475247,O_Cancelled,W_Call after offers
+BPI17,llama32-1b,2,23,9,404,0.0222772277227722,<EOS>,W_Call incomplete files
+BPI17,llama32-1b,13,23,9,404,0.0222772277227722,O_Accepted,W_Call incomplete files
+BPI17,llama32-1b,19,24,9,404,0.0222772277227722,O_Sent (mail and online),W_Complete application
+BPI17,llama32-1b,22,27,9,404,0.0222772277227722,W_Call after offers,W_Validate application
+BPI17,llama32-1b,24,11,9,404,0.0222772277227722,W_Complete application,A_Submitted
+BPI17,llama32-1b,21,23,8,404,0.0198019801980198,W_Assess potential fraud,W_Call incomplete files
+BPI17,llama32-1b,15,19,7,404,0.0173267326732673,O_Create Offer,O_Sent (mail and online)
+BPI17,llama32-1b,24,3,7,404,0.0173267326732673,W_Complete application,A_Accepted
+BPI17,llama32-1b,23,2,6,404,0.0148514851485148,W_Call incomplete files,<EOS>
+BPI17,llama32-1b,14,2,5,404,0.0123762376237623,O_Cancelled,<EOS>
+BPI17,llama32-1b,15,22,5,404,0.0123762376237623,O_Create Offer,W_Call after offers
+BPI17,llama32-1b,3,6,4,404,0.0099009900990099,A_Accepted,A_Concept
+BPI17,llama32-1b,16,22,4,404,0.0099009900990099,O_Created,W_Call after offers
+BPI17,llama32-1b,6,11,3,404,0.0074257425742574,A_Concept,A_Submitted
+BPI17,llama32-1b,8,27,3,404,0.0074257425742574,A_Denied,W_Validate application
+BPI17,llama32-1b,18,23,3,404,0.0074257425742574,O_Returned,W_Call incomplete files
+BPI17,llama32-1b,20,19,3,404,0.0074257425742574,O_Sent (online only),O_Sent (mail and online)
+BPI17,llama32-1b,22,6,3,404,0.0074257425742574,W_Call after offers,A_Concept
+BPI17,llama32-1b,2,12,2,404,0.0049504950495049,<EOS>,A_Validating
+BPI17,llama32-1b,2,14,2,404,0.0049504950495049,<EOS>,O_Cancelled
+BPI17,llama32-1b,4,27,2,404,0.0049504950495049,A_Cancelled,W_Validate application
+BPI17,llama32-1b,16,24,2,404,0.0049504950495049,O_Created,W_Complete application
+BPI17,llama32-1b,18,27,2,404,0.0049504950495049,O_Returned,W_Validate application
+BPI17,llama32-1b,19,22,2,404,0.0049504950495049,O_Sent (mail and online),W_Call after offers
+BPI17,llama32-1b,22,16,2,404,0.0049504950495049,W_Call after offers,O_Created
+BPI17,llama32-1b,22,19,2,404,0.0049504950495049,W_Call after offers,O_Sent (mail and online)
+BPI17,llama32-1b,23,17,2,404,0.0049504950495049,W_Call incomplete files,O_Refused
+BPI17,llama32-1b,24,22,2,404,0.0049504950495049,W_Complete application,W_Call after offers
+BPI17,llama32-1b,27,17,2,404,0.0049504950495049,W_Validate application,O_Refused
+BPI17,llama32-1b,2,9,1,404,0.0024752475247524,<EOS>,A_Incomplete
+BPI17,llama32-1b,2,22,1,404,0.0024752475247524,<EOS>,W_Call after offers
+BPI17,llama32-1b,4,23,1,404,0.0024752475247524,A_Cancelled,W_Call incomplete files
+BPI17,llama32-1b,9,2,1,404,0.0024752475247524,A_Incomplete,<EOS>
+BPI17,llama32-1b,14,19,1,404,0.0024752475247524,O_Cancelled,O_Sent (mail and online)
+BPI17,llama32-1b,14,23,1,404,0.0024752475247524,O_Cancelled,W_Call incomplete files
+BPI17,llama32-1b,15,2,1,404,0.0024752475247524,O_Create Offer,<EOS>
+BPI17,llama32-1b,15,5,1,404,0.0024752475247524,O_Create Offer,A_Complete
+BPI17,llama32-1b,15,24,1,404,0.0024752475247524,O_Create Offer,W_Complete application
+BPI17,llama32-1b,15,27,1,404,0.0024752475247524,O_Create Offer,W_Validate application
+BPI17,llama32-1b,16,23,1,404,0.0024752475247524,O_Created,W_Call incomplete files
+BPI17,rnn,27,23,59,286,0.2062937062937063,W_Validate application,W_Call incomplete files
+BPI17,rnn,3,24,39,286,0.1363636363636363,A_Accepted,W_Complete application
+BPI17,rnn,23,27,32,286,0.1118881118881118,W_Call incomplete files,W_Validate application
+BPI17,rnn,4,22,23,286,0.0804195804195804,A_Cancelled,W_Call after offers
+BPI17,rnn,24,3,16,286,0.0559440559440559,W_Complete application,A_Accepted
+BPI17,rnn,13,23,12,286,0.0419580419580419,O_Accepted,W_Call incomplete files
+BPI17,rnn,13,27,11,286,0.0384615384615384,O_Accepted,W_Validate application
+BPI17,rnn,24,11,9,286,0.0314685314685314,W_Complete application,A_Submitted
+BPI17,rnn,25,24,8,286,0.0279720279720279,W_Handle leads,W_Complete application
+BPI17,rnn,14,22,7,286,0.0244755244755244,O_Cancelled,W_Call after offers
+BPI17,rnn,15,19,7,286,0.0244755244755244,O_Create Offer,O_Sent (mail and online)
+BPI17,rnn,19,24,7,286,0.0244755244755244,O_Sent (mail and online),W_Complete application
+BPI17,rnn,14,2,6,286,0.0209790209790209,O_Cancelled,<EOS>
+BPI17,rnn,15,22,6,286,0.0209790209790209,O_Create Offer,W_Call after offers
+BPI17,rnn,27,22,6,286,0.0209790209790209,W_Validate application,W_Call after offers
+BPI17,rnn,20,19,5,286,0.0174825174825174,O_Sent (online only),O_Sent (mail and online)
+BPI17,rnn,22,27,4,286,0.0139860139860139,W_Call after offers,W_Validate application
+BPI17,rnn,6,11,3,286,0.0104895104895104,A_Concept,A_Submitted
+BPI17,rnn,18,23,3,286,0.0104895104895104,O_Returned,W_Call incomplete files
+BPI17,rnn,24,6,3,286,0.0104895104895104,W_Complete application,A_Concept
+BPI17,rnn,8,23,2,286,0.0069930069930069,A_Denied,W_Call incomplete files
+BPI17,rnn,2,14,1,286,0.0034965034965034,<EOS>,O_Cancelled
+BPI17,rnn,2,21,1,286,0.0034965034965034,<EOS>,W_Assess potential fraud
+BPI17,rnn,4,23,1,286,0.0034965034965034,A_Cancelled,W_Call incomplete files
+BPI17,rnn,8,27,1,286,0.0034965034965034,A_Denied,W_Validate application
+BPI17,rnn,14,15,1,286,0.0034965034965034,O_Cancelled,O_Create Offer
+BPI17,rnn,14,19,1,286,0.0034965034965034,O_Cancelled,O_Sent (mail and online)
+BPI17,rnn,14,23,1,286,0.0034965034965034,O_Cancelled,W_Call incomplete files
+BPI17,rnn,15,23,1,286,0.0034965034965034,O_Create Offer,W_Call incomplete files
+BPI17,rnn,15,24,1,286,0.0034965034965034,O_Create Offer,W_Complete application
+BPI17,rnn,15,27,1,286,0.0034965034965034,O_Create Offer,W_Validate application
+BPI17,rnn,17,27,1,286,0.0034965034965034,O_Refused,W_Validate application
+BPI17,rnn,18,27,1,286,0.0034965034965034,O_Returned,W_Validate application
+BPI17,rnn,21,27,1,286,0.0034965034965034,W_Assess potential fraud,W_Validate application
+BPI17,rnn,22,14,1,286,0.0034965034965034,W_Call after offers,O_Cancelled
+BPI17,rnn,22,23,1,286,0.0034965034965034,W_Call after offers,W_Call incomplete files
+BPI17,rnn,23,2,1,286,0.0034965034965034,W_Call incomplete files,<EOS>
+BPI17,rnn,27,2,1,286,0.0034965034965034,W_Validate application,<EOS>
+BPI17,rnn,27,18,1,286,0.0034965034965034,W_Validate application,O_Returned
+BPI17,saprpt,12,27,80,762,0.1049868766404199,A_Validating,W_Validate application
+BPI17,saprpt,23,27,69,762,0.0905511811023622,W_Call incomplete files,W_Validate application
+BPI17,saprpt,22,24,68,762,0.0892388451443569,W_Call after offers,W_Complete application
+BPI17,saprpt,5,22,54,762,0.0708661417322834,A_Complete,W_Call after offers
+BPI17,saprpt,9,23,49,762,0.0643044619422572,A_Incomplete,W_Call incomplete files
+BPI17,saprpt,27,23,45,762,0.0590551181102362,W_Validate application,W_Call incomplete files
+BPI17,saprpt,3,24,44,762,0.0577427821522309,A_Accepted,W_Complete application
+BPI17,saprpt,25,24,33,762,0.0433070866141732,W_Handle leads,W_Complete application
+BPI17,saprpt,19,24,29,762,0.0380577427821522,O_Sent (mail and online),W_Complete application
+BPI17,saprpt,6,24,27,762,0.0354330708661417,A_Concept,W_Complete application
+BPI17,saprpt,27,22,25,762,0.0328083989501312,W_Validate application,W_Call after offers
+BPI17,saprpt,2,27,24,762,0.0314960629921259,<EOS>,W_Validate application
+BPI17,saprpt,4,22,22,762,0.0288713910761154,A_Cancelled,W_Call after offers
+BPI17,saprpt,18,27,18,762,0.0236220472440944,O_Returned,W_Validate application
+BPI17,saprpt,2,23,14,762,0.0183727034120734,<EOS>,W_Call incomplete files
+BPI17,saprpt,13,27,14,762,0.0183727034120734,O_Accepted,W_Validate application
+BPI17,saprpt,24,3,13,762,0.0170603674540682,W_Complete application,A_Accepted
+BPI17,saprpt,2,14,11,762,0.0144356955380577,<EOS>,O_Cancelled
+BPI17,saprpt,22,14,11,762,0.0144356955380577,W_Call after offers,O_Cancelled
+BPI17,saprpt,13,23,9,762,0.0118110236220472,O_Accepted,W_Call incomplete files
+BPI17,saprpt,21,8,8,762,0.0104986876640419,W_Assess potential fraud,A_Denied
+BPI17,saprpt,24,11,8,762,0.0104986876640419,W_Complete application,A_Submitted
+BPI17,saprpt,27,18,7,762,0.0091863517060367,W_Validate application,O_Returned
+BPI17,saprpt,15,19,6,762,0.0078740157480314,O_Create Offer,O_Sent (mail and online)
+BPI17,saprpt,15,22,6,762,0.0078740157480314,O_Create Offer,W_Call after offers
+BPI17,saprpt,24,25,6,762,0.0078740157480314,W_Complete application,W_Handle leads
+BPI17,saprpt,24,6,5,762,0.0065616797900262,W_Complete application,A_Concept
+BPI17,saprpt,20,19,4,762,0.0052493438320209,O_Sent (online only),O_Sent (mail and online)
+BPI17,saprpt,27,17,4,762,0.0052493438320209,W_Validate application,O_Refused
+BPI17,saprpt,6,11,3,762,0.0039370078740157,A_Concept,A_Submitted
+BPI17,saprpt,8,27,3,762,0.0039370078740157,A_Denied,W_Validate application
+BPI17,saprpt,14,22,3,762,0.0039370078740157,O_Cancelled,W_Call after offers
+BPI17,saprpt,18,23,3,762,0.0039370078740157,O_Returned,W_Call incomplete files
+BPI17,saprpt,22,27,3,762,0.0039370078740157,W_Call after offers,W_Validate application
+BPI17,saprpt,23,14,3,762,0.0039370078740157,W_Call incomplete files,O_Cancelled
+BPI17,saprpt,23,20,3,762,0.0039370078740157,W_Call incomplete files,O_Sent (online only)
+BPI17,saprpt,3,6,2,762,0.0026246719160104,A_Accepted,A_Concept
+BPI17,saprpt,14,23,2,762,0.0026246719160104,O_Cancelled,W_Call incomplete files
+BPI17,saprpt,14,27,2,762,0.0026246719160104,O_Cancelled,W_Validate application
+BPI17,saprpt,15,14,2,762,0.0026246719160104,O_Create Offer,O_Cancelled
+BPI17,saprpt,15,24,2,762,0.0026246719160104,O_Create Offer,W_Complete application
+BPI17,saprpt,22,6,2,762,0.0026246719160104,W_Call after offers,A_Concept
+BPI17,saprpt,2,8,1,762,0.0013123359580052,<EOS>,A_Denied
+BPI17,saprpt,3,26,1,762,0.0013123359580052,A_Accepted,W_Shortened completion 
+BPI17,saprpt,4,23,1,762,0.0013123359580052,A_Cancelled,W_Call incomplete files
+BPI17,saprpt,4,24,1,762,0.0013123359580052,A_Cancelled,W_Complete application
+BPI17,saprpt,14,15,1,762,0.0013123359580052,O_Cancelled,O_Create Offer
+BPI17,saprpt,14,19,1,762,0.0013123359580052,O_Cancelled,O_Sent (mail and online)
+BPI17,saprpt,14,24,1,762,0.0013123359580052,O_Cancelled,W_Complete application
+BPI17,saprpt,15,27,1,762,0.0013123359580052,O_Create Offer,W_Validate application
+BPI17,tabpfn3,12,27,80,701,0.1141226818830242,A_Validating,W_Validate application
+BPI17,tabpfn3,23,27,69,701,0.0984308131241084,W_Call incomplete files,W_Validate application
+BPI17,tabpfn3,22,24,66,701,0.094151212553495,W_Call after offers,W_Complete application
+BPI17,tabpfn3,3,24,52,701,0.0741797432239657,A_Accepted,W_Complete application
+BPI17,tabpfn3,5,22,52,701,0.0741797432239657,A_Complete,W_Call after offers
+BPI17,tabpfn3,9,23,49,701,0.0699001426533523,A_Incomplete,W_Call incomplete files
+BPI17,tabpfn3,27,23,39,701,0.0556348074179743,W_Validate application,W_Call incomplete files
+BPI17,tabpfn3,24,25,36,701,0.0513552068473609,W_Complete application,W_Handle leads
+BPI17,tabpfn3,6,24,28,701,0.0399429386590584,A_Concept,W_Complete application
+BPI17,tabpfn3,18,27,23,701,0.0328102710413694,O_Returned,W_Validate application
+BPI17,tabpfn3,4,22,20,701,0.028530670470756,A_Cancelled,W_Call after offers
+BPI17,tabpfn3,2,27,19,701,0.0271041369472182,<EOS>,W_Validate application
+BPI17,tabpfn3,22,27,15,701,0.021398002853067,W_Call after offers,W_Validate application
+BPI17,tabpfn3,13,27,14,701,0.0199714693295292,O_Accepted,W_Validate application
+BPI17,tabpfn3,2,23,12,701,0.0171184022824536,<EOS>,W_Call incomplete files
+BPI17,tabpfn3,27,22,12,701,0.0171184022824536,W_Validate application,W_Call after offers
+BPI17,tabpfn3,13,23,9,701,0.0128388017118402,O_Accepted,W_Call incomplete files
+BPI17,tabpfn3,14,22,9,701,0.0128388017118402,O_Cancelled,W_Call after offers
+BPI17,tabpfn3,24,11,9,701,0.0128388017118402,W_Complete application,A_Submitted
+BPI17,tabpfn3,19,24,8,701,0.0114122681883024,O_Sent (mail and online),W_Complete application
+BPI17,tabpfn3,15,19,7,701,0.0099857346647646,O_Create Offer,O_Sent (mail and online)
+BPI17,tabpfn3,15,22,6,701,0.0085592011412268,O_Create Offer,W_Call after offers
+BPI17,tabpfn3,24,6,6,701,0.0085592011412268,W_Complete application,A_Concept
+BPI17,tabpfn3,20,19,4,701,0.0057061340941512,O_Sent (online only),O_Sent (mail and online)
+BPI17,tabpfn3,22,23,4,701,0.0057061340941512,W_Call after offers,W_Call incomplete files
+BPI17,tabpfn3,23,2,4,701,0.0057061340941512,W_Call incomplete files,<EOS>
+BPI17,tabpfn3,24,22,4,701,0.0057061340941512,W_Complete application,W_Call after offers
+BPI17,tabpfn3,6,11,3,701,0.0042796005706134,A_Concept,A_Submitted
+BPI17,tabpfn3,14,2,3,701,0.0042796005706134,O_Cancelled,<EOS>
+BPI17,tabpfn3,18,23,3,701,0.0042796005706134,O_Returned,W_Call incomplete files
+BPI17,tabpfn3,3,6,2,701,0.0028530670470756,A_Accepted,A_Concept
+BPI17,tabpfn3,4,27,2,701,0.0028530670470756,A_Cancelled,W_Validate application
+BPI17,tabpfn3,5,27,2,701,0.0028530670470756,A_Complete,W_Validate application
+BPI17,tabpfn3,8,27,2,701,0.0028530670470756,A_Denied,W_Validate application
+BPI17,tabpfn3,14,23,2,701,0.0028530670470756,O_Cancelled,W_Call incomplete files
+BPI17,tabpfn3,14,27,2,701,0.0028530670470756,O_Cancelled,W_Validate application
+BPI17,tabpfn3,15,2,2,701,0.0028530670470756,O_Create Offer,<EOS>
+BPI17,tabpfn3,17,27,2,701,0.0028530670470756,O_Refused,W_Validate application
+BPI17,tabpfn3,22,2,2,701,0.0028530670470756,W_Call after offers,<EOS>
+BPI17,tabpfn3,22,6,2,701,0.0028530670470756,W_Call after offers,A_Concept
+BPI17,tabpfn3,27,18,2,701,0.0028530670470756,W_Validate application,O_Returned
+BPI17,tabpfn3,2,21,1,701,0.0014265335235378,<EOS>,W_Assess potential fraud
+BPI17,tabpfn3,3,22,1,701,0.0014265335235378,A_Accepted,W_Call after offers
+BPI17,tabpfn3,3,26,1,701,0.0014265335235378,A_Accepted,W_Shortened completion 
+BPI17,tabpfn3,4,23,1,701,0.0014265335235378,A_Cancelled,W_Call incomplete files
+BPI17,tabpfn3,4,24,1,701,0.0014265335235378,A_Cancelled,W_Complete application
+BPI17,tabpfn3,8,2,1,701,0.0014265335235378,A_Denied,<EOS>
+BPI17,tabpfn3,14,15,1,701,0.0014265335235378,O_Cancelled,O_Create Offer
+BPI17,tabpfn3,14,19,1,701,0.0014265335235378,O_Cancelled,O_Sent (mail and online)
+BPI17,tabpfn3,15,24,1,701,0.0014265335235378,O_Create Offer,W_Complete application
+BPI17,transformer,23,27,80,296,0.2702702702702703,W_Call incomplete files,W_Validate application
+BPI17,transformer,3,24,40,296,0.1351351351351351,A_Accepted,W_Complete application
+BPI17,transformer,4,22,23,296,0.0777027027027027,A_Cancelled,W_Call after offers
+BPI17,transformer,27,23,19,296,0.0641891891891891,W_Validate application,W_Call incomplete files
+BPI17,transformer,11,24,16,296,0.054054054054054,A_Submitted,W_Complete application
+BPI17,transformer,13,27,15,296,0.0506756756756756,O_Accepted,W_Validate application
+BPI17,transformer,12,27,11,296,0.0371621621621621,A_Validating,W_Validate application
+BPI17,transformer,13,23,8,296,0.027027027027027,O_Accepted,W_Call incomplete files
+BPI17,transformer,15,19,7,296,0.0236486486486486,O_Create Offer,O_Sent (mail and online)
+BPI17,transformer,22,27,7,296,0.0236486486486486,W_Call after offers,W_Validate application
+BPI17,transformer,15,22,6,296,0.0202702702702702,O_Create Offer,W_Call after offers
+BPI17,transformer,18,27,6,296,0.0202702702702702,O_Returned,W_Validate application
+BPI17,transformer,20,19,5,296,0.0168918918918918,O_Sent (online only),O_Sent (mail and online)
+BPI17,transformer,25,24,5,296,0.0168918918918918,W_Handle leads,W_Complete application
+BPI17,transformer,27,22,5,296,0.0168918918918918,W_Validate application,W_Call after offers
+BPI17,transformer,14,22,4,296,0.0135135135135135,O_Cancelled,W_Call after offers
+BPI17,transformer,24,3,4,296,0.0135135135135135,W_Complete application,A_Accepted
+BPI17,transformer,24,11,4,296,0.0135135135135135,W_Complete application,A_Submitted
+BPI17,transformer,6,24,3,296,0.0101351351351351,A_Concept,W_Complete application
+BPI17,transformer,8,27,3,296,0.0101351351351351,A_Denied,W_Validate application
+BPI17,transformer,24,25,3,296,0.0101351351351351,W_Complete application,W_Handle leads
+BPI17,transformer,17,27,2,296,0.0067567567567567,O_Refused,W_Validate application
+BPI17,transformer,19,24,2,296,0.0067567567567567,O_Sent (mail and online),W_Complete application
+BPI17,transformer,23,9,2,296,0.0067567567567567,W_Call incomplete files,A_Incomplete
+BPI17,transformer,23,22,2,296,0.0067567567567567,W_Call incomplete files,W_Call after offers
+BPI17,transformer,2,14,1,296,0.0033783783783783,<EOS>,O_Cancelled
+BPI17,transformer,4,27,1,296,0.0033783783783783,A_Cancelled,W_Validate application
+BPI17,transformer,9,27,1,296,0.0033783783783783,A_Incomplete,W_Validate application
+BPI17,transformer,12,13,1,296,0.0033783783783783,A_Validating,O_Accepted
+BPI17,transformer,14,19,1,296,0.0033783783783783,O_Cancelled,O_Sent (mail and online)
+BPI17,transformer,14,23,1,296,0.0033783783783783,O_Cancelled,W_Call incomplete files
+BPI17,transformer,15,24,1,296,0.0033783783783783,O_Create Offer,W_Complete application
+BPI17,transformer,15,27,1,296,0.0033783783783783,O_Create Offer,W_Validate application
+BPI17,transformer,18,23,1,296,0.0033783783783783,O_Returned,W_Call incomplete files
+BPI17,transformer,21,27,1,296,0.0033783783783783,W_Assess potential fraud,W_Validate application
+BPI17,transformer,23,18,1,296,0.0033783783783783,W_Call incomplete files,O_Returned
+BPI17,transformer,24,19,1,296,0.0033783783783783,W_Complete application,O_Sent (mail and online)
+BPI17,transformer,27,13,1,296,0.0033783783783783,W_Validate application,O_Accepted
+BPI17,transformer,27,18,1,296,0.0033783783783783,W_Validate application,O_Returned
+BPI20PrepaidTravelCosts,gemma-2-2b,17,19,182,754,0.2413793103448276,Request For Payment APPROVED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,gemma-2-2b,4,6,152,754,0.2015915119363395,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,gemma-2-2b,5,9,87,754,0.1153846153846153,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,18,22,64,754,0.0848806366047745,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,23,19,43,754,0.0570291777188328,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,gemma-2-2b,30,9,32,754,0.0424403183023872,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,30,2,31,754,0.0411140583554376,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20PrepaidTravelCosts,gemma-2-2b,7,9,22,754,0.0291777188328912,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,4,9,21,754,0.0278514588859416,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,22,18,15,754,0.019893899204244,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,gemma-2-2b,22,9,10,754,0.013262599469496,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,18,9,9,754,0.0119363395225464,Request For Payment APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,15,9,7,754,0.0092838196286472,Permit REJECTED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,17,22,7,754,0.0092838196286472,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,12,9,6,754,0.0079575596816976,Permit REJECTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,9,25,5,754,0.006631299734748,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,gemma-2-2b,25,31,5,754,0.006631299734748,Request For Payment REJECTED by EMPLOYEE,Request Payment
+BPI20PrepaidTravelCosts,gemma-2-2b,9,31,4,754,0.0053050397877984,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,gemma-2-2b,20,22,4,754,0.0053050397877984,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,23,17,4,754,0.0053050397877984,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,gemma-2-2b,9,18,3,754,0.0039787798408488,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,gemma-2-2b,29,30,3,754,0.0039787798408488,Request For Payment SAVED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,gemma-2-2b,2,9,2,754,0.0026525198938992,<EOS>,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,10,6,2,754,0.0026525198938992,Permit REJECTED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,gemma-2-2b,11,9,2,754,0.0026525198938992,Permit REJECTED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,22,3,2,754,0.0026525198938992,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20PrepaidTravelCosts,gemma-2-2b,22,31,2,754,0.0026525198938992,Request For Payment FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,gemma-2-2b,25,9,2,754,0.0026525198938992,Request For Payment REJECTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,30,25,2,754,0.0026525198938992,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,gemma-2-2b,31,9,2,754,0.0026525198938992,Request Payment,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,3,2,1,754,0.0013262599469496,Payment Handled,<EOS>
+BPI20PrepaidTravelCosts,gemma-2-2b,3,9,1,754,0.0013262599469496,Payment Handled,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,5,3,1,754,0.0013262599469496,Permit APPROVED by BUDGET OWNER,Payment Handled
+BPI20PrepaidTravelCosts,gemma-2-2b,5,18,1,754,0.0013262599469496,Permit APPROVED by BUDGET OWNER,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,gemma-2-2b,5,22,1,754,0.0013262599469496,Permit APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,7,2,1,754,0.0013262599469496,Permit APPROVED by SUPERVISOR,<EOS>
+BPI20PrepaidTravelCosts,gemma-2-2b,7,31,1,754,0.0013262599469496,Permit APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,gemma-2-2b,8,3,1,754,0.0013262599469496,Permit FINAL_APPROVED by DIRECTOR,Payment Handled
+BPI20PrepaidTravelCosts,gemma-2-2b,9,19,1,754,0.0013262599469496,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,gemma-2-2b,9,22,1,754,0.0013262599469496,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,12,25,1,754,0.0013262599469496,Permit REJECTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,gemma-2-2b,17,30,1,754,0.0013262599469496,Request For Payment APPROVED by ADMINISTRATION,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,gemma-2-2b,18,30,1,754,0.0013262599469496,Request For Payment APPROVED by BUDGET OWNER,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,gemma-2-2b,18,31,1,754,0.0013262599469496,Request For Payment APPROVED by BUDGET OWNER,Request Payment
+BPI20PrepaidTravelCosts,gemma-2-2b,22,8,1,754,0.0013262599469496,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,gemma-2-2b,23,9,1,754,0.0013262599469496,Request For Payment REJECTED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,23,22,1,754,0.0013262599469496,Request For Payment REJECTED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,25,19,1,754,0.0013262599469496,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,gemma-2-2b,28,9,1,754,0.0013262599469496,Request For Payment REJECTED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,28,18,1,754,0.0013262599469496,Request For Payment REJECTED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,llama32-1b,9,30,119,779,0.1527599486521181,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,18,22,86,779,0.110397946084724,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,5,30,72,779,0.0924261874197689,Permit APPROVED by BUDGET OWNER,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,17,22,60,779,0.0770218228498074,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,4,30,46,779,0.0590500641848523,Permit APPROVED by ADMINISTRATION,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,23,17,30,779,0.0385109114249037,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,llama32-1b,8,30,26,779,0.0333761232349165,Permit FINAL_APPROVED by DIRECTOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,3,30,25,779,0.0320924261874197,Payment Handled,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,4,9,22,779,0.0282413350449293,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,7,30,21,779,0.0269576379974326,Permit APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,25,22,19,779,0.024390243902439,Request For Payment REJECTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,22,30,18,779,0.0231065468549422,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,4,6,17,779,0.0218228498074454,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,llama32-1b,23,22,16,779,0.0205391527599486,Request For Payment REJECTED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,31,30,16,779,0.0205391527599486,Request Payment,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,9,22,15,779,0.0192554557124518,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,25,31,14,779,0.017971758664955,Request For Payment REJECTED by EMPLOYEE,Request Payment
+BPI20PrepaidTravelCosts,llama32-1b,30,2,14,779,0.017971758664955,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20PrepaidTravelCosts,llama32-1b,2,30,10,779,0.0128369704749679,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,5,9,10,779,0.0128369704749679,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,17,9,7,779,0.0089858793324775,Request For Payment APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,22,18,7,779,0.0089858793324775,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,llama32-1b,25,30,7,779,0.0089858793324775,Request For Payment REJECTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,5,22,6,779,0.0077021822849807,Permit APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,12,30,6,779,0.0077021822849807,Permit REJECTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,15,30,6,779,0.0077021822849807,Permit REJECTED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,17,4,6,779,0.0077021822849807,Request For Payment APPROVED by ADMINISTRATION,Permit APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,llama32-1b,18,30,6,779,0.0077021822849807,Request For Payment APPROVED by BUDGET OWNER,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,16,30,5,779,0.0064184852374839,Permit SUBMITTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,22,9,5,779,0.0064184852374839,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,30,22,5,779,0.0064184852374839,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,20,22,4,779,0.0051347881899871,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,29,30,4,779,0.0051347881899871,Request For Payment SAVED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,9,31,3,779,0.0038510911424903,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,llama32-1b,30,9,3,779,0.0038510911424903,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,8,3,2,779,0.0025673940949935,Permit FINAL_APPROVED by DIRECTOR,Payment Handled
+BPI20PrepaidTravelCosts,llama32-1b,11,9,2,779,0.0025673940949935,Permit REJECTED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,16,2,2,779,0.0025673940949935,Permit SUBMITTED by EMPLOYEE,<EOS>
+BPI20PrepaidTravelCosts,llama32-1b,22,4,2,779,0.0025673940949935,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,llama32-1b,30,3,2,779,0.0025673940949935,Request For Payment SUBMITTED by EMPLOYEE,Payment Handled
+BPI20PrepaidTravelCosts,llama32-1b,2,8,1,779,0.0012836970474967,<EOS>,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,llama32-1b,2,22,1,779,0.0012836970474967,<EOS>,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,3,31,1,779,0.0012836970474967,Payment Handled,Request Payment
+BPI20PrepaidTravelCosts,llama32-1b,5,3,1,779,0.0012836970474967,Permit APPROVED by BUDGET OWNER,Payment Handled
+BPI20PrepaidTravelCosts,llama32-1b,5,18,1,779,0.0012836970474967,Permit APPROVED by BUDGET OWNER,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,llama32-1b,7,2,1,779,0.0012836970474967,Permit APPROVED by SUPERVISOR,<EOS>
+BPI20PrepaidTravelCosts,llama32-1b,7,9,1,779,0.0012836970474967,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,7,31,1,779,0.0012836970474967,Permit APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,llama32-1b,9,2,1,779,0.0012836970474967,Permit FINAL_APPROVED by SUPERVISOR,<EOS>
+BPI20PrepaidTravelCosts,llama32-1b,9,17,1,779,0.0012836970474967,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,rnn,4,9,83,433,0.1916859122401847,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,5,9,68,433,0.1570438799076212,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,4,6,50,433,0.115473441108545,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,rnn,23,17,48,433,0.1108545034642032,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,rnn,30,9,25,433,0.0577367205542725,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,7,9,20,433,0.046189376443418,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,9,30,12,433,0.0277136258660508,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,18,22,12,433,0.0277136258660508,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,5,30,11,433,0.0254041570438799,Permit APPROVED by BUDGET OWNER,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,30,2,9,433,0.0207852193995381,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20PrepaidTravelCosts,rnn,2,30,8,433,0.0184757505773672,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,22,18,8,433,0.0184757505773672,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,rnn,9,18,5,433,0.0115473441108545,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,rnn,15,9,5,433,0.0115473441108545,Permit REJECTED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,17,22,5,433,0.0115473441108545,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,9,25,4,433,0.0092378752886836,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,17,23,4,433,0.0092378752886836,Request For Payment APPROVED by ADMINISTRATION,Request For Payment REJECTED by ADMINISTRATION
+BPI20PrepaidTravelCosts,rnn,20,22,4,433,0.0092378752886836,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,25,30,4,433,0.0092378752886836,Request For Payment REJECTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,29,30,4,433,0.0092378752886836,Request For Payment SAVED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,9,5,3,433,0.0069284064665127,Permit FINAL_APPROVED by SUPERVISOR,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,rnn,5,18,2,433,0.0046189376443418,Permit APPROVED by BUDGET OWNER,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,rnn,5,22,2,433,0.0046189376443418,Permit APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,7,30,2,433,0.0046189376443418,Permit APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,9,22,2,433,0.0046189376443418,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,9,31,2,433,0.0046189376443418,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,rnn,10,6,2,433,0.0046189376443418,Permit REJECTED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,rnn,11,9,2,433,0.0046189376443418,Permit REJECTED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,18,9,2,433,0.0046189376443418,Request For Payment APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,30,25,2,433,0.0046189376443418,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,3,9,1,433,0.0023094688221709,Payment Handled,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,5,3,1,433,0.0023094688221709,Permit APPROVED by BUDGET OWNER,Payment Handled
+BPI20PrepaidTravelCosts,rnn,7,5,1,433,0.0023094688221709,Permit APPROVED by SUPERVISOR,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,rnn,7,31,1,433,0.0023094688221709,Permit APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,rnn,8,3,1,433,0.0023094688221709,Permit FINAL_APPROVED by DIRECTOR,Payment Handled
+BPI20PrepaidTravelCosts,rnn,8,31,1,433,0.0023094688221709,Permit FINAL_APPROVED by DIRECTOR,Request Payment
+BPI20PrepaidTravelCosts,rnn,9,17,1,433,0.0023094688221709,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,rnn,12,25,1,433,0.0023094688221709,Permit REJECTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,12,30,1,433,0.0023094688221709,Permit REJECTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,15,5,1,433,0.0023094688221709,Permit REJECTED by SUPERVISOR,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,rnn,15,30,1,433,0.0023094688221709,Permit REJECTED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,17,30,1,433,0.0023094688221709,Request For Payment APPROVED by ADMINISTRATION,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,22,3,1,433,0.0023094688221709,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20PrepaidTravelCosts,rnn,22,8,1,433,0.0023094688221709,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,rnn,22,9,1,433,0.0023094688221709,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,23,30,1,433,0.0023094688221709,Request For Payment REJECTED by ADMINISTRATION,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,25,9,1,433,0.0023094688221709,Request For Payment REJECTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,25,17,1,433,0.0023094688221709,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,rnn,25,22,1,433,0.0023094688221709,Request For Payment REJECTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,28,5,1,433,0.0023094688221709,Request For Payment REJECTED by SUPERVISOR,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,saprpt,17,19,136,514,0.2645914396887159,Request For Payment APPROVED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,saprpt,18,22,82,514,0.159533073929961,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,5,9,80,514,0.1556420233463035,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,23,19,32,514,0.0622568093385214,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,saprpt,30,9,32,514,0.0622568093385214,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,7,9,22,514,0.0428015564202334,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,23,17,16,514,0.0311284046692607,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,saprpt,2,30,11,514,0.0214007782101167,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,9,22,11,514,0.0214007782101167,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,15,9,7,514,0.0136186770428015,Permit REJECTED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,31,30,7,514,0.0136186770428015,Request Payment,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,5,22,5,514,0.0097276264591439,Permit APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,9,25,5,514,0.0097276264591439,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,22,30,5,514,0.0097276264591439,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,25,30,5,514,0.0097276264591439,Request For Payment REJECTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,9,31,4,514,0.0077821011673151,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,saprpt,18,9,4,514,0.0077821011673151,Request For Payment APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,20,22,4,514,0.0077821011673151,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,5,18,3,514,0.0058365758754863,Permit APPROVED by BUDGET OWNER,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,saprpt,18,30,3,514,0.0058365758754863,Request For Payment APPROVED by BUDGET OWNER,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,22,18,3,514,0.0058365758754863,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,saprpt,29,30,3,514,0.0058365758754863,Request For Payment SAVED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,2,25,2,514,0.0038910505836575,<EOS>,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,4,9,2,514,0.0038910505836575,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,9,5,2,514,0.0038910505836575,Permit FINAL_APPROVED by SUPERVISOR,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,saprpt,10,4,2,514,0.0038910505836575,Permit REJECTED by ADMINISTRATION,Permit APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,saprpt,11,9,2,514,0.0038910505836575,Permit REJECTED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,22,3,2,514,0.0038910505836575,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20PrepaidTravelCosts,saprpt,30,25,2,514,0.0038910505836575,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,3,9,1,514,0.0019455252918287,Payment Handled,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,3,30,1,514,0.0019455252918287,Payment Handled,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,4,6,1,514,0.0019455252918287,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,saprpt,5,3,1,514,0.0019455252918287,Permit APPROVED by BUDGET OWNER,Payment Handled
+BPI20PrepaidTravelCosts,saprpt,5,25,1,514,0.0019455252918287,Permit APPROVED by BUDGET OWNER,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,7,30,1,514,0.0019455252918287,Permit APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,7,31,1,514,0.0019455252918287,Permit APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,saprpt,8,3,1,514,0.0019455252918287,Permit FINAL_APPROVED by DIRECTOR,Payment Handled
+BPI20PrepaidTravelCosts,saprpt,9,17,1,514,0.0019455252918287,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,saprpt,9,18,1,514,0.0019455252918287,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,saprpt,12,25,1,514,0.0019455252918287,Permit REJECTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,17,30,1,514,0.0019455252918287,Request For Payment APPROVED by ADMINISTRATION,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,22,8,1,514,0.0019455252918287,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,saprpt,23,30,1,514,0.0019455252918287,Request For Payment REJECTED by ADMINISTRATION,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,25,9,1,514,0.0019455252918287,Request For Payment REJECTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,25,17,1,514,0.0019455252918287,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,saprpt,28,9,1,514,0.0019455252918287,Request For Payment REJECTED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,28,22,1,514,0.0019455252918287,Request For Payment REJECTED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,29,9,1,514,0.0019455252918287,Request For Payment SAVED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,31,22,1,514,0.0019455252918287,Request Payment,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,17,22,106,720,0.1472222222222222,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,17,19,88,720,0.1222222222222222,Request For Payment APPROVED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,tabpfn3,18,22,85,720,0.1180555555555555,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,4,6,80,720,0.1111111111111111,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,tabpfn3,5,9,79,720,0.1097222222222222,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,4,9,71,720,0.0986111111111111,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,30,9,32,720,0.0444444444444444,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,23,22,29,720,0.0402777777777777,Request For Payment REJECTED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,7,9,22,720,0.0305555555555555,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,23,19,15,720,0.0208333333333333,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,tabpfn3,9,22,11,720,0.0152777777777777,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,2,30,8,720,0.0111111111111111,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,31,30,7,720,0.0097222222222222,Request Payment,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,5,22,6,720,0.0083333333333333,Permit APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,9,25,5,720,0.0069444444444444,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,15,9,5,720,0.0069444444444444,Permit REJECTED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,22,30,5,720,0.0069444444444444,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,25,30,5,720,0.0069444444444444,Request For Payment REJECTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,30,2,5,720,0.0069444444444444,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20PrepaidTravelCosts,tabpfn3,9,31,4,720,0.0055555555555555,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,tabpfn3,18,9,4,720,0.0055555555555555,Request For Payment APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,20,22,4,720,0.0055555555555555,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,23,17,4,720,0.0055555555555555,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,tabpfn3,18,30,3,720,0.0041666666666666,Request For Payment APPROVED by BUDGET OWNER,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,29,30,3,720,0.0041666666666666,Request For Payment SAVED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,4,7,2,720,0.0027777777777777,Permit APPROVED by ADMINISTRATION,Permit APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,5,18,2,720,0.0027777777777777,Permit APPROVED by BUDGET OWNER,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,tabpfn3,10,6,2,720,0.0027777777777777,Permit REJECTED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,tabpfn3,11,9,2,720,0.0027777777777777,Permit REJECTED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,22,3,2,720,0.0027777777777777,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20PrepaidTravelCosts,tabpfn3,30,25,2,720,0.0027777777777777,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,3,9,1,720,0.0013888888888888,Payment Handled,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,3,30,1,720,0.0013888888888888,Payment Handled,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,5,2,1,720,0.0013888888888888,Permit APPROVED by BUDGET OWNER,<EOS>
+BPI20PrepaidTravelCosts,tabpfn3,5,3,1,720,0.0013888888888888,Permit APPROVED by BUDGET OWNER,Payment Handled
+BPI20PrepaidTravelCosts,tabpfn3,5,30,1,720,0.0013888888888888,Permit APPROVED by BUDGET OWNER,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,7,2,1,720,0.0013888888888888,Permit APPROVED by SUPERVISOR,<EOS>
+BPI20PrepaidTravelCosts,tabpfn3,7,31,1,720,0.0013888888888888,Permit APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,tabpfn3,8,3,1,720,0.0013888888888888,Permit FINAL_APPROVED by DIRECTOR,Payment Handled
+BPI20PrepaidTravelCosts,tabpfn3,8,31,1,720,0.0013888888888888,Permit FINAL_APPROVED by DIRECTOR,Request Payment
+BPI20PrepaidTravelCosts,tabpfn3,9,5,1,720,0.0013888888888888,Permit FINAL_APPROVED by SUPERVISOR,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,tabpfn3,9,17,1,720,0.0013888888888888,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,tabpfn3,9,18,1,720,0.0013888888888888,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,tabpfn3,12,25,1,720,0.0013888888888888,Permit REJECTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,17,30,1,720,0.0013888888888888,Request For Payment APPROVED by ADMINISTRATION,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,22,8,1,720,0.0013888888888888,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,tabpfn3,23,30,1,720,0.0013888888888888,Request For Payment REJECTED by ADMINISTRATION,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,25,9,1,720,0.0013888888888888,Request For Payment REJECTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,25,17,1,720,0.0013888888888888,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,tabpfn3,28,9,1,720,0.0013888888888888,Request For Payment REJECTED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,4,9,99,441,0.2244897959183673,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,5,9,81,441,0.1836734693877551,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,23,17,48,441,0.1088435374149659,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,transformer,18,22,33,441,0.0748299319727891,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,30,9,27,441,0.0612244897959183,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,7,9,21,441,0.0476190476190476,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,2,30,12,441,0.0272108843537414,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,18,9,9,441,0.0204081632653061,Request For Payment APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,4,6,8,441,0.0181405895691609,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,transformer,15,9,7,441,0.0158730158730158,Permit REJECTED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,22,18,7,441,0.0158730158730158,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,transformer,5,30,6,441,0.0136054421768707,Permit APPROVED by BUDGET OWNER,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,12,30,6,441,0.0136054421768707,Permit REJECTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,25,30,6,441,0.0136054421768707,Request For Payment REJECTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,8,30,5,441,0.0113378684807256,Permit FINAL_APPROVED by DIRECTOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,9,25,5,441,0.0113378684807256,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,9,30,4,441,0.0090702947845804,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,9,31,4,441,0.0090702947845804,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,transformer,20,22,4,441,0.0090702947845804,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,22,9,4,441,0.0090702947845804,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,17,19,3,441,0.0068027210884353,Request For Payment APPROVED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,transformer,29,30,3,441,0.0068027210884353,Request For Payment SAVED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,5,22,2,441,0.0045351473922902,Permit APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,7,30,2,441,0.0045351473922902,Permit APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,11,9,2,441,0.0045351473922902,Permit REJECTED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,17,22,2,441,0.0045351473922902,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,18,31,2,441,0.0045351473922902,Request For Payment APPROVED by BUDGET OWNER,Request Payment
+BPI20PrepaidTravelCosts,transformer,22,3,2,441,0.0045351473922902,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20PrepaidTravelCosts,transformer,22,30,2,441,0.0045351473922902,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,25,31,2,441,0.0045351473922902,Request For Payment REJECTED by EMPLOYEE,Request Payment
+BPI20PrepaidTravelCosts,transformer,30,25,2,441,0.0045351473922902,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,31,30,2,441,0.0045351473922902,Request Payment,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,3,9,1,441,0.0022675736961451,Payment Handled,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,5,3,1,441,0.0022675736961451,Permit APPROVED by BUDGET OWNER,Payment Handled
+BPI20PrepaidTravelCosts,transformer,7,31,1,441,0.0022675736961451,Permit APPROVED by SUPERVISOR,Request Payment
+BPI20PrepaidTravelCosts,transformer,8,3,1,441,0.0022675736961451,Permit FINAL_APPROVED by DIRECTOR,Payment Handled
+BPI20PrepaidTravelCosts,transformer,9,17,1,441,0.0022675736961451,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,transformer,10,6,1,441,0.0022675736961451,Permit REJECTED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20PrepaidTravelCosts,transformer,10,9,1,441,0.0022675736961451,Permit REJECTED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,12,25,1,441,0.0022675736961451,Permit REJECTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,16,30,1,441,0.0022675736961451,Permit SUBMITTED by EMPLOYEE,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,17,31,1,441,0.0022675736961451,Request For Payment APPROVED by ADMINISTRATION,Request Payment
+BPI20PrepaidTravelCosts,transformer,18,30,1,441,0.0022675736961451,Request For Payment APPROVED by BUDGET OWNER,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,22,8,1,441,0.0022675736961451,Request For Payment FINAL_APPROVED by SUPERVISOR,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,transformer,23,30,1,441,0.0022675736961451,Request For Payment REJECTED by ADMINISTRATION,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,25,9,1,441,0.0022675736961451,Request For Payment REJECTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,25,17,1,441,0.0022675736961451,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,transformer,28,9,1,441,0.0022675736961451,Request For Payment REJECTED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,28,18,1,441,0.0022675736961451,Request For Payment REJECTED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,transformer,29,9,1,441,0.0022675736961451,Request For Payment SAVED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,gemma-2-2b,9,5,87,253,0.3438735177865613,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,gemma-2-2b,5,9,73,253,0.2885375494071146,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,gemma-2-2b,10,4,49,253,0.1936758893280632,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,gemma-2-2b,17,2,20,253,0.0790513833992094,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20RequestForPayment,gemma-2-2b,2,17,9,253,0.0355731225296442,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,gemma-2-2b,8,4,2,253,0.0079051383399209,Request For Payment FINAL_APPROVED by DIRECTOR,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,gemma-2-2b,9,3,2,253,0.0079051383399209,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20RequestForPayment,gemma-2-2b,11,9,2,253,0.0079051383399209,Request For Payment REJECTED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,gemma-2-2b,15,5,2,253,0.0079051383399209,Request For Payment REJECTED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,gemma-2-2b,17,12,2,253,0.0079051383399209,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,gemma-2-2b,7,9,1,253,0.0039525691699604,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,gemma-2-2b,11,5,1,253,0.0039525691699604,Request For Payment REJECTED by BUDGET OWNER,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,gemma-2-2b,12,4,1,253,0.0039525691699604,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,gemma-2-2b,15,9,1,253,0.0039525691699604,Request For Payment REJECTED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,gemma-2-2b,17,9,1,253,0.0039525691699604,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,llama32-1b,9,5,191,296,0.6452702702702703,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,llama32-1b,10,4,49,296,0.1655405405405405,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,llama32-1b,17,2,27,296,0.0912162162162162,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20RequestForPayment,llama32-1b,5,9,14,296,0.0472972972972973,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,llama32-1b,15,5,3,296,0.0101351351351351,Request For Payment REJECTED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,llama32-1b,11,5,2,296,0.0067567567567567,Request For Payment REJECTED by BUDGET OWNER,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,llama32-1b,17,12,2,296,0.0067567567567567,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,llama32-1b,7,5,1,296,0.0033783783783783,Request For Payment APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,llama32-1b,8,9,1,296,0.0033783783783783,Request For Payment FINAL_APPROVED by DIRECTOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,llama32-1b,8,12,1,296,0.0033783783783783,Request For Payment FINAL_APPROVED by DIRECTOR,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,llama32-1b,9,3,1,296,0.0033783783783783,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20RequestForPayment,llama32-1b,9,18,1,296,0.0033783783783783,Request For Payment FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20RequestForPayment,llama32-1b,11,9,1,296,0.0033783783783783,Request For Payment REJECTED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,llama32-1b,12,4,1,296,0.0033783783783783,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,llama32-1b,17,9,1,296,0.0033783783783783,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,rnn,5,9,122,215,0.5674418604651162,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,rnn,10,4,49,215,0.227906976744186,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,rnn,17,2,19,215,0.0883720930232558,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20RequestForPayment,rnn,2,17,7,215,0.0325581395348837,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,rnn,11,9,3,215,0.013953488372093,Request For Payment REJECTED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,rnn,15,9,3,215,0.013953488372093,Request For Payment REJECTED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,rnn,8,18,2,215,0.0093023255813953,Request For Payment FINAL_APPROVED by DIRECTOR,Request Payment
+BPI20RequestForPayment,rnn,9,3,2,215,0.0093023255813953,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20RequestForPayment,rnn,17,12,2,215,0.0093023255813953,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,rnn,4,6,1,215,0.0046511627906976,Request For Payment APPROVED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20RequestForPayment,rnn,4,9,1,215,0.0046511627906976,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,rnn,7,9,1,215,0.0046511627906976,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,rnn,9,5,1,215,0.0046511627906976,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,rnn,12,4,1,215,0.0046511627906976,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,rnn,17,9,1,215,0.0046511627906976,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,4,9,165,513,0.3216374269005848,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,4,6,132,513,0.2573099415204678,Request For Payment APPROVED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20RequestForPayment,saprpt,5,9,122,513,0.2378167641325536,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,10,6,23,513,0.0448343079922027,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20RequestForPayment,saprpt,17,2,21,513,0.0409356725146198,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20RequestForPayment,saprpt,10,9,14,513,0.0272904483430799,Request For Payment REJECTED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,10,4,11,513,0.0214424951267056,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,saprpt,2,17,8,513,0.0155945419103313,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,saprpt,11,9,3,513,0.0058479532163742,Request For Payment REJECTED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,15,9,3,513,0.0058479532163742,Request For Payment REJECTED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,9,3,2,513,0.0038986354775828,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20RequestForPayment,saprpt,17,12,2,513,0.0038986354775828,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,saprpt,7,9,1,513,0.0019493177387914,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,8,9,1,513,0.0019493177387914,Request For Payment FINAL_APPROVED by DIRECTOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,8,12,1,513,0.0019493177387914,Request For Payment FINAL_APPROVED by DIRECTOR,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,saprpt,9,5,1,513,0.0019493177387914,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,saprpt,10,7,1,513,0.0019493177387914,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,12,4,1,513,0.0019493177387914,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,saprpt,17,9,1,513,0.0019493177387914,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,tabpfn3,4,9,303,545,0.5559633027522936,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,tabpfn3,5,9,122,545,0.2238532110091743,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,tabpfn3,10,9,40,545,0.073394495412844,Request For Payment REJECTED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,tabpfn3,4,6,31,545,0.0568807339449541,Request For Payment APPROVED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20RequestForPayment,tabpfn3,2,17,25,545,0.0458715596330275,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,tabpfn3,10,4,8,545,0.0146788990825688,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,tabpfn3,11,9,3,545,0.0055045871559633,Request For Payment REJECTED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,tabpfn3,15,9,3,545,0.0055045871559633,Request For Payment REJECTED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,tabpfn3,9,3,2,545,0.0036697247706422,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20RequestForPayment,tabpfn3,17,2,2,545,0.0036697247706422,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20RequestForPayment,tabpfn3,17,12,2,545,0.0036697247706422,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,tabpfn3,7,9,1,545,0.0018348623853211,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,tabpfn3,10,6,1,545,0.0018348623853211,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20RequestForPayment,tabpfn3,12,9,1,545,0.0018348623853211,Request For Payment REJECTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,tabpfn3,17,9,1,545,0.0018348623853211,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,transformer,5,9,122,211,0.5781990521327014,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,transformer,10,4,49,211,0.2322274881516587,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,transformer,17,2,18,211,0.0853080568720379,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20RequestForPayment,transformer,2,17,8,211,0.0379146919431279,<EOS>,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,transformer,11,9,3,211,0.0142180094786729,Request For Payment REJECTED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,transformer,15,9,3,211,0.0142180094786729,Request For Payment REJECTED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,transformer,9,3,2,211,0.0094786729857819,Request For Payment FINAL_APPROVED by SUPERVISOR,Payment Handled
+BPI20RequestForPayment,transformer,17,9,2,211,0.0094786729857819,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,transformer,17,12,2,211,0.0094786729857819,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,transformer,7,9,1,211,0.0047393364928909,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,transformer,12,4,1,211,0.0047393364928909,Request For Payment REJECTED by EMPLOYEE,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,gemma-2-2b,20,22,113,680,0.1661764705882353,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20TravelPermitData,gemma-2-2b,3,5,80,680,0.1176470588235294,Declaration APPROVED by ADMINISTRATION,Declaration APPROVED by PRE_APPROVER
+BPI20TravelPermitData,gemma-2-2b,21,25,52,680,0.0764705882352941,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,51,17,41,680,0.0602941176470588,Send Reminder,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,gemma-2-2b,4,8,36,680,0.0529411764705882,Declaration APPROVED by BUDGET OWNER,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,2,17,21,680,0.0308823529411764,<EOS>,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,gemma-2-2b,2,51,19,680,0.0279411764705882,<EOS>,Send Reminder
+BPI20TravelPermitData,gemma-2-2b,36,38,18,680,0.0264705882352941,Request For Payment APPROVED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20TravelPermitData,gemma-2-2b,3,8,17,680,0.025,Declaration APPROVED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,9,5,16,680,0.0235294117647058,Declaration REJECTED by ADMINISTRATION,Declaration APPROVED by PRE_APPROVER
+BPI20TravelPermitData,gemma-2-2b,37,41,14,680,0.0205882352941176,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,49,52,14,680,0.0205882352941176,Request For Payment SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,gemma-2-2b,52,25,13,680,0.0191176470588235,Start trip,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,23,25,12,680,0.0176470588235294,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,36,41,12,680,0.0176470588235294,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,20,25,11,680,0.0161764705882352,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,9,3,10,680,0.0147058823529411,Declaration REJECTED by ADMINISTRATION,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,gemma-2-2b,49,25,10,680,0.0147058823529411,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,25,18,9,680,0.013235294117647,Permit FINAL_APPROVED by SUPERVISOR,End trip
+BPI20TravelPermitData,gemma-2-2b,9,8,6,680,0.0088235294117647,Declaration REJECTED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,17,2,6,680,0.0088235294117647,Declaration SUBMITTED by EMPLOYEE,<EOS>
+BPI20TravelPermitData,gemma-2-2b,41,50,6,680,0.0088235294117647,Request For Payment FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20TravelPermitData,gemma-2-2b,50,19,6,680,0.0088235294117647,Request Payment,Payment Handled
+BPI20TravelPermitData,gemma-2-2b,51,2,6,680,0.0088235294117647,Send Reminder,<EOS>
+BPI20TravelPermitData,gemma-2-2b,18,52,4,680,0.0058823529411764,End trip,Start trip
+BPI20TravelPermitData,gemma-2-2b,19,52,4,680,0.0058823529411764,Payment Handled,Start trip
+BPI20TravelPermitData,gemma-2-2b,49,18,4,680,0.0058823529411764,Request For Payment SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,gemma-2-2b,15,8,3,680,0.0044117647058823,Declaration REJECTED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,19,18,3,680,0.0044117647058823,Payment Handled,End trip
+BPI20TravelPermitData,gemma-2-2b,25,50,3,680,0.0044117647058823,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20TravelPermitData,gemma-2-2b,36,25,3,680,0.0044117647058823,Request For Payment APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,42,36,3,680,0.0044117647058823,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,gemma-2-2b,49,41,3,680,0.0044117647058823,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,52,49,3,680,0.0044117647058823,Start trip,Request For Payment SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,gemma-2-2b,6,8,2,680,0.0029411764705882,Declaration APPROVED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,8,4,2,680,0.0029411764705882,Declaration FINAL_APPROVED by SUPERVISOR,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,gemma-2-2b,12,8,2,680,0.0029411764705882,Declaration REJECTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,17,8,2,680,0.0029411764705882,Declaration SUBMITTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,17,18,2,680,0.0029411764705882,Declaration SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,gemma-2-2b,18,2,2,680,0.0029411764705882,End trip,<EOS>
+BPI20TravelPermitData,gemma-2-2b,21,18,2,680,0.0029411764705882,Permit APPROVED by BUDGET OWNER,End trip
+BPI20TravelPermitData,gemma-2-2b,25,41,2,680,0.0029411764705882,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,35,18,2,680,0.0029411764705882,Permit SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,gemma-2-2b,36,2,2,680,0.0029411764705882,Request For Payment APPROVED by ADMINISTRATION,<EOS>
+BPI20TravelPermitData,gemma-2-2b,39,41,2,680,0.0029411764705882,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,42,38,2,680,0.0029411764705882,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20TravelPermitData,gemma-2-2b,49,2,2,680,0.0029411764705882,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20TravelPermitData,gemma-2-2b,49,17,2,680,0.0029411764705882,Request For Payment SUBMITTED by EMPLOYEE,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,gemma-2-2b,50,18,2,680,0.0029411764705882,Request Payment,End trip
+BPI20TravelPermitData,gemma-2-2b,50,41,2,680,0.0029411764705882,Request Payment,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,21,25,56,526,0.1064638783269961,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,4,8,41,526,0.0779467680608365,Declaration APPROVED by BUDGET OWNER,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,51,17,36,526,0.0684410646387832,Send Reminder,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,9,3,29,526,0.0551330798479087,Declaration REJECTED by ADMINISTRATION,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,llama32-1b,2,17,20,526,0.0380228136882129,<EOS>,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,49,52,17,526,0.0323193916349809,Request For Payment SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,llama32-1b,23,25,14,526,0.026615969581749,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,37,41,13,526,0.0247148288973384,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,52,25,13,526,0.0247148288973384,Start trip,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,49,41,11,526,0.0209125475285171,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,49,25,10,526,0.0190114068441064,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,35,20,9,526,0.0171102661596958,Permit SUBMITTED by EMPLOYEE,Permit APPROVED by ADMINISTRATION
+BPI20TravelPermitData,llama32-1b,17,2,8,526,0.0152091254752851,Declaration SUBMITTED by EMPLOYEE,<EOS>
+BPI20TravelPermitData,llama32-1b,35,25,8,526,0.0152091254752851,Permit SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,2,25,7,526,0.0133079847908745,<EOS>,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,24,20,7,526,0.0133079847908745,Permit FINAL_APPROVED by DIRECTOR,Permit APPROVED by ADMINISTRATION
+BPI20TravelPermitData,llama32-1b,41,50,7,526,0.0133079847908745,Request For Payment FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20TravelPermitData,llama32-1b,12,7,6,526,0.0114068441064638,Declaration REJECTED by EMPLOYEE,Declaration FINAL_APPROVED by DIRECTOR
+BPI20TravelPermitData,llama32-1b,18,25,6,526,0.0114068441064638,End trip,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,25,35,6,526,0.0114068441064638,Permit FINAL_APPROVED by SUPERVISOR,Permit SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,42,36,6,526,0.0114068441064638,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,llama32-1b,2,52,5,526,0.0095057034220532,<EOS>,Start trip
+BPI20TravelPermitData,llama32-1b,17,52,5,526,0.0095057034220532,Declaration SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,llama32-1b,18,24,5,526,0.0095057034220532,End trip,Permit FINAL_APPROVED by DIRECTOR
+BPI20TravelPermitData,llama32-1b,25,18,5,526,0.0095057034220532,Permit FINAL_APPROVED by SUPERVISOR,End trip
+BPI20TravelPermitData,llama32-1b,30,20,5,526,0.0095057034220532,Permit REJECTED by EMPLOYEE,Permit APPROVED by ADMINISTRATION
+BPI20TravelPermitData,llama32-1b,44,41,5,526,0.0095057034220532,Request For Payment REJECTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,50,19,5,526,0.0095057034220532,Request Payment,Payment Handled
+BPI20TravelPermitData,llama32-1b,51,30,5,526,0.0095057034220532,Send Reminder,Permit REJECTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,2,51,4,526,0.0076045627376425,<EOS>,Send Reminder
+BPI20TravelPermitData,llama32-1b,3,8,4,526,0.0076045627376425,Declaration APPROVED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,18,52,4,526,0.0076045627376425,End trip,Start trip
+BPI20TravelPermitData,llama32-1b,19,24,4,526,0.0076045627376425,Payment Handled,Permit FINAL_APPROVED by DIRECTOR
+BPI20TravelPermitData,llama32-1b,12,50,3,526,0.0057034220532319,Declaration REJECTED by EMPLOYEE,Request Payment
+BPI20TravelPermitData,llama32-1b,15,8,3,526,0.0057034220532319,Declaration REJECTED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,17,8,3,526,0.0057034220532319,Declaration SUBMITTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,17,30,3,526,0.0057034220532319,Declaration SUBMITTED by EMPLOYEE,Permit REJECTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,18,8,3,526,0.0057034220532319,End trip,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,18,17,3,526,0.0057034220532319,End trip,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,18,35,3,526,0.0057034220532319,End trip,Permit SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,19,18,3,526,0.0057034220532319,Payment Handled,End trip
+BPI20TravelPermitData,llama32-1b,19,52,3,526,0.0057034220532319,Payment Handled,Start trip
+BPI20TravelPermitData,llama32-1b,25,50,3,526,0.0057034220532319,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20TravelPermitData,llama32-1b,30,25,3,526,0.0057034220532319,Permit REJECTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,36,8,3,526,0.0057034220532319,Request For Payment APPROVED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,6,8,2,526,0.0038022813688212,Declaration APPROVED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,9,8,2,526,0.0038022813688212,Declaration REJECTED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,12,8,2,526,0.0038022813688212,Declaration REJECTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,17,12,2,526,0.0038022813688212,Declaration SUBMITTED by EMPLOYEE,Declaration REJECTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,17,18,2,526,0.0038022813688212,Declaration SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,rnn,20,25,89,518,0.1718146718146718,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,20,22,57,518,0.11003861003861,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20TravelPermitData,rnn,51,17,54,518,0.1042471042471042,Send Reminder,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,rnn,21,25,48,518,0.0926640926640926,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,9,3,31,518,0.0598455598455598,Declaration REJECTED by ADMINISTRATION,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,rnn,2,17,23,518,0.0444015444015444,<EOS>,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,rnn,49,52,16,518,0.0308880308880308,Request For Payment SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,rnn,23,25,14,518,0.027027027027027,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,52,25,12,518,0.0231660231660231,Start trip,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,49,25,8,518,0.0154440154440154,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,4,8,7,518,0.0135135135135135,Declaration APPROVED by BUDGET OWNER,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,2,51,6,518,0.0115830115830115,<EOS>,Send Reminder
+BPI20TravelPermitData,rnn,42,36,6,518,0.0115830115830115,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,rnn,49,17,6,518,0.0115830115830115,Request For Payment SUBMITTED by EMPLOYEE,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,rnn,25,18,5,518,0.0096525096525096,Permit FINAL_APPROVED by SUPERVISOR,End trip
+BPI20TravelPermitData,rnn,50,19,5,518,0.0096525096525096,Request Payment,Payment Handled
+BPI20TravelPermitData,rnn,8,4,4,518,0.0077220077220077,Declaration FINAL_APPROVED by SUPERVISOR,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,rnn,18,25,4,518,0.0077220077220077,End trip,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,18,52,4,518,0.0077220077220077,End trip,Start trip
+BPI20TravelPermitData,rnn,35,52,4,518,0.0077220077220077,Permit SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,rnn,36,41,4,518,0.0077220077220077,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,37,41,4,518,0.0077220077220077,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,49,41,4,518,0.0077220077220077,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,15,8,3,518,0.0057915057915057,Declaration REJECTED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,17,2,3,518,0.0057915057915057,Declaration SUBMITTED by EMPLOYEE,<EOS>
+BPI20TravelPermitData,rnn,21,52,3,518,0.0057915057915057,Permit APPROVED by BUDGET OWNER,Start trip
+BPI20TravelPermitData,rnn,25,52,3,518,0.0057915057915057,Permit FINAL_APPROVED by SUPERVISOR,Start trip
+BPI20TravelPermitData,rnn,4,17,2,518,0.0038610038610038,Declaration APPROVED by BUDGET OWNER,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,rnn,8,18,2,518,0.0038610038610038,Declaration FINAL_APPROVED by SUPERVISOR,End trip
+BPI20TravelPermitData,rnn,12,8,2,518,0.0038610038610038,Declaration REJECTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,17,4,2,518,0.0038610038610038,Declaration SUBMITTED by EMPLOYEE,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,rnn,17,8,2,518,0.0038610038610038,Declaration SUBMITTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,17,18,2,518,0.0038610038610038,Declaration SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,rnn,19,17,2,518,0.0038610038610038,Payment Handled,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,rnn,19,18,2,518,0.0038610038610038,Payment Handled,End trip
+BPI20TravelPermitData,rnn,21,41,2,518,0.0038610038610038,Permit APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,35,2,2,518,0.0038610038610038,Permit SUBMITTED by EMPLOYEE,<EOS>
+BPI20TravelPermitData,rnn,35,18,2,518,0.0038610038610038,Permit SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,rnn,36,17,2,518,0.0038610038610038,Request For Payment APPROVED by ADMINISTRATION,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,rnn,39,41,2,518,0.0038610038610038,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,41,37,2,518,0.0038610038610038,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20TravelPermitData,rnn,49,18,2,518,0.0038610038610038,Request For Payment SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,rnn,50,17,2,518,0.0038610038610038,Request Payment,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,rnn,50,41,2,518,0.0038610038610038,Request Payment,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,52,41,2,518,0.0038610038610038,Start trip,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,3,2,1,518,0.0019305019305019,Declaration APPROVED by ADMINISTRATION,<EOS>
+BPI20TravelPermitData,rnn,3,12,1,518,0.0019305019305019,Declaration APPROVED by ADMINISTRATION,Declaration REJECTED by EMPLOYEE
+BPI20TravelPermitData,rnn,3,52,1,518,0.0019305019305019,Declaration APPROVED by ADMINISTRATION,Start trip
+BPI20TravelPermitData,rnn,4,50,1,518,0.0019305019305019,Declaration APPROVED by BUDGET OWNER,Request Payment
+BPI20TravelPermitData,rnn,6,4,1,518,0.0019305019305019,Declaration APPROVED by SUPERVISOR,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,saprpt,20,22,70,648,0.1080246913580246,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20TravelPermitData,saprpt,21,25,47,648,0.0725308641975308,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,4,8,42,648,0.0648148148148148,Declaration APPROVED by BUDGET OWNER,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,51,17,40,648,0.0617283950617283,Send Reminder,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,saprpt,20,25,38,648,0.0586419753086419,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,9,3,27,648,0.0416666666666666,Declaration REJECTED by ADMINISTRATION,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,saprpt,52,2,24,648,0.037037037037037,Start trip,<EOS>
+BPI20TravelPermitData,saprpt,2,17,20,648,0.0308641975308641,<EOS>,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,saprpt,3,8,19,648,0.0293209876543209,Declaration APPROVED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,2,51,16,648,0.0246913580246913,<EOS>,Send Reminder
+BPI20TravelPermitData,saprpt,37,41,14,648,0.0216049382716049,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,17,52,13,648,0.0200617283950617,Declaration SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,saprpt,23,25,12,648,0.0185185185185185,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,52,25,12,648,0.0185185185185185,Start trip,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,52,17,11,648,0.0169753086419753,Start trip,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,saprpt,18,52,10,648,0.015432098765432,End trip,Start trip
+BPI20TravelPermitData,saprpt,49,52,10,648,0.015432098765432,Request For Payment SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,saprpt,36,41,9,648,0.0138888888888888,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,3,5,8,648,0.0123456790123456,Declaration APPROVED by ADMINISTRATION,Declaration APPROVED by PRE_APPROVER
+BPI20TravelPermitData,saprpt,49,25,8,648,0.0123456790123456,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,25,18,7,648,0.0108024691358024,Permit FINAL_APPROVED by SUPERVISOR,End trip
+BPI20TravelPermitData,saprpt,25,21,7,648,0.0108024691358024,Permit FINAL_APPROVED by SUPERVISOR,Permit APPROVED by BUDGET OWNER
+BPI20TravelPermitData,saprpt,49,17,7,648,0.0108024691358024,Request For Payment SUBMITTED by EMPLOYEE,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,saprpt,25,17,6,648,0.0092592592592592,Permit FINAL_APPROVED by SUPERVISOR,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,saprpt,35,17,6,648,0.0092592592592592,Permit SUBMITTED by EMPLOYEE,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,saprpt,41,50,6,648,0.0092592592592592,Request For Payment FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20TravelPermitData,saprpt,42,36,6,648,0.0092592592592592,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,saprpt,50,19,6,648,0.0092592592592592,Request Payment,Payment Handled
+BPI20TravelPermitData,saprpt,49,41,5,648,0.007716049382716,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,17,2,4,648,0.0061728395061728,Declaration SUBMITTED by EMPLOYEE,<EOS>
+BPI20TravelPermitData,saprpt,17,18,4,648,0.0061728395061728,Declaration SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,saprpt,35,18,4,648,0.0061728395061728,Permit SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,saprpt,49,8,4,648,0.0061728395061728,Request For Payment SUBMITTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,9,8,3,648,0.0046296296296296,Declaration REJECTED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,15,8,3,648,0.0046296296296296,Declaration REJECTED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,17,8,3,648,0.0046296296296296,Declaration SUBMITTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,18,2,3,648,0.0046296296296296,End trip,<EOS>
+BPI20TravelPermitData,saprpt,18,8,3,648,0.0046296296296296,End trip,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,19,2,3,648,0.0046296296296296,Payment Handled,<EOS>
+BPI20TravelPermitData,saprpt,19,18,3,648,0.0046296296296296,Payment Handled,End trip
+BPI20TravelPermitData,saprpt,25,41,3,648,0.0046296296296296,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,25,50,3,648,0.0046296296296296,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20TravelPermitData,saprpt,41,37,3,648,0.0046296296296296,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20TravelPermitData,saprpt,49,2,3,648,0.0046296296296296,Request For Payment SUBMITTED by EMPLOYEE,<EOS>
+BPI20TravelPermitData,saprpt,51,2,3,648,0.0046296296296296,Send Reminder,<EOS>
+BPI20TravelPermitData,saprpt,51,52,3,648,0.0046296296296296,Send Reminder,Start trip
+BPI20TravelPermitData,saprpt,52,3,3,648,0.0046296296296296,Start trip,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,saprpt,6,8,2,648,0.0030864197530864,Declaration APPROVED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,9,5,2,648,0.0030864197530864,Declaration REJECTED by ADMINISTRATION,Declaration APPROVED by PRE_APPROVER
+BPI20TravelPermitData,saprpt,12,8,2,648,0.0030864197530864,Declaration REJECTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,3,5,68,792,0.0858585858585858,Declaration APPROVED by ADMINISTRATION,Declaration APPROVED by PRE_APPROVER
+BPI20TravelPermitData,tabpfn3,20,22,63,792,0.0795454545454545,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20TravelPermitData,tabpfn3,20,25,57,792,0.0719696969696969,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,3,8,55,792,0.0694444444444444,Declaration APPROVED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,21,25,51,792,0.0643939393939393,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,51,17,51,792,0.0643939393939393,Send Reminder,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,4,8,42,792,0.053030303030303,Declaration APPROVED by BUDGET OWNER,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,36,41,29,792,0.0366161616161616,Request For Payment APPROVED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,52,2,24,792,0.0303030303030303,Start trip,<EOS>
+BPI20TravelPermitData,tabpfn3,2,51,23,792,0.029040404040404,<EOS>,Send Reminder
+BPI20TravelPermitData,tabpfn3,2,17,22,792,0.0277777777777777,<EOS>,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,52,17,18,792,0.0227272727272727,Start trip,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,9,8,17,792,0.0214646464646464,Declaration REJECTED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,37,41,15,792,0.0189393939393939,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,9,5,13,792,0.0164141414141414,Declaration REJECTED by ADMINISTRATION,Declaration APPROVED by PRE_APPROVER
+BPI20TravelPermitData,tabpfn3,49,52,13,792,0.0164141414141414,Request For Payment SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,tabpfn3,52,25,13,792,0.0164141414141414,Start trip,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,23,25,12,792,0.0151515151515151,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,18,52,10,792,0.0126262626262626,End trip,Start trip
+BPI20TravelPermitData,tabpfn3,17,52,9,792,0.0113636363636363,Declaration SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,tabpfn3,49,25,9,792,0.0113636363636363,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,36,38,8,792,0.0101010101010101,Request For Payment APPROVED by ADMINISTRATION,Request For Payment APPROVED by PRE_APPROVER
+BPI20TravelPermitData,tabpfn3,49,17,8,792,0.0101010101010101,Request For Payment SUBMITTED by EMPLOYEE,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,25,18,7,792,0.0088383838383838,Permit FINAL_APPROVED by SUPERVISOR,End trip
+BPI20TravelPermitData,tabpfn3,41,50,6,792,0.0075757575757575,Request For Payment FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20TravelPermitData,tabpfn3,50,19,6,792,0.0075757575757575,Request Payment,Payment Handled
+BPI20TravelPermitData,tabpfn3,25,17,5,792,0.0063131313131313,Permit FINAL_APPROVED by SUPERVISOR,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,49,41,5,792,0.0063131313131313,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,17,2,4,792,0.005050505050505,Declaration SUBMITTED by EMPLOYEE,<EOS>
+BPI20TravelPermitData,tabpfn3,17,18,4,792,0.005050505050505,Declaration SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,tabpfn3,18,8,4,792,0.005050505050505,End trip,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,35,18,4,792,0.005050505050505,Permit SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,tabpfn3,15,8,3,792,0.0037878787878787,Declaration REJECTED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,17,8,3,792,0.0037878787878787,Declaration SUBMITTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,18,2,3,792,0.0037878787878787,End trip,<EOS>
+BPI20TravelPermitData,tabpfn3,19,18,3,792,0.0037878787878787,Payment Handled,End trip
+BPI20TravelPermitData,tabpfn3,25,35,3,792,0.0037878787878787,Permit FINAL_APPROVED by SUPERVISOR,Permit SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,25,41,3,792,0.0037878787878787,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,25,50,3,792,0.0037878787878787,Permit FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20TravelPermitData,tabpfn3,42,41,3,792,0.0037878787878787,Request For Payment REJECTED by ADMINISTRATION,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,52,8,3,792,0.0037878787878787,Start trip,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,52,35,3,792,0.0037878787878787,Start trip,Permit SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,6,8,2,792,0.0025252525252525,Declaration APPROVED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,9,3,2,792,0.0025252525252525,Declaration REJECTED by ADMINISTRATION,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,tabpfn3,12,8,2,792,0.0025252525252525,Declaration REJECTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,12,17,2,792,0.0025252525252525,Declaration REJECTED by EMPLOYEE,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,17,35,2,792,0.0025252525252525,Declaration SUBMITTED by EMPLOYEE,Permit SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,19,2,2,792,0.0025252525252525,Payment Handled,<EOS>
+BPI20TravelPermitData,tabpfn3,19,52,2,792,0.0025252525252525,Payment Handled,Start trip
+BPI20TravelPermitData,tabpfn3,21,18,2,792,0.0025252525252525,Permit APPROVED by BUDGET OWNER,End trip
+BPI20TravelPermitData,transformer,20,22,160,550,0.2909090909090909,Permit APPROVED by ADMINISTRATION,Permit APPROVED by PRE_APPROVER
+BPI20TravelPermitData,transformer,21,25,50,550,0.0909090909090909,Permit APPROVED by BUDGET OWNER,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,51,17,50,550,0.0909090909090909,Send Reminder,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,transformer,9,3,32,550,0.0581818181818181,Declaration REJECTED by ADMINISTRATION,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,transformer,2,51,27,550,0.049090909090909,<EOS>,Send Reminder
+BPI20TravelPermitData,transformer,2,17,19,550,0.0345454545454545,<EOS>,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,transformer,49,52,16,550,0.029090909090909,Request For Payment SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,transformer,23,25,13,550,0.0236363636363636,Permit APPROVED by SUPERVISOR,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,52,25,13,550,0.0236363636363636,Start trip,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,49,25,9,550,0.0163636363636363,Request For Payment SUBMITTED by EMPLOYEE,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,25,18,7,550,0.0127272727272727,Permit FINAL_APPROVED by SUPERVISOR,End trip
+BPI20TravelPermitData,transformer,42,36,6,550,0.0109090909090909,Request For Payment REJECTED by ADMINISTRATION,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,transformer,50,19,6,550,0.0109090909090909,Request Payment,Payment Handled
+BPI20TravelPermitData,transformer,25,21,5,550,0.009090909090909,Permit FINAL_APPROVED by SUPERVISOR,Permit APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,49,17,5,550,0.009090909090909,Request For Payment SUBMITTED by EMPLOYEE,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,transformer,8,4,4,550,0.0072727272727272,Declaration FINAL_APPROVED by SUPERVISOR,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,18,52,4,550,0.0072727272727272,End trip,Start trip
+BPI20TravelPermitData,transformer,15,8,3,550,0.0054545454545454,Declaration REJECTED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,36,42,3,550,0.0054545454545454,Request For Payment APPROVED by ADMINISTRATION,Request For Payment REJECTED by ADMINISTRATION
+BPI20TravelPermitData,transformer,41,37,3,550,0.0054545454545454,Request For Payment FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,41,50,3,550,0.0054545454545454,Request For Payment FINAL_APPROVED by SUPERVISOR,Request Payment
+BPI20TravelPermitData,transformer,50,52,3,550,0.0054545454545454,Request Payment,Start trip
+BPI20TravelPermitData,transformer,4,8,2,550,0.0036363636363636,Declaration APPROVED by BUDGET OWNER,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,12,8,2,550,0.0036363636363636,Declaration REJECTED by EMPLOYEE,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,17,4,2,550,0.0036363636363636,Declaration SUBMITTED by EMPLOYEE,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,17,18,2,550,0.0036363636363636,Declaration SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,transformer,18,4,2,550,0.0036363636363636,End trip,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,18,25,2,550,0.0036363636363636,End trip,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,19,18,2,550,0.0036363636363636,Payment Handled,End trip
+BPI20TravelPermitData,transformer,20,25,2,550,0.0036363636363636,Permit APPROVED by ADMINISTRATION,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,21,41,2,550,0.0036363636363636,Permit APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,25,37,2,550,0.0036363636363636,Permit FINAL_APPROVED by SUPERVISOR,Request For Payment APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,25,52,2,550,0.0036363636363636,Permit FINAL_APPROVED by SUPERVISOR,Start trip
+BPI20TravelPermitData,transformer,35,18,2,550,0.0036363636363636,Permit SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,transformer,35,52,2,550,0.0036363636363636,Permit SUBMITTED by EMPLOYEE,Start trip
+BPI20TravelPermitData,transformer,37,41,2,550,0.0036363636363636,Request For Payment APPROVED by BUDGET OWNER,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,39,41,2,550,0.0036363636363636,Request For Payment APPROVED by SUPERVISOR,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,49,18,2,550,0.0036363636363636,Request For Payment SUBMITTED by EMPLOYEE,End trip
+BPI20TravelPermitData,transformer,49,37,2,550,0.0036363636363636,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,49,41,2,550,0.0036363636363636,Request For Payment SUBMITTED by EMPLOYEE,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,50,18,2,550,0.0036363636363636,Request Payment,End trip
+BPI20TravelPermitData,transformer,50,41,2,550,0.0036363636363636,Request Payment,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,52,3,2,550,0.0036363636363636,Start trip,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,transformer,52,17,2,550,0.0036363636363636,Start trip,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,transformer,3,8,1,550,0.0018181818181818,Declaration APPROVED by ADMINISTRATION,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,3,52,1,550,0.0018181818181818,Declaration APPROVED by ADMINISTRATION,Start trip
+BPI20TravelPermitData,transformer,4,17,1,550,0.0018181818181818,Declaration APPROVED by BUDGET OWNER,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,transformer,4,50,1,550,0.0018181818181818,Declaration APPROVED by BUDGET OWNER,Request Payment
+BPI20TravelPermitData,transformer,6,4,1,550,0.0018181818181818,Declaration APPROVED by SUPERVISOR,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,6,8,1,550,0.0018181818181818,Declaration APPROVED by SUPERVISOR,Declaration FINAL_APPROVED by SUPERVISOR

@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=llm-peft-ppm_gemma-2-2b
+#SBATCH --job-name=llm-peft-ppm_llama32-1b_error_analysis
 #SBATCH --cpus-per-task=10
-#SBATCH --mem=30G
+#SBATCH --mem=10G
 #SBATCH --mail-user=lennart.fertig@students.uni-mannheim.de
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --gres=gpu:1
@@ -34,15 +34,15 @@ echo "CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
 python -c "import torch,sys; print('torch', torch.__version__, 'cuda?', torch.cuda.is_available())" || true
 
 # Configuration
-PARAMS_FILE="scripts/gemma-2-2b_params.txt" 
+PARAMS_FILE="scripts/llama32-1b_params_error_analysis_selected_params.txt"
 PY_MAIN="fertig_lennart_next_event_prediction.py"
-PROJECT="llm-peft-ppm_gemma-2-2b"
+PROJECT="llm-peft-ppm_llama32-1b_error_analysis"
 
-SEEDS="41 42 43 44 45"
+SEEDS="41"
 
-grep -vE '^\s*#|^\s*$' "$PARAMS_FILE" | while IFS= read -r ARGS; do
+grep -vE '^\s*#|^\s*$' "$PARAMS_FILE" | while IFS= read -r ARGS || [[ -n "$ARGS" ]]; do
   for SEED in $SEEDS; do
-    echo ">>> RUN: python $PY_MAIN $ARGS --seed $SEED --project_name $PROJECT --wandb"
-    python "$PY_MAIN" $ARGS --seed "$SEED" --project_name "$PROJECT" --wandb
+    echo ">>> RUN: python $PY_MAIN $ARGS --seed $SEED --project_name $PROJECT --persist_predictions"
+    python "$PY_MAIN" $ARGS --seed "$SEED" --project_name "$PROJECT" --persist_predictions
   done
 done
