@@ -334,5 +334,10 @@ def run_chronos2_baseline(
             "y_pred_remaining_time": y_pred_rt,
             "y_true_time_to_next_event": y_true_nt,
             "y_pred_time_to_next_event": y_pred_nt,
+            # NEU:
+            "case_ids": df_eval["case_id"].to_numpy(),
+            "positions": df_eval["pos"].to_numpy(),
+            "case_lengths": df_eval["case_len"].to_numpy(),
+            "activity_ids_current": df_eval["activity"].astype(int).to_numpy(),
         },
     }

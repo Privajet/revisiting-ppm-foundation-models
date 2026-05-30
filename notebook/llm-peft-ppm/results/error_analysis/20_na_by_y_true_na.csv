@@ -1,0 +1,439 @@
+dataset,model,paradigm,group_col,group_value,n,accuracy,error_rate,n_cases,group_value_label
+BPI12,gemma-2-2b,llm,y_true_na,2,95,0.8105263157894737,0.1894736842105263,95,<EOS>
+BPI12,gemma-2-2b,llm,y_true_na,3,31,0.0,1.0,31,A_ACCEPTED
+BPI12,gemma-2-2b,llm,y_true_na,6,31,0.2580645161290322,0.7419354838709677,31,A_CANCELLED
+BPI12,gemma-2-2b,llm,y_true_na,7,57,0.2456140350877192,0.7543859649122807,57,A_DECLINED
+BPI12,gemma-2-2b,llm,y_true_na,8,37,0.054054054054054,0.945945945945946,37,A_FINALIZED
+BPI12,gemma-2-2b,llm,y_true_na,9,91,1.0,0.0,91,A_PARTLYSUBMITTED
+BPI12,gemma-2-2b,llm,y_true_na,10,53,0.0,1.0,53,A_PREACCEPTED
+BPI12,gemma-2-2b,llm,y_true_na,15,45,0.1555555555555555,0.8444444444444444,45,O_CREATED
+BPI12,gemma-2-2b,llm,y_true_na,17,56,0.1071428571428571,0.8928571428571429,56,O_SELECTED
+BPI12,gemma-2-2b,llm,y_true_na,18,61,1.0,0.0,60,O_SENT
+BPI12,gemma-2-2b,llm,y_true_na,19,31,0.032258064516129,0.967741935483871,31,O_SENT_BACK
+BPI12,gemma-2-2b,llm,y_true_na,20,99,0.7676767676767676,0.2323232323232323,97,W_Afhandelen leads
+BPI12,gemma-2-2b,llm,y_true_na,22,486,0.8024691358024691,0.1975308641975308,388,W_Completeren aanvraag
+BPI12,gemma-2-2b,llm,y_true_na,23,169,0.0177514792899408,0.9822485207100592,124,W_Nabellen incomplete dossiers
+BPI12,gemma-2-2b,llm,y_true_na,24,381,0.6745406824146981,0.3254593175853019,309,W_Nabellen offertes
+BPI12,gemma-2-2b,llm,y_true_na,25,161,0.6583850931677019,0.3416149068322981,141,W_Valideren aanvraag
+BPI12,llama32-1b,llm,y_true_na,2,95,0.9052631578947368,0.0947368421052631,95,<EOS>
+BPI12,llama32-1b,llm,y_true_na,3,31,0.0,1.0,31,A_ACCEPTED
+BPI12,llama32-1b,llm,y_true_na,6,31,0.0,1.0,31,A_CANCELLED
+BPI12,llama32-1b,llm,y_true_na,7,57,0.5263157894736842,0.4736842105263158,57,A_DECLINED
+BPI12,llama32-1b,llm,y_true_na,8,37,0.2702702702702703,0.7297297297297297,37,A_FINALIZED
+BPI12,llama32-1b,llm,y_true_na,9,91,1.0,0.0,91,A_PARTLYSUBMITTED
+BPI12,llama32-1b,llm,y_true_na,10,53,0.0,1.0,53,A_PREACCEPTED
+BPI12,llama32-1b,llm,y_true_na,15,45,0.9555555555555556,0.0444444444444444,45,O_CREATED
+BPI12,llama32-1b,llm,y_true_na,17,56,0.1964285714285714,0.8035714285714286,56,O_SELECTED
+BPI12,llama32-1b,llm,y_true_na,18,61,0.8852459016393442,0.1147540983606557,60,O_SENT
+BPI12,llama32-1b,llm,y_true_na,19,31,0.0,1.0,31,O_SENT_BACK
+BPI12,llama32-1b,llm,y_true_na,20,99,0.3838383838383838,0.6161616161616161,97,W_Afhandelen leads
+BPI12,llama32-1b,llm,y_true_na,22,486,0.8930041152263375,0.1069958847736625,388,W_Completeren aanvraag
+BPI12,llama32-1b,llm,y_true_na,23,169,0.0,1.0,124,W_Nabellen incomplete dossiers
+BPI12,llama32-1b,llm,y_true_na,24,381,0.6850393700787402,0.3149606299212598,309,W_Nabellen offertes
+BPI12,llama32-1b,llm,y_true_na,25,161,0.4472049689440994,0.5527950310559007,141,W_Valideren aanvraag
+BPI12,rnn,sequence,y_true_na,2,95,0.6842105263157895,0.3157894736842105,95,<EOS>
+BPI12,rnn,sequence,y_true_na,3,31,0.0,1.0,31,A_ACCEPTED
+BPI12,rnn,sequence,y_true_na,6,31,0.1935483870967742,0.8064516129032258,31,A_CANCELLED
+BPI12,rnn,sequence,y_true_na,7,57,0.4385964912280701,0.5614035087719298,57,A_DECLINED
+BPI12,rnn,sequence,y_true_na,8,37,0.3783783783783784,0.6216216216216216,37,A_FINALIZED
+BPI12,rnn,sequence,y_true_na,9,91,1.0,0.0,91,A_PARTLYSUBMITTED
+BPI12,rnn,sequence,y_true_na,10,53,0.0,1.0,53,A_PREACCEPTED
+BPI12,rnn,sequence,y_true_na,15,45,0.9777777777777776,0.0222222222222222,45,O_CREATED
+BPI12,rnn,sequence,y_true_na,17,56,0.2857142857142857,0.7142857142857143,56,O_SELECTED
+BPI12,rnn,sequence,y_true_na,18,61,0.9836065573770492,0.0163934426229508,60,O_SENT
+BPI12,rnn,sequence,y_true_na,19,31,0.1290322580645161,0.8709677419354839,31,O_SENT_BACK
+BPI12,rnn,sequence,y_true_na,20,99,0.5959595959595959,0.4040404040404041,97,W_Afhandelen leads
+BPI12,rnn,sequence,y_true_na,22,486,0.9958847736625516,0.0041152263374485,388,W_Completeren aanvraag
+BPI12,rnn,sequence,y_true_na,23,169,0.8106508875739645,0.1893491124260354,124,W_Nabellen incomplete dossiers
+BPI12,rnn,sequence,y_true_na,24,381,0.8608923884514436,0.1391076115485564,309,W_Nabellen offertes
+BPI12,rnn,sequence,y_true_na,25,161,0.8571428571428571,0.1428571428571429,141,W_Valideren aanvraag
+BPI12,saprpt,tabular_fm,y_true_na,2,95,0.3368421052631579,0.6631578947368422,95,<EOS>
+BPI12,saprpt,tabular_fm,y_true_na,3,31,0.0,1.0,31,A_ACCEPTED
+BPI12,saprpt,tabular_fm,y_true_na,6,31,0.0,1.0,31,A_CANCELLED
+BPI12,saprpt,tabular_fm,y_true_na,7,57,0.0701754385964912,0.9298245614035088,57,A_DECLINED
+BPI12,saprpt,tabular_fm,y_true_na,8,37,0.054054054054054,0.945945945945946,37,A_FINALIZED
+BPI12,saprpt,tabular_fm,y_true_na,9,91,1.0,0.0,91,A_PARTLYSUBMITTED
+BPI12,saprpt,tabular_fm,y_true_na,10,53,0.6415094339622641,0.3584905660377359,53,A_PREACCEPTED
+BPI12,saprpt,tabular_fm,y_true_na,15,45,0.4888888888888889,0.5111111111111111,45,O_CREATED
+BPI12,saprpt,tabular_fm,y_true_na,17,56,0.6785714285714286,0.3214285714285714,56,O_SELECTED
+BPI12,saprpt,tabular_fm,y_true_na,18,61,1.0,0.0,60,O_SENT
+BPI12,saprpt,tabular_fm,y_true_na,19,31,0.0,1.0,31,O_SENT_BACK
+BPI12,saprpt,tabular_fm,y_true_na,20,99,0.4444444444444444,0.5555555555555556,97,W_Afhandelen leads
+BPI12,saprpt,tabular_fm,y_true_na,22,486,0.8580246913580247,0.1419753086419752,388,W_Completeren aanvraag
+BPI12,saprpt,tabular_fm,y_true_na,23,169,0.7337278106508875,0.2662721893491124,124,W_Nabellen incomplete dossiers
+BPI12,saprpt,tabular_fm,y_true_na,24,381,0.8162729658792651,0.1837270341207348,309,W_Nabellen offertes
+BPI12,saprpt,tabular_fm,y_true_na,25,161,0.4409937888198758,0.5590062111801242,141,W_Valideren aanvraag
+BPI12,tabpfn3,tabular_fm,y_true_na,2,95,0.3473684210526316,0.6526315789473685,95,<EOS>
+BPI12,tabpfn3,tabular_fm,y_true_na,3,31,0.0,1.0,31,A_ACCEPTED
+BPI12,tabpfn3,tabular_fm,y_true_na,6,31,0.3225806451612903,0.6774193548387097,31,A_CANCELLED
+BPI12,tabpfn3,tabular_fm,y_true_na,7,57,0.2456140350877192,0.7543859649122807,57,A_DECLINED
+BPI12,tabpfn3,tabular_fm,y_true_na,8,37,0.1891891891891892,0.8108108108108107,37,A_FINALIZED
+BPI12,tabpfn3,tabular_fm,y_true_na,9,91,1.0,0.0,91,A_PARTLYSUBMITTED
+BPI12,tabpfn3,tabular_fm,y_true_na,10,53,0.1132075471698113,0.8867924528301887,53,A_PREACCEPTED
+BPI12,tabpfn3,tabular_fm,y_true_na,15,45,0.6222222222222222,0.3777777777777777,45,O_CREATED
+BPI12,tabpfn3,tabular_fm,y_true_na,17,56,0.375,0.625,56,O_SELECTED
+BPI12,tabpfn3,tabular_fm,y_true_na,18,61,1.0,0.0,60,O_SENT
+BPI12,tabpfn3,tabular_fm,y_true_na,19,31,0.032258064516129,0.967741935483871,31,O_SENT_BACK
+BPI12,tabpfn3,tabular_fm,y_true_na,20,99,0.5959595959595959,0.4040404040404041,97,W_Afhandelen leads
+BPI12,tabpfn3,tabular_fm,y_true_na,22,486,0.8703703703703703,0.1296296296296296,388,W_Completeren aanvraag
+BPI12,tabpfn3,tabular_fm,y_true_na,23,169,0.7633136094674556,0.2366863905325443,124,W_Nabellen incomplete dossiers
+BPI12,tabpfn3,tabular_fm,y_true_na,24,381,0.7900262467191601,0.2099737532808399,309,W_Nabellen offertes
+BPI12,tabpfn3,tabular_fm,y_true_na,25,161,0.4347826086956521,0.5652173913043479,141,W_Valideren aanvraag
+BPI12,transformer,sequence,y_true_na,2,95,0.9789473684210528,0.0210526315789473,95,<EOS>
+BPI12,transformer,sequence,y_true_na,3,31,0.0,1.0,31,A_ACCEPTED
+BPI12,transformer,sequence,y_true_na,6,31,0.5806451612903226,0.4193548387096774,31,A_CANCELLED
+BPI12,transformer,sequence,y_true_na,7,57,0.2631578947368421,0.736842105263158,57,A_DECLINED
+BPI12,transformer,sequence,y_true_na,8,37,0.4594594594594595,0.5405405405405406,37,A_FINALIZED
+BPI12,transformer,sequence,y_true_na,9,91,1.0,0.0,91,A_PARTLYSUBMITTED
+BPI12,transformer,sequence,y_true_na,10,53,0.0,1.0,53,A_PREACCEPTED
+BPI12,transformer,sequence,y_true_na,15,45,0.9777777777777776,0.0222222222222222,45,O_CREATED
+BPI12,transformer,sequence,y_true_na,17,56,0.625,0.375,56,O_SELECTED
+BPI12,transformer,sequence,y_true_na,18,61,1.0,0.0,60,O_SENT
+BPI12,transformer,sequence,y_true_na,19,31,0.3225806451612903,0.6774193548387097,31,O_SENT_BACK
+BPI12,transformer,sequence,y_true_na,20,99,0.9191919191919192,0.0808080808080807,97,W_Afhandelen leads
+BPI12,transformer,sequence,y_true_na,22,486,0.9423868312757202,0.0576131687242797,388,W_Completeren aanvraag
+BPI12,transformer,sequence,y_true_na,23,169,0.7692307692307693,0.2307692307692307,124,W_Nabellen incomplete dossiers
+BPI12,transformer,sequence,y_true_na,24,381,0.6771653543307087,0.3228346456692913,309,W_Nabellen offertes
+BPI12,transformer,sequence,y_true_na,25,161,0.8385093167701864,0.1614906832298136,141,W_Valideren aanvraag
+BPI17,gemma-2-2b,llm,y_true_na,2,65,0.9846153846153848,0.0153846153846153,65,<EOS>
+BPI17,gemma-2-2b,llm,y_true_na,3,56,0.25,0.75,56,A_Accepted
+BPI17,gemma-2-2b,llm,y_true_na,5,54,0.9814814814814816,0.0185185185185184,54,A_Complete
+BPI17,gemma-2-2b,llm,y_true_na,6,41,0.926829268292683,0.073170731707317,41,A_Concept
+BPI17,gemma-2-2b,llm,y_true_na,9,49,0.7959183673469388,0.2040816326530612,49,A_Incomplete
+BPI17,gemma-2-2b,llm,y_true_na,11,31,1.0,0.0,31,A_Submitted
+BPI17,gemma-2-2b,llm,y_true_na,12,80,0.85,0.15,79,A_Validating
+BPI17,gemma-2-2b,llm,y_true_na,14,34,0.4705882352941176,0.5294117647058824,34,O_Cancelled
+BPI17,gemma-2-2b,llm,y_true_na,15,70,0.7714285714285715,0.2285714285714285,70,O_Create Offer
+BPI17,gemma-2-2b,llm,y_true_na,16,60,1.0,0.0,59,O_Created
+BPI17,gemma-2-2b,llm,y_true_na,18,38,0.868421052631579,0.131578947368421,38,O_Returned
+BPI17,gemma-2-2b,llm,y_true_na,19,68,0.9411764705882352,0.0588235294117647,68,O_Sent (mail and online)
+BPI17,gemma-2-2b,llm,y_true_na,22,327,0.981651376146789,0.018348623853211,322,W_Call after offers
+BPI17,gemma-2-2b,llm,y_true_na,23,321,0.8068535825545171,0.1931464174454829,308,W_Call incomplete files
+BPI17,gemma-2-2b,llm,y_true_na,24,233,0.8969957081545065,0.1030042918454935,228,W_Complete application
+BPI17,gemma-2-2b,llm,y_true_na,25,71,0.9014084507042254,0.0985915492957746,71,W_Handle leads
+BPI17,gemma-2-2b,llm,y_true_na,27,304,0.7203947368421053,0.2796052631578947,293,W_Validate application
+BPI17,llama32-1b,llm,y_true_na,2,65,0.7692307692307693,0.2307692307692307,65,<EOS>
+BPI17,llama32-1b,llm,y_true_na,3,56,0.2857142857142857,0.7142857142857143,56,A_Accepted
+BPI17,llama32-1b,llm,y_true_na,5,54,1.0,0.0,54,A_Complete
+BPI17,llama32-1b,llm,y_true_na,6,41,0.926829268292683,0.073170731707317,41,A_Concept
+BPI17,llama32-1b,llm,y_true_na,9,49,0.979591836734694,0.0204081632653061,49,A_Incomplete
+BPI17,llama32-1b,llm,y_true_na,11,31,1.0,0.0,31,A_Submitted
+BPI17,llama32-1b,llm,y_true_na,12,80,1.0,0.0,79,A_Validating
+BPI17,llama32-1b,llm,y_true_na,14,34,0.5,0.5,34,O_Cancelled
+BPI17,llama32-1b,llm,y_true_na,15,70,0.7714285714285715,0.2285714285714285,70,O_Create Offer
+BPI17,llama32-1b,llm,y_true_na,16,60,0.8833333333333333,0.1166666666666667,59,O_Created
+BPI17,llama32-1b,llm,y_true_na,18,38,0.868421052631579,0.131578947368421,38,O_Returned
+BPI17,llama32-1b,llm,y_true_na,19,68,0.8235294117647058,0.1764705882352941,68,O_Sent (mail and online)
+BPI17,llama32-1b,llm,y_true_na,22,327,0.944954128440367,0.055045871559633,322,W_Call after offers
+BPI17,llama32-1b,llm,y_true_na,23,321,0.7663551401869159,0.2336448598130841,308,W_Call incomplete files
+BPI17,llama32-1b,llm,y_true_na,24,233,0.759656652360515,0.2403433476394849,228,W_Complete application
+BPI17,llama32-1b,llm,y_true_na,25,71,0.8169014084507042,0.1830985915492957,71,W_Handle leads
+BPI17,llama32-1b,llm,y_true_na,27,304,0.7993421052631579,0.2006578947368421,293,W_Validate application
+BPI17,rnn,sequence,y_true_na,2,65,0.9692307692307692,0.0307692307692307,65,<EOS>
+BPI17,rnn,sequence,y_true_na,3,56,0.3035714285714285,0.6964285714285714,56,A_Accepted
+BPI17,rnn,sequence,y_true_na,5,54,1.0,0.0,54,A_Complete
+BPI17,rnn,sequence,y_true_na,6,41,0.926829268292683,0.073170731707317,41,A_Concept
+BPI17,rnn,sequence,y_true_na,9,49,1.0,0.0,49,A_Incomplete
+BPI17,rnn,sequence,y_true_na,11,31,1.0,0.0,31,A_Submitted
+BPI17,rnn,sequence,y_true_na,12,80,1.0,0.0,79,A_Validating
+BPI17,rnn,sequence,y_true_na,14,34,0.5294117647058824,0.4705882352941176,34,O_Cancelled
+BPI17,rnn,sequence,y_true_na,15,70,0.7714285714285715,0.2285714285714285,70,O_Create Offer
+BPI17,rnn,sequence,y_true_na,16,60,1.0,0.0,59,O_Created
+BPI17,rnn,sequence,y_true_na,18,38,0.8947368421052632,0.1052631578947368,38,O_Returned
+BPI17,rnn,sequence,y_true_na,19,68,0.8970588235294118,0.1029411764705882,68,O_Sent (mail and online)
+BPI17,rnn,sequence,y_true_na,22,327,0.981651376146789,0.018348623853211,322,W_Call after offers
+BPI17,rnn,sequence,y_true_na,23,321,0.897196261682243,0.102803738317757,308,W_Call incomplete files
+BPI17,rnn,sequence,y_true_na,24,233,0.8798283261802575,0.1201716738197424,228,W_Complete application
+BPI17,rnn,sequence,y_true_na,25,71,0.8873239436619719,0.1126760563380281,71,W_Handle leads
+BPI17,rnn,sequence,y_true_na,27,304,0.7796052631578947,0.2203947368421053,293,W_Validate application
+BPI17,saprpt,tabular_fm,y_true_na,2,65,0.2307692307692307,0.7692307692307692,65,<EOS>
+BPI17,saprpt,tabular_fm,y_true_na,3,56,0.1607142857142857,0.8392857142857143,56,A_Accepted
+BPI17,saprpt,tabular_fm,y_true_na,5,54,0.0,1.0,54,A_Complete
+BPI17,saprpt,tabular_fm,y_true_na,6,41,0.2682926829268293,0.7317073170731707,41,A_Concept
+BPI17,saprpt,tabular_fm,y_true_na,9,49,0.0,1.0,49,A_Incomplete
+BPI17,saprpt,tabular_fm,y_true_na,11,31,1.0,0.0,31,A_Submitted
+BPI17,saprpt,tabular_fm,y_true_na,12,80,0.0,1.0,79,A_Validating
+BPI17,saprpt,tabular_fm,y_true_na,14,34,0.7058823529411765,0.2941176470588235,34,O_Cancelled
+BPI17,saprpt,tabular_fm,y_true_na,15,70,0.7571428571428571,0.2428571428571428,70,O_Create Offer
+BPI17,saprpt,tabular_fm,y_true_na,16,60,1.0,0.0,59,O_Created
+BPI17,saprpt,tabular_fm,y_true_na,18,38,0.4473684210526316,0.5526315789473684,38,O_Returned
+BPI17,saprpt,tabular_fm,y_true_na,19,68,0.5735294117647058,0.4264705882352941,68,O_Sent (mail and online)
+BPI17,saprpt,tabular_fm,y_true_na,22,327,0.7370030581039755,0.2629969418960245,322,W_Call after offers
+BPI17,saprpt,tabular_fm,y_true_na,23,321,0.7601246105919003,0.2398753894080997,308,W_Call incomplete files
+BPI17,saprpt,tabular_fm,y_true_na,24,233,0.8583690987124464,0.1416309012875536,228,W_Complete application
+BPI17,saprpt,tabular_fm,y_true_na,25,71,0.5352112676056338,0.4647887323943662,71,W_Handle leads
+BPI17,saprpt,tabular_fm,y_true_na,27,304,0.7335526315789473,0.2664473684210526,293,W_Validate application
+BPI17,tabpfn3,tabular_fm,y_true_na,2,65,0.5076923076923077,0.4923076923076923,65,<EOS>
+BPI17,tabpfn3,tabular_fm,y_true_na,3,56,0.0,1.0,56,A_Accepted
+BPI17,tabpfn3,tabular_fm,y_true_na,5,54,0.0,1.0,54,A_Complete
+BPI17,tabpfn3,tabular_fm,y_true_na,6,41,0.2439024390243902,0.7560975609756098,41,A_Concept
+BPI17,tabpfn3,tabular_fm,y_true_na,9,49,0.0,1.0,49,A_Incomplete
+BPI17,tabpfn3,tabular_fm,y_true_na,11,31,1.0,0.0,31,A_Submitted
+BPI17,tabpfn3,tabular_fm,y_true_na,12,80,0.0,1.0,79,A_Validating
+BPI17,tabpfn3,tabular_fm,y_true_na,14,34,0.4705882352941176,0.5294117647058824,34,O_Cancelled
+BPI17,tabpfn3,tabular_fm,y_true_na,15,70,0.7714285714285715,0.2285714285714285,70,O_Create Offer
+BPI17,tabpfn3,tabular_fm,y_true_na,16,60,1.0,0.0,59,O_Created
+BPI17,tabpfn3,tabular_fm,y_true_na,18,38,0.3157894736842105,0.6842105263157895,38,O_Returned
+BPI17,tabpfn3,tabular_fm,y_true_na,19,68,0.8823529411764706,0.1176470588235294,68,O_Sent (mail and online)
+BPI17,tabpfn3,tabular_fm,y_true_na,22,327,0.72782874617737,0.2721712538226299,322,W_Call after offers
+BPI17,tabpfn3,tabular_fm,y_true_na,23,321,0.7694704049844237,0.2305295950155763,308,W_Call incomplete files
+BPI17,tabpfn3,tabular_fm,y_true_na,24,233,0.759656652360515,0.2403433476394849,228,W_Complete application
+BPI17,tabpfn3,tabular_fm,y_true_na,25,71,1.0,0.0,71,W_Handle leads
+BPI17,tabpfn3,tabular_fm,y_true_na,27,304,0.8223684210526315,0.1776315789473684,293,W_Validate application
+BPI17,transformer,sequence,y_true_na,2,65,0.9846153846153848,0.0153846153846153,65,<EOS>
+BPI17,transformer,sequence,y_true_na,3,56,0.2857142857142857,0.7142857142857143,56,A_Accepted
+BPI17,transformer,sequence,y_true_na,5,54,1.0,0.0,54,A_Complete
+BPI17,transformer,sequence,y_true_na,6,41,0.926829268292683,0.073170731707317,41,A_Concept
+BPI17,transformer,sequence,y_true_na,9,49,0.979591836734694,0.0204081632653061,49,A_Incomplete
+BPI17,transformer,sequence,y_true_na,11,31,0.4838709677419355,0.5161290322580645,31,A_Submitted
+BPI17,transformer,sequence,y_true_na,12,80,0.85,0.15,79,A_Validating
+BPI17,transformer,sequence,y_true_na,14,34,0.8235294117647058,0.1764705882352941,34,O_Cancelled
+BPI17,transformer,sequence,y_true_na,15,70,0.7857142857142857,0.2142857142857143,70,O_Create Offer
+BPI17,transformer,sequence,y_true_na,16,60,1.0,0.0,59,O_Created
+BPI17,transformer,sequence,y_true_na,18,38,0.8157894736842105,0.1842105263157895,38,O_Returned
+BPI17,transformer,sequence,y_true_na,19,68,0.9705882352941176,0.0294117647058823,68,O_Sent (mail and online)
+BPI17,transformer,sequence,y_true_na,22,327,0.9785932721712538,0.0214067278287461,322,W_Call after offers
+BPI17,transformer,sequence,y_true_na,23,321,0.735202492211838,0.264797507788162,308,W_Call incomplete files
+BPI17,transformer,sequence,y_true_na,24,233,0.9484978540772532,0.0515021459227468,228,W_Complete application
+BPI17,transformer,sequence,y_true_na,25,71,0.9295774647887324,0.0704225352112676,71,W_Handle leads
+BPI17,transformer,sequence,y_true_na,27,304,0.9144736842105264,0.0855263157894736,293,W_Validate application
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,2,212,0.9905660377358492,0.0094339622641509,212,<EOS>
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,3,222,0.990990990990991,0.009009009009009,222,Payment Handled
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,4,199,0.1306532663316583,0.8693467336683417,196,Permit APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,5,90,0.0,1.0,90,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,8,32,0.96875,0.03125,32,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,9,164,0.9146341463414634,0.0853658536585365,164,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,17,207,0.0821256038647343,0.9178743961352656,207,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,18,93,0.1935483870967742,0.8064516129032258,93,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,22,206,0.8543689320388349,0.1456310679611651,206,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,23,49,0.0,1.0,47,Request For Payment REJECTED by ADMINISTRATION
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,25,43,0.813953488372093,0.1860465116279069,41,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,30,234,0.7222222222222222,0.2777777777777778,222,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,gemma-2-2b,llm,y_true_na,31,187,0.983957219251337,0.016042780748663,187,Request Payment
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,2,212,0.9433962264150944,0.0566037735849056,212,<EOS>
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,3,222,0.8828828828828829,0.1171171171171171,222,Payment Handled
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,4,199,0.5728643216080402,0.4271356783919597,196,Permit APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,5,90,0.0,1.0,90,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,8,32,0.125,0.875,32,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,9,164,0.1524390243902439,0.8475609756097561,164,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,17,207,0.6376811594202898,0.3623188405797102,207,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,18,93,0.0,1.0,93,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,22,206,0.8349514563106796,0.1650485436893204,206,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,23,49,0.0,1.0,47,Request For Payment REJECTED by ADMINISTRATION
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,25,43,0.0232558139534883,0.9767441860465116,41,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,30,234,0.8888888888888888,0.1111111111111111,222,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,llama32-1b,llm,y_true_na,31,187,0.9037433155080212,0.0962566844919786,187,Request Payment
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,2,212,0.9622641509433962,0.0377358490566037,212,<EOS>
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,3,222,0.9954954954954957,0.0045045045045044,222,Payment Handled
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,4,199,0.3316582914572864,0.6683417085427136,196,Permit APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,5,90,0.0666666666666666,0.9333333333333332,90,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,8,32,0.9375,0.0625,32,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,9,164,0.823170731707317,0.1768292682926829,164,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,17,207,0.9516908212560388,0.0483091787439613,207,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,18,93,0.8494623655913979,0.1505376344086021,93,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,22,206,0.9466019417475728,0.0533980582524271,206,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,23,49,0.0,1.0,47,Request For Payment REJECTED by ADMINISTRATION
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,25,43,0.8372093023255814,0.1627906976744185,41,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,30,234,0.8461538461538461,0.1538461538461538,222,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,rnn,sequence,y_true_na,31,187,0.9893048128342246,0.0106951871657754,187,Request Payment
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,2,212,0.9386792452830188,0.0613207547169811,212,<EOS>
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,3,222,0.990990990990991,0.009009009009009,222,Payment Handled
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,4,199,0.984924623115578,0.015075376884422,196,Permit APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,5,90,0.0,1.0,90,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,8,32,0.96875,0.03125,32,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,9,164,0.8536585365853658,0.1463414634146341,164,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,17,207,0.3381642512077294,0.6618357487922706,207,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,18,93,0.043010752688172,0.956989247311828,93,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,22,206,0.9466019417475728,0.0533980582524271,206,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,23,49,0.0,1.0,47,Request For Payment REJECTED by ADMINISTRATION
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,25,43,0.8372093023255814,0.1627906976744185,41,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,30,234,0.8547008547008547,0.1452991452991453,222,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,saprpt,tabular_fm,y_true_na,31,187,0.9572192513368984,0.0427807486631015,187,Request Payment
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,2,212,0.9622641509433962,0.0377358490566037,212,<EOS>
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,3,222,0.990990990990991,0.009009009009009,222,Payment Handled
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,4,199,0.2311557788944723,0.7688442211055276,196,Permit APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,5,90,0.0,1.0,90,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,8,32,0.9375,0.0625,32,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,9,164,0.8597560975609756,0.1402439024390244,164,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,17,207,0.0579710144927536,0.9420289855072465,207,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,18,93,0.010752688172043,0.989247311827957,93,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,22,206,0.9611650485436892,0.0388349514563106,206,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,23,49,0.0,1.0,47,Request For Payment REJECTED by ADMINISTRATION
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,25,43,0.8372093023255814,0.1627906976744185,41,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,30,234,0.8333333333333334,0.1666666666666666,222,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,tabpfn3,tabular_fm,y_true_na,31,187,0.9572192513368984,0.0427807486631015,187,Request Payment
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,2,212,0.9433962264150944,0.0566037735849056,212,<EOS>
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,3,222,0.9954954954954957,0.0045045045045044,222,Payment Handled
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,4,199,0.4623115577889447,0.5376884422110553,196,Permit APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,5,90,0.0,1.0,90,Permit APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,8,32,0.8125,0.1875,32,Permit FINAL_APPROVED by DIRECTOR
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,9,164,0.9146341463414634,0.0853658536585365,164,Permit FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,17,207,0.9710144927536232,0.0289855072463768,207,Request For Payment APPROVED by ADMINISTRATION
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,18,93,0.5161290322580645,0.4838709677419355,93,Request For Payment APPROVED by BUDGET OWNER
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,22,206,0.9223300970873788,0.0776699029126213,206,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,23,49,0.0,1.0,47,Request For Payment REJECTED by ADMINISTRATION
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,25,43,0.7674418604651163,0.2325581395348837,41,Request For Payment REJECTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,30,234,0.8760683760683761,0.1239316239316239,222,Request For Payment SUBMITTED by EMPLOYEE
+BPI20PrepaidTravelCosts,transformer,sequence,y_true_na,31,187,0.983957219251337,0.016042780748663,187,Request Payment
+BPI20RequestForPayment,gemma-2-2b,llm,y_true_na,2,374,0.9759358288770054,0.0240641711229946,374,<EOS>
+BPI20RequestForPayment,gemma-2-2b,llm,y_true_na,3,318,1.0,0.0,318,Payment Handled
+BPI20RequestForPayment,gemma-2-2b,llm,y_true_na,4,358,1.0,0.0,356,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,gemma-2-2b,llm,y_true_na,5,122,0.4016393442622951,0.5983606557377049,122,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,gemma-2-2b,llm,y_true_na,9,341,0.7390029325513197,0.2609970674486803,341,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,gemma-2-2b,llm,y_true_na,10,49,0.0,1.0,48,Request For Payment REJECTED by ADMINISTRATION
+BPI20RequestForPayment,gemma-2-2b,llm,y_true_na,12,61,0.9836065573770492,0.0163934426229508,58,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,gemma-2-2b,llm,y_true_na,17,33,0.303030303030303,0.696969696969697,32,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,gemma-2-2b,llm,y_true_na,18,335,1.0,0.0,335,Request Payment
+BPI20RequestForPayment,llama32-1b,llm,y_true_na,2,374,1.0,0.0,374,<EOS>
+BPI20RequestForPayment,llama32-1b,llm,y_true_na,3,318,1.0,0.0,318,Payment Handled
+BPI20RequestForPayment,llama32-1b,llm,y_true_na,4,358,1.0,0.0,356,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,llama32-1b,llm,y_true_na,5,122,0.8852459016393442,0.1147540983606557,122,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,llama32-1b,llm,y_true_na,9,341,0.4340175953079179,0.565982404692082,341,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,llama32-1b,llm,y_true_na,10,49,0.0,1.0,48,Request For Payment REJECTED by ADMINISTRATION
+BPI20RequestForPayment,llama32-1b,llm,y_true_na,12,61,0.9836065573770492,0.0163934426229508,58,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,llama32-1b,llm,y_true_na,17,33,0.0909090909090909,0.9090909090909092,32,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,llama32-1b,llm,y_true_na,18,335,1.0,0.0,335,Request Payment
+BPI20RequestForPayment,rnn,sequence,y_true_na,2,374,0.9812834224598932,0.0187165775401069,374,<EOS>
+BPI20RequestForPayment,rnn,sequence,y_true_na,3,318,1.0,0.0,318,Payment Handled
+BPI20RequestForPayment,rnn,sequence,y_true_na,4,358,0.994413407821229,0.0055865921787709,356,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,rnn,sequence,y_true_na,5,122,0.0,1.0,122,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,rnn,sequence,y_true_na,9,341,0.9912023460410556,0.0087976539589442,341,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,rnn,sequence,y_true_na,10,49,0.0,1.0,48,Request For Payment REJECTED by ADMINISTRATION
+BPI20RequestForPayment,rnn,sequence,y_true_na,12,61,0.9836065573770492,0.0163934426229508,58,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,rnn,sequence,y_true_na,17,33,0.3333333333333333,0.6666666666666667,32,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,rnn,sequence,y_true_na,18,335,1.0,0.0,335,Request Payment
+BPI20RequestForPayment,saprpt,tabular_fm,y_true_na,2,374,0.9786096256684492,0.0213903743315507,374,<EOS>
+BPI20RequestForPayment,saprpt,tabular_fm,y_true_na,3,318,1.0,0.0,318,Payment Handled
+BPI20RequestForPayment,saprpt,tabular_fm,y_true_na,4,358,0.1703910614525139,0.8296089385474861,356,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,saprpt,tabular_fm,y_true_na,5,122,0.0,1.0,122,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,saprpt,tabular_fm,y_true_na,9,341,0.9912023460410556,0.0087976539589442,341,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,saprpt,tabular_fm,y_true_na,10,49,0.0,1.0,48,Request For Payment REJECTED by ADMINISTRATION
+BPI20RequestForPayment,saprpt,tabular_fm,y_true_na,12,61,0.9836065573770492,0.0163934426229508,58,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,saprpt,tabular_fm,y_true_na,17,33,0.2727272727272727,0.7272727272727273,32,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,saprpt,tabular_fm,y_true_na,18,335,1.0,0.0,335,Request Payment
+BPI20RequestForPayment,tabpfn3,tabular_fm,y_true_na,2,374,0.9331550802139036,0.0668449197860963,374,<EOS>
+BPI20RequestForPayment,tabpfn3,tabular_fm,y_true_na,3,318,1.0,0.0,318,Payment Handled
+BPI20RequestForPayment,tabpfn3,tabular_fm,y_true_na,4,358,0.0670391061452514,0.9329608938547486,356,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,tabpfn3,tabular_fm,y_true_na,5,122,0.0,1.0,122,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,tabpfn3,tabular_fm,y_true_na,9,341,0.9941348973607038,0.0058651026392961,341,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,tabpfn3,tabular_fm,y_true_na,10,49,0.0,1.0,48,Request For Payment REJECTED by ADMINISTRATION
+BPI20RequestForPayment,tabpfn3,tabular_fm,y_true_na,12,61,0.9836065573770492,0.0163934426229508,58,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,tabpfn3,tabular_fm,y_true_na,17,33,0.8484848484848485,0.1515151515151515,32,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,tabpfn3,tabular_fm,y_true_na,18,335,1.0,0.0,335,Request Payment
+BPI20RequestForPayment,transformer,sequence,y_true_na,2,374,0.9786096256684492,0.0213903743315507,374,<EOS>
+BPI20RequestForPayment,transformer,sequence,y_true_na,3,318,1.0,0.0,318,Payment Handled
+BPI20RequestForPayment,transformer,sequence,y_true_na,4,358,1.0,0.0,356,Request For Payment APPROVED by ADMINISTRATION
+BPI20RequestForPayment,transformer,sequence,y_true_na,5,122,0.0,1.0,122,Request For Payment APPROVED by BUDGET OWNER
+BPI20RequestForPayment,transformer,sequence,y_true_na,9,341,0.9941348973607038,0.0058651026392961,341,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20RequestForPayment,transformer,sequence,y_true_na,10,49,0.0,1.0,48,Request For Payment REJECTED by ADMINISTRATION
+BPI20RequestForPayment,transformer,sequence,y_true_na,12,61,0.9836065573770492,0.0163934426229508,58,Request For Payment REJECTED by EMPLOYEE
+BPI20RequestForPayment,transformer,sequence,y_true_na,17,33,0.3333333333333333,0.6666666666666667,32,Request For Payment SUBMITTED by EMPLOYEE
+BPI20RequestForPayment,transformer,sequence,y_true_na,18,335,1.0,0.0,335,Request Payment
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,2,164,0.75,0.25,164,<EOS>
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,3,129,0.2325581395348837,0.7674418604651163,129,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,4,44,0.1136363636363636,0.8863636363636364,44,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,8,112,0.9553571428571428,0.044642857142857,112,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,9,32,0.0,1.0,32,Declaration REJECTED by ADMINISTRATION
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,12,47,0.8723404255319149,0.127659574468085,46,Declaration REJECTED by EMPLOYEE
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,17,131,0.8931297709923665,0.1068702290076335,128,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,18,174,0.942528735632184,0.0574712643678161,174,End trip
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,19,144,0.9375,0.0625,141,Payment Handled
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,20,162,0.2345679012345679,0.7654320987654322,162,Permit APPROVED by ADMINISTRATION
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,21,57,0.0,1.0,57,Permit APPROVED by BUDGET OWNER
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,25,150,0.8866666666666667,0.1133333333333332,150,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,36,50,0.28,0.72,49,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,41,39,0.6923076923076923,0.3076923076923077,38,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,49,48,0.25,0.75,48,Request For Payment SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,50,171,0.9239766081871345,0.0760233918128655,166,Request Payment
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,51,70,0.3142857142857143,0.6857142857142857,69,Send Reminder
+BPI20TravelPermitData,gemma-2-2b,llm,y_true_na,52,171,0.8654970760233918,0.1345029239766082,171,Start trip
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,2,164,0.7682926829268293,0.2317073170731707,164,<EOS>
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,3,129,0.9457364341085271,0.0542635658914728,129,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,4,44,0.0,1.0,44,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,8,112,0.9732142857142856,0.0267857142857143,112,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,9,32,0.0,1.0,32,Declaration REJECTED by ADMINISTRATION
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,12,47,0.6808510638297872,0.3191489361702128,46,Declaration REJECTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,17,131,0.7480916030534351,0.2519083969465648,128,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,18,174,0.8505747126436781,0.1494252873563218,174,End trip
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,19,144,0.8958333333333334,0.1041666666666666,141,Payment Handled
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,20,162,1.0,0.0,162,Permit APPROVED by ADMINISTRATION
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,21,57,0.0,1.0,57,Permit APPROVED by BUDGET OWNER
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,25,150,0.8933333333333333,0.1066666666666666,150,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,36,50,0.88,0.12,49,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,41,39,0.6666666666666666,0.3333333333333333,38,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,49,48,0.0,1.0,48,Request For Payment SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,50,171,0.9239766081871345,0.0760233918128655,166,Request Payment
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,51,70,0.3142857142857143,0.6857142857142857,69,Send Reminder
+BPI20TravelPermitData,llama32-1b,llm,y_true_na,52,171,0.8947368421052632,0.1052631578947368,171,Start trip
+BPI20TravelPermitData,rnn,sequence,y_true_na,2,164,0.823170731707317,0.1768292682926829,164,<EOS>
+BPI20TravelPermitData,rnn,sequence,y_true_na,3,129,0.9767441860465116,0.0232558139534884,129,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,rnn,sequence,y_true_na,4,44,0.7727272727272727,0.2272727272727273,44,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,rnn,sequence,y_true_na,8,112,0.9285714285714286,0.0714285714285714,112,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,sequence,y_true_na,9,32,0.03125,0.96875,32,Declaration REJECTED by ADMINISTRATION
+BPI20TravelPermitData,rnn,sequence,y_true_na,12,47,0.8936170212765957,0.1063829787234043,46,Declaration REJECTED by EMPLOYEE
+BPI20TravelPermitData,rnn,sequence,y_true_na,17,131,0.9083969465648856,0.0916030534351145,128,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,rnn,sequence,y_true_na,18,174,0.9080459770114944,0.0919540229885057,174,End trip
+BPI20TravelPermitData,rnn,sequence,y_true_na,19,144,0.9444444444444444,0.0555555555555555,141,Payment Handled
+BPI20TravelPermitData,rnn,sequence,y_true_na,20,162,0.0987654320987654,0.9012345679012346,162,Permit APPROVED by ADMINISTRATION
+BPI20TravelPermitData,rnn,sequence,y_true_na,21,57,0.0350877192982456,0.9649122807017544,57,Permit APPROVED by BUDGET OWNER
+BPI20TravelPermitData,rnn,sequence,y_true_na,25,150,0.92,0.0799999999999999,150,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,sequence,y_true_na,36,50,0.86,0.14,49,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,rnn,sequence,y_true_na,41,39,0.8461538461538461,0.1538461538461538,38,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,rnn,sequence,y_true_na,49,48,0.2083333333333333,0.7916666666666666,48,Request For Payment SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,rnn,sequence,y_true_na,50,171,0.9239766081871345,0.0760233918128655,166,Request Payment
+BPI20TravelPermitData,rnn,sequence,y_true_na,51,70,0.2,0.8,69,Send Reminder
+BPI20TravelPermitData,rnn,sequence,y_true_na,52,171,0.9064327485380116,0.0935672514619883,171,Start trip
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,2,164,0.7682926829268293,0.2317073170731707,164,<EOS>
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,3,129,0.7829457364341085,0.2170542635658915,129,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,4,44,0.0,1.0,44,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,8,112,0.9732142857142856,0.0267857142857143,112,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,9,32,0.0,1.0,32,Declaration REJECTED by ADMINISTRATION
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,12,47,0.8723404255319149,0.127659574468085,46,Declaration REJECTED by EMPLOYEE
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,17,131,0.7938931297709924,0.2061068702290076,128,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,18,174,0.8793103448275862,0.1206896551724138,174,End trip
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,19,144,0.9375,0.0625,141,Payment Handled
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,20,162,0.3209876543209876,0.6790123456790124,162,Permit APPROVED by ADMINISTRATION
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,21,57,0.0701754385964912,0.9298245614035088,57,Permit APPROVED by BUDGET OWNER
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,25,150,0.8066666666666666,0.1933333333333333,150,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,36,50,0.82,0.18,49,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,41,39,0.6410256410256411,0.3589743589743589,38,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,49,48,0.1666666666666666,0.8333333333333334,48,Request For Payment SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,50,171,0.9239766081871345,0.0760233918128655,166,Request Payment
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,51,70,0.3,0.7,69,Send Reminder
+BPI20TravelPermitData,saprpt,tabular_fm,y_true_na,52,171,0.6608187134502924,0.3391812865497076,171,Start trip
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,2,164,0.7134146341463414,0.2865853658536585,164,<EOS>
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,3,129,0.0387596899224806,0.9612403100775194,129,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,4,44,0.0,1.0,44,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,8,112,0.9732142857142856,0.0267857142857143,112,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,9,32,0.0,1.0,32,Declaration REJECTED by ADMINISTRATION
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,12,47,0.8723404255319149,0.127659574468085,46,Declaration REJECTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,17,131,0.816793893129771,0.1832061068702289,128,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,18,174,0.8793103448275862,0.1206896551724138,174,End trip
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,19,144,0.9375,0.0625,141,Payment Handled
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,20,162,0.2592592592592592,0.7407407407407407,162,Permit APPROVED by ADMINISTRATION
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,21,57,0.0,1.0,57,Permit APPROVED by BUDGET OWNER
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,25,150,0.8533333333333334,0.1466666666666666,150,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,36,50,0.26,0.74,49,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,41,39,0.717948717948718,0.282051282051282,38,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,49,48,0.2083333333333333,0.7916666666666666,48,Request For Payment SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,50,171,0.9239766081871345,0.0760233918128655,166,Request Payment
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,51,70,0.1714285714285714,0.8285714285714285,69,Send Reminder
+BPI20TravelPermitData,tabpfn3,tabular_fm,y_true_na,52,171,0.6198830409356725,0.3801169590643275,171,Start trip
+BPI20TravelPermitData,transformer,sequence,y_true_na,2,164,0.7195121951219512,0.2804878048780488,164,<EOS>
+BPI20TravelPermitData,transformer,sequence,y_true_na,3,129,0.9844961240310076,0.0155038759689922,129,Declaration APPROVED by ADMINISTRATION
+BPI20TravelPermitData,transformer,sequence,y_true_na,4,44,0.9090909090909092,0.0909090909090909,44,Declaration APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,sequence,y_true_na,8,112,0.9375,0.0625,112,Declaration FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,sequence,y_true_na,9,32,0.0,1.0,32,Declaration REJECTED by ADMINISTRATION
+BPI20TravelPermitData,transformer,sequence,y_true_na,12,47,0.8936170212765957,0.1063829787234043,46,Declaration REJECTED by EMPLOYEE
+BPI20TravelPermitData,transformer,sequence,y_true_na,17,131,0.9389312977099236,0.0610687022900763,128,Declaration SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,transformer,sequence,y_true_na,18,174,0.9252873563218392,0.0747126436781608,174,End trip
+BPI20TravelPermitData,transformer,sequence,y_true_na,19,144,0.9583333333333334,0.0416666666666666,141,Payment Handled
+BPI20TravelPermitData,transformer,sequence,y_true_na,20,162,0.0,1.0,162,Permit APPROVED by ADMINISTRATION
+BPI20TravelPermitData,transformer,sequence,y_true_na,21,57,0.0526315789473684,0.9473684210526316,57,Permit APPROVED by BUDGET OWNER
+BPI20TravelPermitData,transformer,sequence,y_true_na,25,150,0.86,0.14,150,Permit FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,sequence,y_true_na,36,50,0.9,0.0999999999999999,49,Request For Payment APPROVED by ADMINISTRATION
+BPI20TravelPermitData,transformer,sequence,y_true_na,41,39,0.7692307692307693,0.2307692307692307,38,Request For Payment FINAL_APPROVED by SUPERVISOR
+BPI20TravelPermitData,transformer,sequence,y_true_na,49,48,0.1875,0.8125,48,Request For Payment SUBMITTED by EMPLOYEE
+BPI20TravelPermitData,transformer,sequence,y_true_na,50,171,0.8947368421052632,0.1052631578947368,166,Request Payment
+BPI20TravelPermitData,transformer,sequence,y_true_na,51,70,0.2571428571428571,0.7428571428571429,69,Send Reminder
+BPI20TravelPermitData,transformer,sequence,y_true_na,52,171,0.8771929824561403,0.1228070175438597,171,Start trip
