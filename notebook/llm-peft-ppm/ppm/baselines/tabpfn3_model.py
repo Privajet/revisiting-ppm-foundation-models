@@ -20,7 +20,7 @@ def run_tabpfn3_baseline(train_log, test_log, random_state: int):
     """
 
     max_n_train = 50000
-    max_n_test = 2000
+    #max_n_test = 2000
     
     df_train = train_log.dataframe
     df_test = _enrich_with_positions(test_log.dataframe)
@@ -28,8 +28,8 @@ def run_tabpfn3_baseline(train_log, test_log, random_state: int):
     if len(df_train) > max_n_train:
         df_train = df_train.sample(n=max_n_train, random_state=random_state).reset_index(drop=True)
         
-    if len(df_test) > max_n_test:
-        df_test = df_test.sample(n=max_n_test, random_state=random_state).reset_index(drop=True)
+    #if len(df_test) > max_n_test:
+        #df_test = df_test.sample(n=max_n_test, random_state=random_state).reset_index(drop=True)
 
     feature_cols = list(train_log.features.categorical) + list(train_log.features.numerical)
 
