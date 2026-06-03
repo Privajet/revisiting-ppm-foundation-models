@@ -1,0 +1,97 @@
+======================================================================================
+PER-DATASET: temporal error by branching level (entropy buckets), MAE
+Level 1 = LEAST branchy ... level K = MOST branchy.
+seq/tab are MAE (lower=better); diff = tab - seq  (positive => sequence ahead).
+======================================================================================
+
+BPI12
+  [NT]
+    level 1 of 4 (LEAST branchy)  seq=0.15  tab=0.07  diff=-0.08
+    level 2 of 4                  seq=0.63  tab=0.60  diff=-0.03
+    level 3 of 4                  seq=0.65  tab=0.71  diff=+0.06
+    level 4 of 4 (MOST branchy)   seq=0.14  tab=0.04  diff=-0.10
+  [RT]
+    level 1 of 4 (LEAST branchy)  seq=1.13  tab=1.11  diff=-0.02
+    level 2 of 4                  seq=1.72  tab=1.63  diff=-0.09
+    level 3 of 4                  seq=1.25  tab=1.12  diff=-0.14
+    level 4 of 4 (MOST branchy)   seq=0.54  tab=0.39  diff=-0.15
+
+BPI17
+  [NT]
+    level 1 of 4 (LEAST branchy)  seq=0.10  tab=0.04  diff=-0.06
+    level 2 of 4                  seq=0.19  tab=0.19  diff=+0.00
+    level 3 of 4                  seq=0.49  tab=0.68  diff=+0.19
+    level 4 of 4 (MOST branchy)   seq=0.17  tab=0.16  diff=-0.02
+  [RT]
+    level 1 of 4 (LEAST branchy)  seq=0.73  tab=1.02  diff=+0.29
+    level 2 of 4                  seq=0.63  tab=0.80  diff=+0.17
+    level 3 of 4                  seq=0.89  tab=1.24  diff=+0.35
+    level 4 of 4 (MOST branchy)   seq=0.38  tab=0.38  diff=-0.01
+
+BPI20PrepaidTravelCosts
+  [NT]
+    level 1 of 4 (LEAST branchy)  seq=0.31  tab=0.07  diff=-0.24
+    level 2 of 4                  seq=0.46  tab=0.28  diff=-0.17
+    level 3 of 4                  seq=1.11  tab=1.09  diff=-0.03
+    level 4 of 4 (MOST branchy)   seq=0.41  tab=0.19  diff=-0.21
+  [RT]
+    level 1 of 4 (LEAST branchy)  seq=0.53  tab=0.44  diff=-0.09
+    level 2 of 4                  seq=0.46  tab=0.36  diff=-0.09
+    level 3 of 4                  seq=0.90  tab=0.90  diff=-0.00
+    level 4 of 4 (MOST branchy)   seq=0.78  tab=0.68  diff=-0.10
+
+BPI20RequestForPayment
+  [NT]
+    level 1 of 4 (LEAST branchy)  seq=0.18  tab=0.11  diff=-0.08
+    level 2 of 4                  seq=0.96  tab=0.94  diff=-0.02
+    level 3 of 4                  seq=0.34  tab=0.31  diff=-0.03
+    level 4 of 4 (MOST branchy)   seq=0.81  tab=0.78  diff=-0.04
+  [RT]
+    level 1 of 4 (LEAST branchy)  seq=0.14  tab=0.07  diff=-0.07
+    level 2 of 4                  seq=0.50  tab=0.49  diff=-0.01
+    level 3 of 4                  seq=0.82  tab=0.81  diff=-0.01
+    level 4 of 4 (MOST branchy)   seq=0.83  tab=0.82  diff=-0.01
+
+BPI20TravelPermitData
+  [NT]
+    level 1 of 4 (LEAST branchy)  seq=0.16  tab=0.10  diff=-0.06
+    level 2 of 4                  seq=0.25  tab=0.17  diff=-0.09
+    level 3 of 4                  seq=0.42  tab=0.46  diff=+0.04
+    level 4 of 4 (MOST branchy)   seq=1.13  tab=1.24  diff=+0.12
+  [RT]
+    level 1 of 4 (LEAST branchy)  seq=0.53  tab=0.62  diff=+0.08
+    level 2 of 4                  seq=0.51  tab=0.49  diff=-0.02
+    level 3 of 4                  seq=0.56  tab=0.64  diff=+0.08
+    level 4 of 4 (MOST branchy)   seq=0.88  tab=0.86  diff=-0.02
+
+======================================================================================
+TREND: sequence advantage at least- vs most-branchy level (per dataset x task)
+======================================================================================
+                dataset task            metric  diff_least_branchy  diff_most_branchy  growth
+                  BPI12   NT  branching_degree               -0.11              -0.06    0.05
+                  BPI12   NT branching_entropy               -0.08              -0.10   -0.01
+                  BPI17   NT  branching_degree               -0.06               0.03    0.09
+                  BPI17   NT branching_entropy               -0.06              -0.02    0.05
+BPI20PrepaidTravelCosts   NT  branching_degree               -0.23              -0.10    0.13
+BPI20PrepaidTravelCosts   NT branching_entropy               -0.24              -0.21    0.03
+ BPI20RequestForPayment   NT  branching_degree               -0.05              -0.04    0.02
+ BPI20RequestForPayment   NT branching_entropy               -0.08              -0.04    0.04
+  BPI20TravelPermitData   NT  branching_degree               -0.02               0.05    0.06
+  BPI20TravelPermitData   NT branching_entropy               -0.06               0.12    0.17
+                  BPI12   RT  branching_degree               -0.01              -0.16   -0.14
+                  BPI12   RT branching_entropy               -0.02              -0.15   -0.13
+                  BPI17   RT  branching_degree                0.31               0.02   -0.29
+                  BPI17   RT branching_entropy                0.29              -0.01   -0.29
+BPI20PrepaidTravelCosts   RT  branching_degree               -0.07              -0.04    0.03
+BPI20PrepaidTravelCosts   RT branching_entropy               -0.09              -0.10   -0.00
+ BPI20RequestForPayment   RT  branching_degree               -0.05              -0.01    0.04
+ BPI20RequestForPayment   RT branching_entropy               -0.07              -0.01    0.06
+  BPI20TravelPermitData   RT  branching_degree                0.02              -0.02   -0.04
+  BPI20TravelPermitData   RT branching_entropy                0.08              -0.02   -0.10
+
+======================================================================================
+VERDICT: cells where the sequence advantage does NOT grow with branching
+(growth <= 0.03 MAE). High count => temporal behaves UNLIKE NA.
+======================================================================================
+  RT: 8 / 10 (dataset x branching-measure) cells stay flat or shrink
+  NT: 3 / 10 (dataset x branching-measure) cells stay flat or shrink

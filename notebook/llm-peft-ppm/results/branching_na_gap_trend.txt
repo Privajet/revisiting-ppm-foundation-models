@@ -1,0 +1,56 @@
+==============================================================================
+PER-DATASET: NA accuracy by branching level (entropy buckets)
+Level 1 = LEAST branchy (on rails) ... level K = MOST branchy (fork).
+seq/tab are accuracy (fraction correct, 0-1); gap = seq - tab.
+==============================================================================
+
+BPI12
+  level 1 of 4 (LEAST branchy)  seq_acc=0.85  tab_acc=0.83  gap=+0.01
+  level 2 of 4                  seq_acc=0.85  tab_acc=0.70  gap=+0.15
+  level 3 of 4                  seq_acc=0.60  tab_acc=0.61  gap=-0.01
+  level 4 of 4 (MOST branchy)   seq_acc=0.70  tab_acc=0.36  gap=+0.34
+
+BPI17
+  level 1 of 4 (LEAST branchy)  seq_acc=0.96  tab_acc=0.85  gap=+0.11
+  level 2 of 4                  seq_acc=0.83  tab_acc=0.64  gap=+0.20
+  level 3 of 4                  seq_acc=0.84  tab_acc=0.55  gap=+0.29
+  level 4 of 4 (MOST branchy)   seq_acc=0.77  tab_acc=0.47  gap=+0.30
+
+BPI20PrepaidTravelCosts
+  level 1 of 4 (LEAST branchy)  seq_acc=0.80  tab_acc=0.87  gap=-0.07
+  level 2 of 4                  seq_acc=0.87  tab_acc=0.61  gap=+0.27
+  level 3 of 4                  seq_acc=0.83  tab_acc=0.80  gap=+0.03
+  level 4 of 4 (MOST branchy)   seq_acc=0.59  tab_acc=0.46  gap=+0.13
+
+BPI20RequestForPayment
+  level 1 of 4 (LEAST branchy)  seq_acc=1.00  tab_acc=1.00  gap=+0.00
+  level 2 of 4                  seq_acc=1.00  tab_acc=1.00  gap=+0.00
+  level 3 of 4                  seq_acc=0.91  tab_acc=0.36  gap=+0.55
+  level 4 of 4 (MOST branchy)   seq_acc=0.62  tab_acc=0.61  gap=+0.00
+
+BPI20TravelPermitData
+  level 1 of 4 (LEAST branchy)  seq_acc=0.65  tab_acc=0.73  gap=-0.08
+  level 2 of 4                  seq_acc=0.83  tab_acc=0.66  gap=+0.16
+  level 3 of 4                  seq_acc=0.73  tab_acc=0.60  gap=+0.13
+  level 4 of 4 (MOST branchy)   seq_acc=0.72  tab_acc=0.55  gap=+0.17
+
+==============================================================================
+TREND: gap at least-branchy level vs most-branchy level
+==============================================================================
+                dataset            metric  gap_least_branchy  gap_most_branchy  widened_by
+                  BPI12  branching_degree               0.07              0.23        0.16
+                  BPI12 branching_entropy               0.01              0.34        0.32
+                  BPI17  branching_degree               0.15              0.19        0.04
+                  BPI17 branching_entropy               0.11              0.30        0.19
+BPI20PrepaidTravelCosts  branching_degree              -0.08              0.03        0.11
+BPI20PrepaidTravelCosts branching_entropy              -0.07              0.13        0.20
+ BPI20RequestForPayment  branching_degree               0.00              0.00       -0.00
+ BPI20RequestForPayment branching_entropy               0.00              0.00        0.00
+  BPI20TravelPermitData  branching_degree              -0.05              0.12        0.17
+  BPI20TravelPermitData branching_entropy              -0.08              0.17        0.25
+
+==============================================================================
+VERDICT: datasets where the gap widens by more than 0.03 from least to most branchy
+==============================================================================
+  branching_entropy : 4 / 5 datasets
+  branching_degree  : 4 / 5 datasets
