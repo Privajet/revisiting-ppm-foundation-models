@@ -1,111 +1,180 @@
-# Extending Multi-Task Predictive Process Monitoring with Decoder-Only LLMs
+# Revisiting Predictive Process Monitoring in the Age of Foundation Models
+
+This repository contains the implementation and experiment scripts for the comparative study:
+
+**Revisiting Predictive Process Monitoring in the Age of Foundation Models: A Comparative Study of Sequence, Tabular, and LLM Approaches**
 
 ## Overview
 
-This repository contains code and scripts to fine-tune decoder-only large language models (LLMs) for multi-task predictive process monitoring (PPM) and to compare them against sequence baselines and tabular foundation models.
+The project benchmarks three modeling paradigms for predictive process monitoring (PPM):
 
-This thesis project is based on the original implementation by Oyamada et al. and extends it with an additional temporal prediction task, additional backbones, and additional baselines.
+1. **Sequence models trained from scratch**
+
+   * LSTM
+   * Transformer
+
+2. **Decoder-only large language models adapted via LoRA**
+
+   * Llama-3.2-1B
+   * Gemma-2-2B
+
+3. **Tabular foundation models using in-context learning**
+
+   * TabPFN-3
+   * ConTextTab
+
+The models are evaluated on three prediction tasks:
+
+* **NA**: next activity prediction
+* **RT**: remaining time prediction
+* **NT**: next event time prediction
+
+The benchmark covers five public event logs and reports predictive performance, runtime, and slice-level error analyses.
 
 ## Origin and Attribution
 
-This project builds on the original repository and approach:
+This project builds on the original implementation by Oyamada et al.:
 
-- Original GitHub repository: https://github.com/raseidi/llm-peft-ppm
-- Original paper (arXiv): https://doi.org/10.48550/arXiv.2509.03161
+* Original repository: https://github.com/raseidi/llm-peft-ppm
+* Original paper: https://doi.org/10.48550/arXiv.2509.03161
 
-### Thesis extensions (relative to the original work)
+The original repository provides the foundation for adapting decoder-only LLMs to structured event-log representations for PPM.
 
-Compared to the original implementation, this thesis project:
+## Main Extensions
 
-1. Extends the multi-task setting by adding next event time alongside next activity and remaining tim, resulting in three prediction heads.
-2. Evaluates additional decoder-only LLM backbones under the same interface, including zero-shot and few-shot adaptation settings.
-3. Includes tabular foundation models as additional baselines.
+Relative to the original implementation, this repository:
 
-## System and Tooling
+1. Adds **next event time prediction** as an additional temporal task.
+2. Extends the benchmark to three prediction tasks: NA, RT, and NT.
+3. Adds further decoder-only LLM backbones and evaluates LoRA, zero-shot, and few-shot configurations.
+4. Adds two tabular foundation model baselines: TabPFN-3 and ConTextTab.
+5. Includes slice-level analyses of prediction behavior, including branching-related difficulty and model-specific error patterns.
 
-- Tested on **Ubuntu 24.04**
-- Python **3.12**
-- Local environment management via **uv**: https://docs.astral.sh/uv/guides/install-python/
+## Prediction Setup
+
+The sequence models and LLM-based approaches jointly predict NA, RT, and NT in a multi-task setting.
+
+The tabular foundation models use three task-specific predictors:
+
+* one classifier for NA
+* one regressor for RT
+* one regressor for NT
+
+TabPFN-3 results are unavailable for BPI17 because evaluation could not be completed due to computational constraints at this dataset scale.
+
+## Data
+
+The experiments use five public event logs from the 4TU.ResearchData repository:
+
+* **BPI20PTC**: Prepaid Travel Costs
+  https://doi.org/10.4121/uuid:5d2fe5e1-f91f-4a3b-ad9b-9e4126870165
+
+* **BPI20RfP**: Request for Payment
+  https://doi.org/10.4121/uuid:895b26fb-6f25-46eb-9e48-0dca26fcd030
+
+* **BPI20TPD**: Permit Data
+  https://doi.org/10.4121/uuid:ea03d361-a7cd-4f5e-83d8-5fbdf0362550
+
+* **BPI12**
+  https://doi.org/10.4121/uuid:3926db30-f712-4394-aebc-75976070e91f
+
+* **BPI17**
+  https://doi.org/10.4121/uuid:c2c3b154-ab26-4b31-a0e8-8f2350ddac11
+
+The event logs are downloaded through `skpm` into:
+
+```text
+data/<LOG>/
+```
+
+Documentation for the data API:
+
+https://skpm.readthedocs.io/en/latest/examples/01_data_api.html
+
+## Input Features
+
+The shared preprocessing pipeline uses the activity label as a categorical input feature and derives numerical features from event timestamps.
+
+The evaluated configurations pass the configured timestamp-derived features through:
+
+```bash
+--continuous_features all
+```
+
+## System Requirements
+
+The project was tested with:
+
+* Ubuntu 24.04
+* Python 3.12
+* CUDA-capable GPU for LLM fine-tuning
+* `uv` or Conda for environment management
+
+Documentation for `uv`:
+
+https://docs.astral.sh/uv/guides/install-python/
 
 ## Installation
 
-You can set up the project using either `requirements.txt` (pip/uv) or the provided conda environment files.
+### Option A: Install with `uv`
 
-### Option A: `requirements.txt` (pip/uv)
-
-Create and activate a virtual environment (example with `uv`):
+Create and activate a virtual environment:
 
 ```bash
 uv venv
 source .venv/bin/activate
 ```
 
-Install dependencies:
+Install the dependencies:
 
 ```bash
 uv pip install -r requirements.txt
 ```
 
-### Option B: Conda environments (recommended for reproducibility)
+### Option B: Install with Conda
 
-This repository provides two conda environment files:
+The repository provides Conda environment files for reproducibility:
 
-- `env-llm-peft-ppm.yml`
-- `env-llm-peft-ppm-saprpt.yml`
+```text
+env-llm-peft-ppm.yml
+env-llm-peft-ppm-saprpt.yml
+```
 
-Create and activate one of them:
+Create and activate the main environment:
 
 ```bash
 conda env create -f env-llm-peft-ppm.yml
 conda activate env-llm-peft-ppm
 ```
 
-or
+For ConTextTab experiments, use:
 
 ```bash
 conda env create -f env-llm-peft-ppm-saprpt.yml
 conda activate env-llm-peft-ppm-saprpt
 ```
 
-Notes:
-
-- Use the conda environment files for thesis-grade reproducibility.
-- Use `requirements.txt` for lightweight/local debugging setups.
-
 ## Repository Structure
 
 ```text
 .
-├── data/                                       # Event logs (automatically downloaded)
-├── scripts/                                    # Experiment scripts and configs
+├── data/                                        # Downloaded event logs
+├── scripts/                                     # Experiment scripts and parameter grids
 │   ├── *.sh
 │   └── *.txt
-├── notebooks/                                  # Analysis notebooks
-├── ppm/                                        # Source code
-├── fertig_lennart_next_event_prediction.py     # Main training script
-├── requirements.txt                            # Python dependencies (pip/uv)
-├── env-llm-peft-ppm.yml                        # Conda environment (reproducibility)
-├── env-llm-peft-ppm-saprpt.yml                 # Conda environment variant (reproducibility)
-└── README.md                                   # This file
+├── notebook/                                   # Analysis notebooks
+├── ppm/                                         # Source code
+├── results/                                     # Metrics, exports, and analyses
+├── fertig_lennart_next_event_prediction.py      # Main experiment entry point
+├── requirements.txt                             # Python dependencies
+├── env-llm-peft-ppm.yml                         # Main Conda environment
+├── env-llm-peft-ppm-saprpt.yml                  # ConTextTab environment
+└── README.md
 ```
-
-## Data
-
-Five public event logs are used. They are downloaded via `skpm` into `data/<LOG>/`:
-
-SkPM documentation: https://skpm.readthedocs.io/en/latest/examples/01_data_api.html
-
-Event logs:
-
-- BPI20PTC (Prepaid Travel Costs): https://doi.org/10.4121/uuid:5d2fe5e1-f91f-4a3b-ad9b-9e4126870165
-- BPI20RfP (Request for Payment): https://doi.org/10.4121/uuid:895b26fb-6f25-46eb-9e48-0dca26fcd030
-- BPI20TPD (Permit Data): https://doi.org/10.4121/uuid:ea03d361-a7cd-4f5e-83d8-5fbdf0362550
-- BPI12: https://doi.org/10.4121/uuid:3926db30-f712-4394-aebc-75976070e91f
-- BPI17: https://doi.org/10.4121/uuid:c2c3b154-ab26-4b31-a0e8-8f2350ddac11
 
 ## Usage
 
-### RNN baseline
+### LSTM Baseline
 
 ```bash
 python fertig_lennart_next_event_prediction.py \
@@ -122,36 +191,32 @@ python fertig_lennart_next_event_prediction.py \
   --continuous_targets remaining_time next_event_time
 ```
 
-### LLM fine-tuning (LoRA)
+### LLM Fine-Tuning with LoRA
 
-To use Hugging Face-hosted model weights, a Hugging Face token is required:
+Hugging Face-hosted model weights require a Hugging Face token.
 
-Hugging Face tokens: https://huggingface.co/docs/hub/en/security-tokens
+Documentation:
 
-Supported ways to provide it:
+https://huggingface.co/docs/hub/en/security-tokens
 
-1. Create an `.env` file in the repository root:
+Provide the token through an `.env` file:
 
 ```text
 HF_TOKEN=<YOUR_TOKEN>
 ```
 
-2. Export an environment variable:
+or export it as an environment variable:
 
 ```bash
 export HF_TOKEN="<YOUR_TOKEN>"
 ```
 
-3. Use environment-variable access in code (recommended pattern already used in the project):
-
-`HF_TOKEN = os.getenv("HF_TOKEN")` (see `ppm/models/models.py`)
-
-Minimal local debugging configuration (reduce `batch_size` if GPU memory is limited):
+Minimal LoRA example:
 
 ```bash
 python fertig_lennart_next_event_prediction.py \
   --dataset BPI20PrepaidTravelCosts \
-  --backbone qwen25-05b \
+  --backbone gemma-2-2b \
   --embedding_size 896 \
   --hidden_size 896 \
   --lr 0.00005 \
@@ -166,34 +231,59 @@ python fertig_lennart_next_event_prediction.py \
   --lora_alpha 4
 ```
 
-Weights & Biases logging can be enabled with `--wandb`.
+Weights & Biases logging can be enabled with:
 
-## Hyperparameter Search and Reproducibility
+```bash
+--wandb
+```
 
-Experiment scripts and configuration grids are located in:
+## Reproducing the Benchmark
 
-- `scripts/*.sh`
-- `scripts/*.txt`
+Experiment scripts and parameter grids are located under:
 
-They document how runs were executed and can be used to reproduce experiments locally or on compute infrastructure.
+```text
+scripts/
+```
 
-## Results
+The directory contains separate configurations for:
 
-Metrics, exports, and analysis notebooks are stored under:
+* sequence baselines
+* LLM-based approaches
+* TabPFN-3
+* ConTextTab
+* result aggregation
+* error analysis
 
-- `results/`
+Use the scripts and parameter files as the reference for reproducing the reported benchmark runs.
 
-Plots and analysis are available in:
+## Results and Analyses
 
-- `results/results.ipynb`
+Generated metrics and prediction outputs are stored under:
+
+```text
+results/
+```
+
+The repository also contains scripts for:
+
+* benchmark aggregation
+* slice-level error analysis
+* branching-related analysis
+* temporal dissociation analysis
+* LLM adaptation analysis
 
 ## Citation
 
-If you use or build upon this repository, cite the original work:
+If you use this repository, please cite the accompanying paper and the original work by Oyamada et al.
 
-- Original GitHub: https://github.com/raseidi/llm-peft-ppm
-- Original paper: https://doi.org/10.48550/arXiv.2509.03161
+Original repository:
+
+https://github.com/raseidi/llm-peft-ppm
+
+Original paper:
+
+https://doi.org/10.48550/arXiv.2509.03161
 
 ## Contact
 
-For questions or feedback or open an issue in this repository.
+For questions or feedback, please open an issue in this repository.
