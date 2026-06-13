@@ -271,19 +271,5 @@ The repository also contains scripts for:
 * branching-related analysis
 * temporal dissociation analysis
 * LLM adaptation analysis
-
-## Citation
-
-If you use this repository, please cite the accompanying paper and the original work by Oyamada et al.
-
-Original repository:
-
-https://github.com/raseidi/llm-peft-ppm
-
-Original paper:
-
-https://doi.org/10.48550/arXiv.2509.03161
-
-## Contact
-
+  
 For questions or feedback, please open an issue in this repository.
